@@ -2,7 +2,13 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://www.jolaandco.com/$1",
+      "has": [
+        {
+          "type": "host",
+          "value": "jolaandco.com"
+        }
+      ],
+      "destination": "https://www.jolaandco.com/:1",
       "permanent": true
     }
   ]

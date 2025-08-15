@@ -1,3 +1,10 @@
+/* === Brand Colors === */
+:root {
+  --brand-primary: #6C5CE7;       /* Main purple */
+  --brand-primaryDark: #4C46B3;   /* Darker purple */
+  --brand-accent: #F59E0B;        /* Warm accent color */
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +21,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(
+    135deg,
+    var(--brand-primary),
+    var(--brand-primaryDark)
+  );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +36,12 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--brand-accent);
+  text-decoration: none;
+}
+
+.App-link:hover {
+  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +51,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Buttons that use your brand colors */
+.btn-primary {
+  background: var(--brand-primary);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  display: inline-block;
+  transition: filter 120ms ease, background 120ms ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--brand-primaryDark);
+  filter: brightness(0.98);
+}
+
+.btn-outline {
+  border: 2px solid var(--brand-primary);
+  color: var(--brand-primary);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  display: inline-block;
+  transition: background 120ms ease, color 120ms ease;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: var(--brand-primary);
+  color: #fff;
+}
+
+C:\Users\Admin\jolaandco
+/* Buttons that use your brand colors */
+.btn-primary {
+  background: var(--brand-primary);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  display: inline-block;
+  transition: filter 120ms ease, background 120ms ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--brand-primaryDark);
+  filter: brightness(0.98);
+}
+
+.btn-outline {
+  border: 2px solid var(--brand-primary);
+  color: var(--brand-primary);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  display: inline-block;
+  transition: background 120ms ease, color 120ms ease;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: var(--brand-primary);
+  color: #fff;
 }

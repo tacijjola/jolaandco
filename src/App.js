@@ -21,7 +21,7 @@ export default function App() {
             <a href="#projects" className="hover:opacity-80">Projects</a>
             <a href="#contact" className="hover:opacity-80">Contact</a>
             <a
-              href="/Jola-Tacij-CV.pdf"
+              href="/cv.html"
               className="bg-driftwood text-white px-4 py-2 rounded-md hover:opacity-90"
             >
               View CV
@@ -176,12 +176,12 @@ export default function App() {
               Email Me
             </a>
             <a
-              href="/Jola-Tacij-CV.pdf"
+              href="/cv.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-md border border-brightGray/30 hover:bg-lightStone"
+              className="bg-driftwood text-white px-4 py-2 rounded-md hover:opacity-90"
             >
-              View CV (PDF)
+              View CV
             </a>
           </div>
         </div>

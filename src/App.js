@@ -7,22 +7,33 @@ export default function App() {
       {/* HEADER */}
       <header className="bg-white border-b border-brightGray/10">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
-          <a href="#top" className="flex items-center gap-3 text-bigStone no-underline">
+          <a href="#top" className="flex items-center gap-2 text-bigStone no-underline">
             <img
               src="/logo.png"
               alt="Jola & Co. logo"
               className="h-16 w-auto object-contain"
+              style={{filter: 'drop-shadow(0 2px 6px rgba(212, 165, 116, 0.25))'}}
             />
+            <span style={{
+              fontWeight: '600',
+              fontSize: '0.95rem',
+              letterSpacing: '0.5px',
+              textShadow: '2px 2px 4px rgba(153, 153, 153, 0.25)'
+            }}>Jola <span style={{color: '#d4a574'}}&</span> Co</span>
           </a>
 
           <nav className="hidden sm:flex items-center gap-6">
             <a href="#about" className="hover:opacity-80">About</a>
             <a href="#certifications" className="hover:opacity-80">Certifications</a>
             <a href="#projects" className="hover:opacity-80">Projects</a>
-            <a href="#contact" className="hover:opacity-80">Contact</a>
+            <a href="#contact" className="text-white bg-d4a574 px-4 py-2 rounded-md hover:opacity-90" style={{backgroundColor: '#d4a574'}}>
+              Contact
+            </a>
             <a
               href="/Jola_Tacij_CV.pdf"
-              className="bg-driftwood text-white px-4 py-2 rounded-md hover:opacity-90"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-md border border-brightGray/30 hover:bg-lightStone"
             >
               View CV
             </a>
@@ -35,7 +46,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-semibold leading-tight">
             Practical operations, clear data,{" "}
-            <span className="text-driftwood">real momentum</span>.
+            <span style={{color: '#2563eb'}}>real momentum</span>.
           </h1>
           <p className="mt-4 text-lg text-brightGray">
             I help businesses structure smarter, report clearly, and move faster.
@@ -44,7 +55,7 @@ export default function App() {
           </p>
 
           <div className="mt-8 flex justify-center gap-3 flex-wrap">
-            <a href="#contact" className="bg-driftwood text-white px-6 py-3 rounded-md hover:opacity-90">
+            <a href="#contact" className="text-white px-6 py-3 rounded-md hover:opacity-90" style={{backgroundColor: '#2563eb'}}>
               Let's Work Together
             </a>
             <a href="#projects" className="px-6 py-3 rounded-md border border-brightGray/30 hover:bg-lightStone">
@@ -264,7 +275,7 @@ export default function App() {
           </p>
 
           <div className="flex justify-center gap-3 flex-wrap">
-            <a href="mailto:jola.tacij@outlook.com" className="bg-driftwood text-white px-6 py-3 rounded-md hover:opacity-90">
+            <a href="mailto:jola.tacij@outlook.com" className="text-white px-6 py-3 rounded-md hover:opacity-90" style={{backgroundColor: '#d4a574'}}>
               Email Me
             </a>
             <a

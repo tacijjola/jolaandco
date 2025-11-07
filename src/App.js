@@ -16,12 +16,12 @@ export default function App() {
           </a>
 
           <nav className="hidden sm:flex items-center gap-6">
-            <a href="#about" className="hover:opacity-80">About</a>
+            <a href="#story" className="hover:opacity-80">About</a>
             <a href="#certifications" className="hover:opacity-80">Certifications</a>
             <a href="#projects" className="hover:opacity-80">Projects</a>
             <a href="#contact" className="hover:opacity-80">Contact</a>
             <a
-              href="/cv.html"
+              href="/Jola-Tacij-CV.pdf"
               className="bg-driftwood text-white px-4 py-2 rounded-md hover:opacity-90"
             >
               View CV
@@ -30,7 +30,59 @@ export default function App() {
         </div>
       </header>
 
-      {/* HERO */}
+      {/* ABOUT / STORY */}
+      <section id="story" className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-12 text-center">
+            <p className="text-lg text-brightGray italic mb-4">
+              "Things get done only if the data we gather can inform and inspire those in a position to make a difference."
+            </p>
+            <p className="text-sm text-driftwood">– Towards Data Science</p>
+          </div>
+
+          <h2 className="text-3xl font-bold mb-8 text-center">Who I Am</h2>
+          <p className="text-lg text-brightGray mb-6 leading-relaxed">
+            I'm a <strong>Business Operations Specialist</strong> focused on transforming complex operations through data-driven systems and strategic project management. I work at the intersection of data analysis, business intelligence, and operational excellence.
+          </p>
+          <p className="text-lg text-brightGray mb-8 leading-relaxed">
+            With <strong>5+ years of remote-first experience</strong> across energy, EV infrastructure, and technology sectors, I've built dashboards, optimized workflows, and led teams to deliver measurable results.
+          </p>
+
+          <h3 className="text-2xl font-bold mb-6 mt-10">What I Do</h3>
+          
+          <div className="space-y-6">
+            <div className="border-l-4 border-driftwood pl-6">
+              <h4 className="text-xl font-semibold mb-2">Data-Driven Operations Transformation</h4>
+              <p className="text-brightGray">I design and implement systems that turn operational chaos into strategic clarity. Using Power BI, SQL, and business intelligence tools, I create dashboards and metrics that inform critical business decisions.</p>
+            </div>
+
+            <div className="border-l-4 border-driftwood pl-6">
+              <h4 className="text-xl font-semibold mb-2">Project & Portfolio Management</h4>
+              <p className="text-brightGray">I manage 50+ concurrent projects simultaneously, ensuring accurate tracking, cross-functional visibility, and milestone delivery. I coordinate across Engineering, Deployment, Procurement, and Finance teams — making sure every stakeholder has the data they need to succeed.</p>
+            </div>
+
+            <div className="border-l-4 border-driftwood pl-6">
+              <h4 className="text-xl font-semibold mb-2">Back-Office & Systems Design</h4>
+              <p className="text-brightGray">I build the infrastructure that allows organizations to scale. From documentation systems to project tracking frameworks to invoice governance workflows, I create the operational backbone that makes growth possible.</p>
+            </div>
+
+            <div className="border-l-4 border-driftwood pl-6">
+              <h4 className="text-xl font-semibold mb-2">Strategic Analysis & Reporting</h4>
+              <p className="text-brightGray">I translate business objectives into actionable insights. Whether presenting investment feasibility analysis to the Board or creating KPI dashboards for leadership teams, I ensure data tells the story that matters.</p>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-bold mb-6 mt-10">My Approach</h3>
+          <p className="text-brightGray mb-6">I believe operations should be <strong>clear, measurable, and impactful</strong>. Not guesswork. Not assumptions.</p>
+          
+          <ul className="text-lg text-brightGray space-y-2">
+            <li>✓ <strong>Data-informed</strong> — Every decision backed by evidence</li>
+            <li>✓ <strong>Team-focused</strong> — Solving problems that matter to people</li>
+            <li>✓ <strong>Scalable</strong> — Systems that grow with your business</li>
+            <li>✓ <strong>Practical</strong> — Tools and processes that actually work</li>
+          </ul>
+        </div>
+      </section>
       <section id="top" className="py-12 sm:py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-semibold leading-tight">
@@ -88,6 +140,20 @@ export default function App() {
               <p className="text-sm text-driftwood font-medium">APMG International</p>
             </div>
 
+            {/* Generative AI Mastermind */}
+            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
+              <img
+                src="/cert-ai-mastermind.png"
+                alt="Generative AI Mastermind Certificate"
+                className="h-32 w-32 object-contain mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">Generative AI Mastermind</h3>
+              <p className="text-brightGray mb-3">
+                Completed comprehensive training in AI applications, prompt engineering, and automation strategies. This learning directly shaped how I approach process optimization and new business solutions.
+              </p>
+              <p className="text-sm text-driftwood font-medium">Outskill</p>
+            </div>
+
             {/* Power BI Data Analyst */}
             <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
               <img
@@ -102,20 +168,6 @@ export default function App() {
               <p className="text-sm text-driftwood font-medium">Microsoft</p>
             </div>
           </div>
-
-          {/* Generative AI Mastermind */}
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
-              <img
-                src="/cert-ai-mastermind.png"
-                alt="Generative AI Mastermind Certificate"
-                className="h-32 w-32 object-contain mb-4"
-              />
-              <h3 className="text-xl font-semibold mb-2">Generative AI Mastermind</h3>
-              <p className="text-brightGray mb-3">
-                Completed comprehensive training in AI applications, prompt engineering, and automation strategies. This learning directly shaped how I approach process optimization and new business solutions.
-              </p>
-              <p className="text-sm text-driftwood font-medium">Outskill</p>
-            </div>
 
           <p className="text-center text-brightGray text-sm mt-8">
             Committed to continuous learning and industry-recognized standards for operations, project management, and emerging technologies.
@@ -176,12 +228,12 @@ export default function App() {
               Email Me
             </a>
             <a
-              href="/cv.html"
+              href="/Jola-Tacij-CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-driftwood text-white px-4 py-2 rounded-md hover:opacity-90"
+              className="px-6 py-3 rounded-md border border-brightGray/30 hover:bg-lightStone"
             >
-              View CV
+              View CV (PDF)
             </a>
           </div>
         </div>
@@ -197,4 +249,3 @@ export default function App() {
     </div>
   );
 }
-

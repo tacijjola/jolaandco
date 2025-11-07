@@ -17,6 +17,7 @@ export default function App() {
 
           <nav className="hidden sm:flex items-center gap-6">
             <a href="#about" className="hover:opacity-80">About</a>
+            <a href="#certifications" className="hover:opacity-80">Certifications</a>
             <a href="#projects" className="hover:opacity-80">Projects</a>
             <a href="#contact" className="hover:opacity-80">Contact</a>
             <a
@@ -44,7 +45,7 @@ export default function App() {
 
           <div className="mt-8 flex justify-center gap-3 flex-wrap">
             <a href="#contact" className="bg-driftwood text-white px-6 py-3 rounded-md hover:opacity-90">
-              Let’s Work Together
+              Let's Work Together
             </a>
             <a href="#projects" className="px-6 py-3 rounded-md border border-brightGray/30 hover:bg-lightStone">
               See Projects
@@ -67,8 +68,63 @@ export default function App() {
         </div>
       </section>
 
+      {/* CERTIFICATIONS */}
+      <section id="certifications" className="py-16 px-4 bg-lightStone/40">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">Certifications & Learning</h2>
+          
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* AgilePM v3 Foundation */}
+            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
+              <img
+                src="/cert-agilepm.png"
+                alt="AgilePM v3 Foundation Badge"
+                className="h-32 w-32 object-contain mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">AgilePM® v3 Foundation</h3>
+              <p className="text-brightGray mb-3">
+                Certified in Agile Project Management. Currently studying for Practitioner level. Brings structured, flexible methodology to project delivery and cross-team coordination.
+              </p>
+              <p className="text-sm text-driftwood font-medium">APMG International</p>
+            </div>
+
+            {/* Power BI Data Analyst */}
+            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
+              <img
+                src="/cert-PL-300-Power-BI-Data-Analyst.png"
+                alt="Microsoft Power BI Data Analyst Certification"
+                className="h-32 w-32 object-contain mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">Power BI Data Analyst (PL-300)</h3>
+              <p className="text-brightGray mb-3">
+                Microsoft certified. Demonstrates expertise in data modeling, visualization, and business intelligence. Core to dashboard delivery and reporting strategy.
+              </p>
+              <p className="text-sm text-driftwood font-medium">Microsoft</p>
+            </div>
+          </div>
+
+          {/* Generative AI Mastermind */}
+            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
+              <img
+                src="/cert-ai-mastermind.png"
+                alt="Generative AI Mastermind Certificate"
+                className="h-32 w-32 object-contain mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">Generative AI Mastermind</h3>
+              <p className="text-brightGray mb-3">
+                Completed comprehensive training in AI applications, prompt engineering, and automation strategies. This learning directly shaped how I approach process optimization and new business solutions.
+              </p>
+              <p className="text-sm text-driftwood font-medium">Outskill</p>
+            </div>
+
+          <p className="text-center text-brightGray text-sm mt-8">
+            Committed to continuous learning and industry-recognized standards for operations, project management, and emerging technologies.
+          </p>
+        </div>
+      </section>
+
       {/* PROJECTS */}
-      <section id="projects" className="py-16 px-4 bg-lightStone/40">
+      <section id="projects" className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Highlighted Projects</h2>
 
@@ -109,10 +165,10 @@ export default function App() {
       {/* CONTACT */}
       <section id="contact" className="py-16 px-4">
         <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Let’s Collaborate</h2>
+          <h2 className="text-3xl font-bold mb-4">Let's Collaborate</h2>
           <p className="mb-6 text-brightGray">
-            Consulting, project collaboration, or remote support. If you’re looking to streamline, grow, 
-            or automate — let’s talk.
+            Consulting, project collaboration, or remote support. If you're looking to streamline, grow, 
+            or automate — let's talk.
           </p>
 
           <div className="flex justify-center gap-3 flex-wrap">

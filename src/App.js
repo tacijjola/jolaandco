@@ -232,36 +232,23 @@ export default function App() {
       {/* ABOUT ME */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
           
-          <div className="mb-8 text-center">
-            <p className="text-lg text-brightGray italic mb-4">
-              "Things get done only if the data we gather can inform and inspire those in a position to make a difference."
-            </p>
-            <p className="text-sm text-driftwood">– Towards Data Science</p>
-          </div>
-
           <div className="space-y-6 text-brightGray">
-            <p>
-              I'm a <strong>Business Operations Specialist</strong> focused on transforming complex operations through data-driven systems and strategic project management. With <strong>5+ years of remote-first experience</strong> across energy, EV infrastructure, and technology sectors, I've built dashboards, optimized workflows, and led teams to deliver measurable results.
+            <p className="text-lg leading-relaxed">
+              I bring <strong>passion, precision, and intuition</strong> to every project. I listen first, ask the right questions, and deliver solutions that actually work — not just theoretically, but in practice.
             </p>
 
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-bigStone">What I Bring</h3>
-              <ul className="space-y-2">
-                <li>✓ <strong>Data-driven operations</strong> — Transforming chaos into strategic clarity</li>
-                <li>✓ <strong>Portfolio management</strong> — Managing 50+ projects with precision</li>
-                <li>✓ <strong>Systems design</strong> — Building infrastructure that scales</li>
-                <li>✓ <strong>Strategic insights</strong> — Data that informs board-level decisions</li>
-              </ul>
-            </div>
-
-            <p>
-              I believe operations should be <strong>clear, measurable, and impactful</strong>. Not guesswork. Not assumptions. I work at the heart of what matters—ensuring data informs decisions, and decisions drive results.
+            <p className="text-lg leading-relaxed">
+              What sets me apart: I'm <strong>forthcoming</strong> about challenges, transparent about timelines, and relentless about quality. I don't hide behind jargon or complexity — I translate it into clarity. My clients know exactly what they're getting and why it matters.
             </p>
 
-            <p>
-              Based in Abruzzo with my family and two beautiful Maremma Sheep Dogs, I bring passion, precision, and 5+ years of proven remote expertise to every project.
+            <p className="text-lg leading-relaxed">
+              I'm <strong>remote-first, deadline-driven, and genuinely invested</strong> in the success of the organizations I work with. Whether you need a one-off analysis, a complete operations overhaul, or ongoing support, I show up ready to make a difference.
+            </p>
+
+            <p className="text-lg leading-relaxed italic text-center mt-8">
+              Based in Abruzzo with my family and two beautiful Maremma Sheep Dogs. Always learning. Always improving. Always ready.
             </p>
           </div>
         </div>
@@ -302,3 +289,5 @@ export default function App() {
     </div>
   );
 }
+
+

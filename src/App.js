@@ -108,34 +108,61 @@ export default function App() {
       {/* CERTIFICATIONS & LEARNING */}
       <section id="certifications" className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Certifications & Professional Development</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Certifications & Professional Development</h2>
           
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
+          <div className="grid gap-8 md:grid-cols-3 mb-16">
             {/* AgilePM v3 Foundation */}
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
-              <h3 className="text-xl font-semibold mb-2">AgilePM® v3 Foundation</h3>
-              <p className="text-brightGray mb-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 h-32 w-32 flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-b from-blue-100 to-blue-50 rounded-full flex items-center justify-center border-4 border-blue-400 shadow-lg">
+                  <div className="text-center">
+                    <p className="text-sm font-bold text-blue-600">AgilePM</p>
+                    <p className="text-xs font-semibold text-blue-700">v3</p>
+                    <p className="text-xs text-blue-600 mt-1">FOUNDATION</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">AgilePM® v3 Foundation</h3>
+              <p className="text-brightGray text-sm">
                 Certified in Agile Project Management. Currently studying for Practitioner level. Brings structured, flexible methodology to project delivery and cross-team coordination.
               </p>
-              <p className="text-sm text-driftwood font-medium">APMG International, 2025</p>
-            </div>
-
-            {/* Generative AI Mastermind */}
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
-              <h3 className="text-xl font-semibold mb-2">Generative AI Mastermind</h3>
-              <p className="text-brightGray mb-3">
-                Comprehensive training in AI applications, prompt engineering, and automation strategies. Directly shaped approach to process optimization and business solutions.
-              </p>
-              <p className="text-sm text-driftwood font-medium">Outskill, 2025</p>
+              <p className="text-sm text-driftwood font-medium mt-3">APMG International</p>
             </div>
 
             {/* Power BI Data Analyst */}
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
-              <h3 className="text-xl font-semibold mb-2">Power BI Data Analyst (PL-300)</h3>
-              <p className="text-brightGray mb-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 h-32 w-32 flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-b from-blue-100 to-blue-50 rounded-full flex items-center justify-center border-4 border-blue-500 shadow-lg">
+                  <div className="text-center">
+                    <p className="text-sm font-bold text-blue-700">Power BI</p>
+                    <p className="text-xs font-semibold text-blue-600">Data Analyst</p>
+                    <p className="text-xs text-blue-600 mt-1">ASSOCIATE</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Power BI Data Analyst (PL-300)</h3>
+              <p className="text-brightGray text-sm">
                 Microsoft certified. Demonstrates expertise in data modeling, visualization, and business intelligence. Core to dashboard delivery and reporting strategy.
               </p>
-              <p className="text-sm text-driftwood font-medium">Microsoft Certified, 2022</p>
+              <p className="text-sm text-driftwood font-medium mt-3">Microsoft Certified</p>
+            </div>
+
+            {/* Generative AI Mastermind */}
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 h-32 w-32 flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-b from-green-100 to-green-50 rounded-full flex items-center justify-center border-4 border-green-500 shadow-lg">
+                  <div className="text-center">
+                    <p className="text-sm font-bold text-green-700">Generative</p>
+                    <p className="text-xs font-semibold text-green-600">AI</p>
+                    <p className="text-xs text-green-600 mt-1">MASTERMIND</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Generative AI Mastermind</h3>
+              <p className="text-brightGray text-sm">
+                Comprehensive training in AI applications, prompt engineering, and automation strategies. Directly shaped approach to process optimization and business solutions.
+              </p>
+              <p className="text-sm text-driftwood font-medium mt-3">Outskill</p>
             </div>
           </div>
 

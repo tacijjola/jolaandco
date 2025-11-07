@@ -150,6 +150,33 @@
             padding-left: 0;
         }
 
+        .achievement-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding: 12px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #d4a574;
+            border-radius: 4px;
+        }
+
+        .achievement-icon {
+            font-size: 1.3em;
+            flex-shrink: 0;
+            min-width: 30px;
+        }
+
+        .achievement-item p {
+            margin: 0;
+            color: #555;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+
+        .achievement-item strong {
+            color: #1a1a1a;
+        }
+
         .cv-skill-category {
             margin-bottom: 15px;
         }
@@ -258,10 +285,40 @@
         <!-- SUMMARY -->
         <div class="cv-section">
             <h2>Summary</h2>
-            <p>AgilePM®-certified Project and Business Analyst with 5+ years of experience in energy infrastructure and tech-driven environments. Skilled in cross-functional coordination, workflow optimization, and data analysis using Sitetracker, Power BI, SQL, and Business Central. Actively seeking a remote role to apply a broad technical and strategic skill set, including recent work in Generative AI.</p>
+            <p><strong>AgilePM®-certified Project and Business Analyst</strong> with <strong>5+ years of proven impact</strong> in energy infrastructure and tech-driven environments. <strong>Specialist in transforming operations</strong> through cross-functional coordination, workflow optimization, and strategic data analysis. Expert in <strong>Sitetracker, Power BI, SQL, and Business Central</strong>. Actively seeking a remote role to drive operational excellence and apply a broad technical skill set, including recent expertise in <strong>Generative AI and automation</strong>.</p>
+            <p style="margin-top: 8px; font-style: italic; color: #d4a574;"><strong>Leveling Up Operations Environments</strong></p>
         </div>
 
-        <!-- EXPERIENCE -->
+        <!-- KEY ACHIEVEMENTS -->
+        <div class="cv-section">
+            <h2>Key Achievements</h2>
+            <div class="grid gap-4">
+                <div class="achievement-item">
+                    <span class="achievement-icon">📈</span>
+                    <p><strong>Scaled 50+ deployment projects</strong> simultaneously using Sitetracker, improving project visibility and cross-team execution by 100%</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-icon">📊</span>
+                    <p><strong>Built geospatial Power BI dashboards</strong> with Python integration, enabling data-driven location strategy and resource optimization</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-icon">⚡</span>
+                    <p><strong>Increased departmental efficiency by 25%</strong> through structured data systems and process automation at SWARCO</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-icon">🎯</span>
+                    <p><strong>Delivered financial dashboards</strong> that shaped leadership decisions and aligned Operations, Finance, and Strategy teams</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-icon">✅</span>
+                    <p><strong>Pioneered workflow automation</strong>, reducing manual data extraction tasks by 70% and improving accuracy</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-icon">🤝</span>
+                    <p><strong>Bridged technical and non-technical teams</strong>, ensuring smooth execution across Engineering, Procurement, Finance, and Deployment</p>
+                </div>
+            </div>
+        </div>
         <div class="cv-section">
             <h2>Experience</h2>
 
@@ -331,14 +388,7 @@
             </div>
         </div>
 
-        <!-- KEY ACHIEVEMENTS -->
-        <div class="cv-section">
-            <h2>Key Achievements</h2>
-            <div class="cv-skill-category">
-                <strong>Department Workflow Optimization</strong>
-                <p>Designed a structured file and data system, improving access, compliance, and collaboration across teams.</p>
-            </div>
-        </div>
+
 
         <!-- SKILLS -->
         <div class="cv-section">
@@ -402,7 +452,7 @@
 
         <!-- DOWNLOAD -->
         <div class="cv-download">
-            <a href="/Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer">📥 Download PDF Version</a>
+            <a href="/Jola-Tacij-CV.pdf" download="Jola-Tacij-CV.pdf" type="application/pdf">📥 Download PDF Version</a>
         </div>
     </div>
 </body>

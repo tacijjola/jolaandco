@@ -4,17 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navySlate: "#2D3644",   // Primary text & main accents
-        sage: "#96A4A5",        // Secondary highlights
-        goldenWheat: "#9F8551", // Accent & symbol
-        sandBeige: "#CAB69D",   // Subtle backgrounds
-        lightStone: "#E0E2E0",  // Page background
+        blueCharcoal: "#010520", // optional deep accent
+        driftwood: "#B38F46",    // warm gold (CTAs, & symbol)
+        bigStone:   "#132633",   // primary navy (headings/text)
+        brightGray: "#343B4A",   // subtle borders / secondary text
+        nepal:      "#94B4C6",   // soft blue accent
+        mutedTeal:  "#4A6B6B",   // secondary accent
       },
     },
   },
   plugins: [],
 };
-
-
-
 

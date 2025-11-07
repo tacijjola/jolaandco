@@ -19,7 +19,7 @@ export default function App() {
               fontSize: '0.95rem',
               letterSpacing: '0.5px',
               textShadow: '2px 2px 4px rgba(153, 153, 153, 0.25)'
-            }}>Jola <span style={{color: '#d4a574'}}&</span> Co</span>
+            }}>Jola & Co</span>
           </a>
 
           <nav className="hidden sm:flex items-center gap-6">
@@ -300,5 +300,4 @@ export default function App() {
     </div>
   );
 }
-
 

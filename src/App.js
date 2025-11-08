@@ -7,33 +7,22 @@ export default function App() {
       {/* HEADER */}
       <header className="bg-white border-b border-brightGray/10">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
-          <a href="#top" className="flex items-center gap-2 text-bigStone no-underline">
+          <a href="#top" className="flex items-center gap-3 text-bigStone no-underline">
             <img
               src="/logo.png"
               alt="Jola & Co. logo"
               className="h-16 w-auto object-contain"
-              style={{filter: 'drop-shadow(0 2px 6px rgba(212, 165, 116, 0.25))'}}
             />
-            <span style={{
-              fontWeight: '600',
-              fontSize: '0.95rem',
-              letterSpacing: '0.5px',
-              textShadow: '2px 2px 4px rgba(153, 153, 153, 0.25)'
-            }}>Jola & Co</span>
           </a>
 
           <nav className="hidden sm:flex items-center gap-6">
             <a href="#about" className="hover:opacity-80">About</a>
             <a href="#certifications" className="hover:opacity-80">Certifications</a>
             <a href="#projects" className="hover:opacity-80">Projects</a>
-            <a href="#contact" className="text-white bg-d4a574 px-4 py-2 rounded-md hover:opacity-90" style={{backgroundColor: '#d4a574'}}>
-              Contact
-            </a>
+            <a href="#contact" className="hover:opacity-80">Contact</a>
             <a
               href="/Jola_Tacij_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 rounded-md border border-brightGray/30 hover:bg-lightStone"
+              className="bg-driftwood text-white px-4 py-2 rounded-md hover:opacity-90"
             >
               View CV
             </a>
@@ -46,7 +35,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-semibold leading-tight">
             Practical operations, clear data,{" "}
-            <span style={{color: '#2563eb'}}>real momentum</span>.
+            <span className="text-driftwood">real momentum</span>.
           </h1>
           <p className="mt-4 text-lg text-brightGray">
             I help businesses structure smarter, report clearly, and move faster.
@@ -55,7 +44,7 @@ export default function App() {
           </p>
 
           <div className="mt-8 flex justify-center gap-3 flex-wrap">
-            <a href="#contact" className="text-white px-6 py-3 rounded-md hover:opacity-90" style={{backgroundColor: '#2563eb'}}>
+            <a href="#contact" className="bg-driftwood text-white px-6 py-3 rounded-md hover:opacity-90">
               Let's Work Together
             </a>
             <a href="#projects" className="px-6 py-3 rounded-md border border-brightGray/30 hover:bg-lightStone">
@@ -116,7 +105,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* CERTIFICATIONS & LEARNING */}
+      {/* CERTIFICATIONS & PROFESSIONAL DEVELOPMENT */}
       <section id="certifications" className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center">Certifications & Professional Development</h2>
@@ -247,15 +236,15 @@ export default function App() {
           
           <div className="space-y-6 text-brightGray">
             <p className="text-lg leading-relaxed">
-              I bring <strong>passion, precision, and intuition</strong> to every project. I listen first, ask the right questions, and deliver solutions that actually work — not just theoretically, but in practice.
+              I bring passion, precision, and intuition to every project. I listen first, ask the right questions, and deliver solutions that actually work — not just theoretically, but in practice.
             </p>
 
             <p className="text-lg leading-relaxed">
-              What sets me apart: I'm <strong>forthcoming</strong> about challenges, transparent about timelines, and relentless about quality. I don't hide behind jargon or complexity — I translate it into clarity. My clients know exactly what they're getting and why it matters.
+              What sets me apart: I'm forthcoming about challenges, transparent about timelines, and relentless about quality. I don't hide behind jargon or complexity — I translate it into clarity. My clients know exactly what they're getting and why it matters.
             </p>
 
             <p className="text-lg leading-relaxed">
-              I'm <strong>remote-first, deadline-driven, and genuinely invested</strong> in the success of the organizations I work with. Whether you need a one-off analysis, a complete operations overhaul, or ongoing support, I show up ready to make a difference.
+              I'm remote-first, deadline-driven, and genuinely invested in the success of the organizations I work with. Whether you need a one-off analysis, a complete operations overhaul, or ongoing support, I show up ready to make a difference.
             </p>
 
             <p className="text-lg leading-relaxed italic text-center mt-8">
@@ -275,7 +264,7 @@ export default function App() {
           </p>
 
           <div className="flex justify-center gap-3 flex-wrap">
-            <a href="mailto:jola.tacij@outlook.com" className="text-white px-6 py-3 rounded-md hover:opacity-90" style={{backgroundColor: '#d4a574'}}>
+            <a href="mailto:jola.tacij@outlook.com" className="bg-driftwood text-white px-6 py-3 rounded-md hover:opacity-90">
               Email Me
             </a>
             <a
@@ -300,4 +289,3 @@ export default function App() {
     </div>
   );
 }
-

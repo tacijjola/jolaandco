@@ -1,6 +1,26 @@
 import React from "react";
 import "./App.css";
 
+// Expandable Box Component
+function ExpandableBox({ title, short, full }) {
+  const [expanded, setExpanded] = React.useState(false);
+
+  return (
+    <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
+      <h3 className="text-xl font-semibold mb-3">{title}</h3>
+      <p className="text-brightGray mb-3">
+        {expanded ? full : short}
+      </p>
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="text-driftwood font-semibold hover:opacity-80 transition"
+      >
+        {expanded ? "Show less ↑" : "Learn more →"}
+      </button>
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-bigStone font-sans">
@@ -60,47 +80,41 @@ export default function App() {
           <h2 className="text-3xl font-bold mb-8 text-center">What I Offer</h2>
           
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-3">Business Support & Operations</h3>
-              <p className="text-brightGray">
-                Strategic support for project coordination, stakeholder engagement, and cross-functional alignment that drives execution.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="Business Support & Operations"
+              short="Strategic project coordination and team alignment that drives execution."
+              full="End meetings with clarity and action. I coordinate complex projects across teams, ensuring stakeholders stay aligned and deliverables ship on time. Managing 50+ concurrent projects? I track dependencies, flag risks, and keep everyone moving forward."
+            />
 
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-3">Process & Systems Optimization</h3>
-              <p className="text-brightGray">
-                Design and implement operational systems, workflows, and automation that scale with your business.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="Process & Systems Optimization"
+              short="Operational systems and workflows that scale with your business."
+              full="Turn chaos into workflow. I design the systems that let your team work smarter — automating manual tasks, reducing bottlenecks, and freeing up 20-30% of admin time. The result? Your team focuses on strategy, not spreadsheets."
+            />
 
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-3">Data Management & Analysis</h3>
-              <p className="text-brightGray">
-                Transform raw data into actionable insights. Clean, organize, and analyze data for strategic decision-making.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="Data Management & Analysis"
+              short="Transform raw data into actionable insights and informed decisions."
+              full="Data without insight is just noise. I clean, organize, and analyze your information to reveal what actually matters — identifying trends, spotting inefficiencies, and uncovering growth opportunities your team might miss."
+            />
 
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-3">New Business Setup & Back Office</h3>
-              <p className="text-brightGray">
-                Build the operational foundation for growth. From documentation systems to governance workflows, I create what scales.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="New Business Setup & Back Office"
+              short="Build the operational foundation for growth from day one."
+              full="Building something new? I create the operational backbone from day one — from documentation and compliance to invoicing and governance systems. Strong foundations scale; weak ones collapse."
+            />
 
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-3">Power BI, SQL, & Automation</h3>
-              <p className="text-brightGray">
-                Create dashboards, build queries, and automate workflows. Data infrastructure that drives decisions and frees up time.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="Power BI, SQL, & Automation"
+              short="Dashboards, queries, and workflows that save time and surface insights."
+              full="Stop copying data between systems. I build dashboards that answer your questions automatically, write queries that surface hidden patterns, and automate workflows that save hours every week. Your data works for you."
+            />
 
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-3">Strategic Reporting</h3>
-              <p className="text-brightGray">
-                Present data that matters. Board presentations, KPI dashboards, investment analysis—data that tells your story.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="Strategic Reporting"
+              short="Clear, compelling reports and dashboards that matter to leadership."
+              full="Data tells a story — if you know how to tell it. I create reports and dashboards that matter to leadership: investment ROI, department performance, market trends. Clear, compelling, actionable."
+            />
           </div>
         </div>
       </section>

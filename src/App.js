@@ -262,7 +262,7 @@ export default function App() {
             </p>
 
             <p className="text-lg leading-relaxed italic text-center mt-8">
-              Based in Abruzzo with my family and two beautiful Maremma Sheep Dogs. Always learning. Always improving. Always ready.
+              Based in Abruzzo with my family and two beautiful Maremma Sheepdogs. Always learning. Always improving. Always ready.
             </p>
           </div>
         </div>

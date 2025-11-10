@@ -209,36 +209,30 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Highlighted Projects</h2>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-2">E.ON – Deployment Coordination</h3>
-              <p className="text-brightGray">
-                Led 50+ EV infrastructure projects, managed DNO workflows, Sitetracker setup, 
-                and invoice governance with Business Central.
-              </p>
-            </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <ExpandableBox 
+              title="E.ON – Deployment Coordination"
+              short="Led multiple EV infrastructure projects, managed DNO workflows, Sitetracker setup, and invoice governance with Business Central."
+              full="Coordinated the full lifecycle of electric vehicle charging infrastructure projects across the UK. Managed complex workflows with Distribution Network Operators (DNOs) to secure grid connections and approvals. Implemented and configured Sitetracker as the central project management platform, ensuring real-time visibility across engineering, operations, and leadership teams. Established invoice governance processes in Microsoft Business Central, streamlining payment workflows and improving vendor relationships. Created standardized documentation and compliance tracking systems that scaled with rapid business growth. The result was improved project delivery timelines and enhanced cross-team coordination."
+            />
 
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-2">SWARCO – BI & Reporting</h3>
-              <p className="text-brightGray">
-                Built Power BI dashboards and reporting that supported leadership decisions and 
-                aligned cross-team planning.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="SWARCO – BI & Reporting"
+              short="Built Power BI dashboards and reporting that supported leadership decisions and aligned cross-team planning."
+              full="Designed and deployed comprehensive Power BI reporting suite for a leading traffic management company. Integrated data from multiple sources including CRM, project management tools, and financial systems to create unified executive dashboards. Developed automated weekly performance reports tracking project profitability, resource utilization, and pipeline health. Created custom visualizations that identified bottlenecks in the sales-to-delivery process, enabling targeted process improvements. Collaborated with department heads to define KPIs that aligned with their strategic goals. Delivered training sessions to ensure teams could interpret and act on insights independently. The result was enhanced visibility into business performance and more informed strategic decision-making across the organization."
+            />
 
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-2">PoGo – Investment Feasibility</h3>
-              <p className="text-brightGray">
-                Performed site feasibility and investment analysis for EV rollout using traffic and grid data.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="PoGo – Investment Feasibility"
+              short="Performed site feasibility and investment analysis for EV rollout using traffic and grid data."
+              full="Led comprehensive site feasibility and ROI analysis for electric vehicle charging infrastructure expansion across high-traffic urban locations. Analyzed traffic patterns, demographic data, grid capacity, and competitive landscape to identify optimal deployment sites. Built financial models projecting multi-year revenue scenarios under various utilization rates and pricing strategies. Conducted risk assessment evaluating planning permissions, grid upgrade costs, and market timing. Collaborated with engineering teams to validate technical feasibility and installation costs. Created executive presentations that translated complex data into clear, actionable investment recommendations. The analysis identified priority sites and supported strategic decision-making for infrastructure investment allocation."
+            />
 
-            <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-2">Virtual Jola – Remote Executive Support</h3>
-              <p className="text-brightGray">
-                Project coordination, workflows, stakeholder engagement, and compliance tracking for small businesses.
-              </p>
-            </div>
+            <ExpandableBox 
+              title="Virtual Jola – Remote Executive Support"
+              short="Project coordination, workflows, stakeholder engagement, and compliance tracking for small businesses."
+              full="Provided strategic remote executive support to small businesses and growing consultancies, acting as operational backbone during critical growth phases. Coordinated cross-functional projects from initiation to delivery, ensuring stakeholder alignment and on-time completion. Designed and implemented workflow automation using tools like Zapier, Airtable, and Microsoft Power Automate, reducing administrative overhead and manual processes. Established compliance tracking systems for client contracts, certifications, and regulatory requirements. Managed client communications and stakeholder engagement, maintaining professional relationships across time zones. Created templates, SOPs, and documentation that enabled teams to scale without adding administrative headcount. The result was streamlined operations that allowed leadership to focus on strategic priorities and business development rather than day-to-day administrative tasks."
+            />
           </div>
         </div>
       </section>
@@ -289,6 +283,7 @@ export default function App() {
             >
               View CV (PDF)
             </a>
+            
           </div>
         </div>
       </section>

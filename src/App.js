@@ -81,9 +81,9 @@ export default function App() {
           
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <ExpandableBox 
-              title="Business Support & Operations"
+              title="PMO & Project Coordination"
               short="Strategic project coordination and team alignment that drives execution."
-              full="End meetings with clarity and action. I coordinate complex projects across teams, ensuring stakeholders stay aligned and deliverables ship on time. Managing 50+ concurrent projects? I track dependencies, flag risks, and keep everyone moving forward."
+              full="End meetings with clarity and action. I coordinate complex projects across teams, ensuring stakeholders stay aligned and deliverables ship on time. Managing 50+ concurrent projects? I track dependencies, flag risks, and keep everyone moving forward. Currently supporting E.ON Drive Infrastructure with Sitetracker-based project tracking and cross-functional delivery."
             />
 
             <ExpandableBox 
@@ -212,13 +212,13 @@ export default function App() {
           <div className="grid gap-6 md:grid-cols-2">
             <ExpandableBox 
               title="E.ON – Deployment Coordination"
-              short="Led multiple EV infrastructure projects, managed DNO workflows, Sitetracker setup, and invoice governance with Business Central."
-              full="Coordinated the full lifecycle of electric vehicle charging infrastructure projects across the UK. Managed complex workflows with Distribution Network Operators (DNOs) to secure grid connections and approvals. Implemented and configured Sitetracker as the central project management platform, ensuring real-time visibility across engineering, operations, and leadership teams. Established invoice governance processes in Microsoft Business Central, streamlining payment workflows and improving vendor relationships. Created standardized documentation and compliance tracking systems that scaled with rapid business growth. The result was improved project delivery timelines and enhanced cross-team coordination."
+              short="PMO support for 50+ concurrent EV infrastructure projects. Managed Sitetracker setup, DNO workflows, invoice governance with Business Central, and executive dashboards."
+              full="Coordinated the full lifecycle of electric vehicle charging infrastructure projects across the UK. Managed complex workflows with Distribution Network Operators (DNOs) to secure grid connections and approvals. Implemented and configured Sitetracker as the central project management platform, ensuring real-time visibility across engineering, operations, and leadership teams. Established invoice governance processes in Microsoft Business Central, streamlining payment workflows and improving vendor relationships. Created standardized documentation and compliance tracking systems that scaled with rapid business growth. Built geospatial Power BI dashboards with Databricks for location strategy and performance tracking. The result was improved project delivery timelines and enhanced cross-team coordination."
             />
 
             <ExpandableBox 
               title="SWARCO – BI & Reporting"
-              short="Built Power BI dashboards and reporting that supported leadership decisions and aligned cross-team planning."
+              short="Built Power BI dashboards and PMO reporting that supported leadership decisions and aligned cross-team planning."
               full="Designed and deployed comprehensive Power BI reporting suite for a leading traffic management company. Integrated data from multiple sources including CRM, project management tools, and financial systems to create unified executive dashboards. Developed automated weekly performance reports tracking project profitability, resource utilization, and pipeline health. Created custom visualizations that identified bottlenecks in the sales-to-delivery process, enabling targeted process improvements. Collaborated with department heads to define KPIs that aligned with their strategic goals. Delivered training sessions to ensure teams could interpret and act on insights independently. The result was enhanced visibility into business performance and more informed strategic decision-making across the organization."
             />
 

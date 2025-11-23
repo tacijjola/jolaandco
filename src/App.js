@@ -204,16 +204,16 @@ export default function App() {
         </div>
       </section>
 
-      {/* PROJECTS */}
+      {/* PROJECTS & CASE STUDIES */}
       <section id="projects" className="py-16 px-4 bg-lightStone/40">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Highlighted Projects</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Highlighted Projects & Case Studies</h2>
 
           <div className="grid gap-6 md:grid-cols-2">
             <ExpandableBox 
-              title="E.ON – Deployment Coordination"
-              short="PMO support for 50+ concurrent EV infrastructure projects. Managed Sitetracker setup, DNO workflows, invoice governance with Business Central, and executive dashboards."
-              full="Coordinated the full lifecycle of electric vehicle charging infrastructure projects across the UK. Managed complex workflows with Distribution Network Operators (DNOs) to secure grid connections and approvals. Implemented and configured Sitetracker as the central project management platform, ensuring real-time visibility across engineering, operations, and leadership teams. Established invoice governance processes in Microsoft Business Central, streamlining payment workflows and improving vendor relationships. Created standardized documentation and compliance tracking systems that scaled with rapid business growth. Built geospatial Power BI dashboards with Databricks for location strategy and performance tracking. The result was improved project delivery timelines and enhanced cross-team coordination."
+              title="E.ON Drive Infrastructure – Case Study"
+              short="Standardized DNO application process, eliminating bottlenecks and keeping 50+ concurrent EV infrastructure projects on schedule."
+              full="THE CHALLENGE: No standardized process for DNO (Distribution Network Operator) applications. Delays and misunderstandings causing project bottlenecks. Multiple stakeholders (DNOs, IDNOs, finance, engineering) with no clear coordination. 50+ concurrent projects at risk of timeline slippage. || MY ROLE: Single point of contact for all pre-work involving DNOs and IDNOs across the UK deployment portfolio. Acted as liaison between external network operators, internal engineering teams, and finance. || THE SOLUTION: (1) Process Design - Analyzed existing workflows, identified pain points, and designed a simplified, standardized DNO application process. (2) Cross-Functional Collaboration - Worked closely with finance team to align payment tracking with application milestones. (3) Sitetracker Implementation - Created milestone tracker providing real-time visibility of project progress and key deliverables. (4) Business Central Integration - Streamlined payment tracking system, liaising between accounts and project teams for clear visibility of payments and outstanding balances. || THE RESULTS: Eliminated bottlenecks in DNO application process. Projects kept on schedule despite complex regulatory environment. Clear visibility across stakeholders on timelines and dependencies. Simplified tracking method adopted across entire UK deployment team. Reduced administrative overhead and manual follow-ups by ~40%. || TOOLS USED: Sitetracker, Business Central, Excel, stakeholder coordination across Engineering, Finance, and external DNO/IDNO partners. || KEY TAKEAWAY: By standardizing what was previously an ad-hoc process, we turned a major bottleneck into a competitive advantage. Projects that previously stalled for weeks waiting on DNO approvals now moved through a clear, tracked pipeline."
             />
 
             <ExpandableBox 

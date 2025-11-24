@@ -217,10 +217,358 @@ export default function App() {
             />
 
             <ExpandableBox 
-              title="SWARCO – BI & Reporting"
-              short="Built Power BI dashboards and PMO reporting that supported leadership decisions and aligned cross-team planning."
-              full="Designed and deployed comprehensive Power BI reporting suite for a leading traffic management company. Integrated data from multiple sources including CRM, project management tools, and financial systems to create unified executive dashboards. Developed automated weekly performance reports tracking project profitability, resource utilization, and pipeline health. Created custom visualizations that identified bottlenecks in the sales-to-delivery process, enabling targeted process improvements. Collaborated with department heads to define KPIs that aligned with their strategic goals. Delivered training sessions to ensure teams could interpret and act on insights independently. The result was enhanced visibility into business performance and more informed strategic decision-making across the organization."
+              title="SWARCO – PoGo EV Investment Department (Case Study)"
+              short="Built data infrastructure and evaluation framework for new EV Investment Department from ground up. Unified fragmented data for Azure migration and created systems that shaped £millions in infrastructure investment decisions."
+              full="THE CHALLENGE: SWARCO was operating in manual mode with fragmented data across dozens of sources - different files, apps, and back-office systems with no unified view. The company was preparing to establish a new EV Investment Department to expand ultra-fast charging infrastructure across Scotland and the UK, but lacked the data infrastructure to make informed investment decisions. Without a clear evaluation system, there was no way to assess which sites were viable for multi-million pound infrastructure investments. || MY ROLE: Initially hired on a 3-6 month contract to consolidate and clean data for Azure migration. Due to successful delivery, role expanded to become founding member of new EV Investment Department (team of 3: department director, engineer, and myself). Responsible for all back-office operations, data management, and business intelligence systems. || THE SOLUTION: (1) Data Consolidation & Azure Migration - Successfully unified fragmented data sources across the organization in preparation for Azure platform migration, creating single source of truth for business operations. (2) Project Evaluation Framework - Designed and implemented tracking/evaluation system for scoping investment-grade EV charging sites. Created comprehensive tracking of all incoming projects with dates, evaluation scores, and decision commentary. (3) Self-Directed Power BI Upskilling - Independently studied for and achieved Microsoft PL-300 Power BI Data Analyst certification to meet emerging business intelligence needs. (4) KPI Dashboard Development - Built first-ever EV charging KPIs dashboard for SWARCO using Power BI with DAX and M-language. Created custom visualizations tracking project profitability, resource utilization, and pipeline health. (5) Training & Documentation - Created user manuals and delivered training sessions ensuring teams could interpret and act on insights independently. || THE RESULTS: Successfully unified fragmented data sources across entire organization, enabling data-driven decision-making. Established project evaluation system that assessed hundreds of potential investment sites. Created BI infrastructure that directly supported formation of PoGo Charge brand. Delivered executive dashboards providing real-time visibility into investment pipeline. Achieved Microsoft PL-300 certification while delivering production systems. Enabled department to scale from 3 people to full investment operation supporting £multi-million infrastructure decisions. || TOOLS USED: Power BI, DAX, M-language, Excel, Azure data platform, multiple CRM and project management systems || KEY TAKEAWAY: Starting with messy, fragmented data across dozens of sources, I built the data infrastructure and BI systems that enabled SWARCO to launch their EV Investment Department. The evaluation framework and dashboards I created became the foundation for their investment strategy and the formation of the PoGo Charge brand."
             />
+
+            <ExpandableBox 
+              title="SWARCO Smart Charging – Scotland Operations (Case Study)"
+              short="Created Operations Dashboard in Power BI for project tracking and Finance/Accounting dashboard. Consolidated Scotland team data onto master spreadsheet, streamlining reporting workflows."
+              full="THE CHALLENGE: SWARCO's Scottish operations team (Smart Charging division) was managing EV charging projects across Scotland without unified tracking systems. Project data was scattered, financial reporting was manual and time-consuming, and there was no real-time visibility into operational performance. Leadership needed clear oversight of project pipeline, resource allocation, and financial health but lacked the tools to get it. || MY ROLE: Brought in to consolidate data and create operational visibility for the Scotland-based team. Responsible for designing dashboards, streamlining data workflows, and enabling self-service reporting. || THE SOLUTION: (1) Operations Dashboard - Created comprehensive Power BI dashboard for tracking all Scottish projects from pipeline through delivery. Provided real-time visibility into project status, timelines, and resource allocation. (2) Finance/Accounting Dashboard - Built dedicated financial tracking dashboard enabling finance team to monitor budgets, expenditures, and project profitability without manual data compilation. (3) Master Data Consolidation - Consolidated fragmented Scotland team data onto meaningful master spreadsheet that became the single source feeding all reporting systems. Eliminated duplicate data entry and manual reconciliation. (4) Automated Reporting Workflows - Transformed manual monthly reporting into automated dashboards that updated in real-time, saving hours of administrative work. || THE RESULTS: Operations team gained real-time visibility into project pipeline and resource allocation. Finance team reduced monthly reporting time by approximately 60% through automated dashboards. Eliminated data inconsistencies through single master data source. Leadership could make faster decisions based on current data rather than week-old reports. Team adopted dashboards as primary operational tools, checking them daily for project status. || TOOLS USED: Power BI, DAX, Power Query, Excel, data consolidation and cleansing workflows || KEY TAKEAWAY: By consolidating scattered data and creating purpose-built dashboards for operations and finance, I transformed how the Scotland team managed their growing EV charging portfolio. What was once a manual, time-consuming reporting process became an automated system providing real-time operational intelligence."
+            />
+
+Summary - Best Practice Going Forward:
+✅ DO: Copy/paste code directly into VS Code
+✅ DO: Work directly in your project files
+✅ DO: Save in VS Code, then commit and push
+❌ DON'T: Download files unless it's something like a CV, image, or document
+❌ DON'T: Create a library folder for code files
+Does this make sense? Copy those two boxes above into your VS Code now! 🎯RetryJwhy dos it say it changed the cv?
+I don't see changes in localhost :(
+C:\Users\Admin\jolaandco>git add src/App.js
+C:\Users\Admin\jolaandco>git commit -m "Split SWARCO into two case studies - PoGo Investment Dept and Scotland Operations"
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)     
+        modified:   public/Jola_Tacij_CV.docx
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\Admin\jolaandco>git push origin main
+Everything up-to-date
+C:\Users\Admin\jolaandco>Show moreThe issue is that your src/App.js file wasn't actually modified on your local machine. Here's what's happening:
+The Problem:
+
+❌ Your src/App.js in VS Code doesn't have the new changes yet
+⚠️ Your public/Jola_Tacij_CV.docx was modified (maybe you opened it?)
+✅ Git is correctly saying "nothing to commit" because App.js wasn't changed
+
+
+The Solution - 3 Steps:
+Step 1: Check if you actually made the changes
+Open your src/App.js in VS Code and search for "SWARCO – PoGo EV Investment Department".
+Do you see it?
+
+✅ YES → Go to Step 2
+❌ NO → You need to copy/paste the code I gave you above
+
+
+Step 2: If you made the changes, check git status
+bashgit status
+Does it show modified: src/App.js?
+
+✅ YES → Go to Step 3
+❌ NO → The file wasn't saved. Save it in VS Code (Ctrl+S) then try again
+
+
+Step 3: Stage and commit
+bash# Stage ONLY App.js (ignore the CV for now)
+git add src/App.js
+
+# Check what's staged
+git status
+
+# Commit
+git commit -m "Split SWARCO into two case studies - PoGo Investment Dept and Scotland Operations"
+
+# Push
+git push origin main
+
+About the CV change:
+The CV probably got modified when you opened it. You have two options:
+Option A: Ignore it for now
+bash# Discard the CV changes
+git restore public/Jola_Tacij_CV.docx
+Option B: Commit it too
+bash# Stage both files
+git add src/App.js public/Jola_Tacij_CV.docx
+
+# Commit both
+git commit -m "Update website case studies and CV"
+
+# Push
+git push origin main
+
+Quick Check:
+Did you actually copy/paste those two SWARCO boxes into your VS Code and SAVE the file?
+If not, that's why nothing is committing! 😊Retry<div className="grid gap-6 md:grid-cols-2">
+            <ExpandableBox 
+              title="E.ON Drive Infrastructure – Case Study"
+              short="Standardized DNO application process, eliminating bottlenecks and keeping 50+ concurrent EV infrastructure projects on schedule."
+            pastedJlook this is what is now in my App.js:
+it looks updated. Then I followed your guide and in the terminal: git add src/App.js
+and git status
+C:\Users\Admin\jolaandco>git add src/App.js
+C:\Users\Admin\jolaandco>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)     
+        modified:   public/Jola_Tacij_CV.docx
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\Admin\jolaandco>Show moreAh! I see the issue now!
+Your App.js IS updated (I can see all 4 case studies in the code you shared), BUT Git is saying it hasn't changed. This means:
+The Problem: Git thinks the file is unchanged
+This can happen when:
+
+The file has the same content as what's already committed, OR
+There's a file encoding/line ending issue
+
+Let's check what Git thinks:
+bashgit diff src/App.js
+This will show you what Git sees as different. If it shows nothing, then the changes are already committed!
+
+Try This:
+Option 1: Check if changes are already on GitHub
+Maybe you already pushed these changes earlier? Check your live website - are the two SWARCO case studies already there?
+Option 2: Force Git to see the changes
+bash# Check the file status specifically
+git status src/App.js
+
+# If nothing shows, try:
+git diff HEAD src/App.js
+
+# Still nothing? The changes might already be committed. Check:
+git log --oneline -5
+Option 3: Make a tiny change to trigger Git
+
+Open src/App.js in VS Code
+Add a space somewhere (like at the end of a line)
+Save (Ctrl+S)
+Try again:
+
+bashgit add src/App.js
+git status
+
+About the CV:
+Let's ignore that for now:
+bashgit restore public/Jola_Tacij_CV.docx
+This will discard the CV changes so it stops showing up.
+
+Try git diff src/App.js first and tell me what it shows! That will tell us what's going on. 🔍RetryJgit diff src/App.js shows me nothing.
+AN i checked localhost and - still no change.Okay! Now I understand the issue. The changes you made in VS Code were NOT saved properly, OR you edited the wrong file.
+Let's troubleshoot:
+Step 1: Verify which file you're editing
+In VS Code, look at the top of the tab where you have App.js open. Does it say:
+
+src/App.js ✅ (correct)
+App.js somewhere else ❌ (wrong location)
+
+Step 2: Check if VS Code shows unsaved changes
+Look at the tab name in VS Code:
+
+White dot next to filename = unsaved changes
+X button only = saved
+
+If there's a white dot, press Ctrl+S to save!
+Step 3: Verify the actual file content
+Run this command to see what's actually in your project's App.js:
+bashtype src\App.js | findstr "SWARCO"
+Does it show:
+
+"SWARCO – PoGo EV Investment Department (Case Study)" ✅ Changes are there
+"SWARCO – BI & Reporting" ❌ Changes are NOT there
+
+
+Step 4: If changes are NOT there, let's do it manually
+
+Open C:\Users\Admin\jolaandco\src\App.js in VS Code
+Find the line that says title="SWARCO – BI & Reporting"
+Select and delete both the SWARCO and PoGo <ExpandableBox> sections
+Paste the 3 new boxes I gave you earlier (E.ON, SWARCO PoGo, SWARCO Scotland)
+SAVE the file (Ctrl+S)
+Check localhost - refresh the page (Ctrl+Shift+R)
+
+
+What does this command show you:
+bashtype src\App.js | findstr "SWARCO"
+Tell me the output! 🔍RetryClaude can make mistakes. Please double-check responses.
+
+            <ExpandableBox 
+              title="SWARCO Smart Charging – Scotland Operations (Case Study)"
+              short="Created Operations Dashboard in Power BI for project tracking and Finance/Accounting dashboard. Consolidated Scotland team data onto master spreadsheet, streamlining reporting workflows."
+              full="THE CHALLENGE: SWARCO's Scottish operations team (Smart Charging division) was managing EV charging projects across Scotland without unified tracking systems. Project data was scattered, financial reporting was manual and time-consuming, and there was no real-time visibility into operational performance. Leadership needed clear oversight of project pipeline, resource allocation, and financial health but lacked the tools to get it. || MY ROLE: Brought in to consolidate data and create operational visibility for the Scotland-based team. Responsible for designing dashboards, streamlining data workflows, and enabling self-service reporting. || THE SOLUTION: (1) Operations Dashboard - Created comprehensive Power BI dashboard for tracking all Scottish projects from pipeline through delivery. Provided real-time visibility into project status, timelines, and resource allocation. (2) Finance/Accounting Dashboard - Built dedicated financial tracking dashboard enabling finance team to monitor budgets, expenditures, and project profitability without manual data compilation. (3) Master Data Consolidation - Consolidated fragmented Scotland team data onto meaningful master spreadsheet that became the single source feeding all reporting systems. Eliminated duplicate data entry and manual reconciliation. (4) Automated Reporting Workflows - Transformed manual monthly reporting into automated dashboards that updated in real-time, saving hours of administrative work. || THE RESULTS: Operations team gained real-time visibility into project pipeline and resource allocation. Finance team reduced monthly reporting time by approximately 60% through automated dashboards. Eliminated data inconsistencies through single master data source. Leadership could make faster decisions based on current data rather than week-old reports. Team adopted dashboards as primary operational tools, checking them daily for project status. || TOOLS USED: Power BI, DAX, Power Query, Excel, data consolidation and cleansing workflows || KEY TAKEAWAY: By consolidating scattered data and creating purpose-built dashboards for operations and finance, I transformed how the Scotland team managed their growing EV charging portfolio. What was once a manual, time-consuming reporting process became an automated system providing real-time operational intelligence."
+            />
+
+Summary - Best Practice Going Forward:
+✅ DO: Copy/paste code directly into VS Code
+✅ DO: Work directly in your project files
+✅ DO: Save in VS Code, then commit and push
+❌ DON'T: Download files unless it's something like a CV, image, or document
+❌ DON'T: Create a library folder for code files
+Does this make sense? Copy those two boxes above into your VS Code now! 🎯RetryJwhy dos it say it changed the cv?
+I don't see changes in localhost :(
+C:\Users\Admin\jolaandco>git add src/App.js
+C:\Users\Admin\jolaandco>git commit -m "Split SWARCO into two case studies - PoGo Investment Dept and Scotland Operations"
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)     
+        modified:   public/Jola_Tacij_CV.docx
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\Admin\jolaandco>git push origin main
+Everything up-to-date
+C:\Users\Admin\jolaandco>Show moreThe issue is that your src/App.js file wasn't actually modified on your local machine. Here's what's happening:
+The Problem:
+
+❌ Your src/App.js in VS Code doesn't have the new changes yet
+⚠️ Your public/Jola_Tacij_CV.docx was modified (maybe you opened it?)
+✅ Git is correctly saying "nothing to commit" because App.js wasn't changed
+
+
+The Solution - 3 Steps:
+Step 1: Check if you actually made the changes
+Open your src/App.js in VS Code and search for "SWARCO – PoGo EV Investment Department".
+Do you see it?
+
+✅ YES → Go to Step 2
+❌ NO → You need to copy/paste the code I gave you above
+
+
+Step 2: If you made the changes, check git status
+bashgit status
+Does it show modified: src/App.js?
+
+✅ YES → Go to Step 3
+❌ NO → The file wasn't saved. Save it in VS Code (Ctrl+S) then try again
+
+
+Step 3: Stage and commit
+bash# Stage ONLY App.js (ignore the CV for now)
+git add src/App.js
+
+# Check what's staged
+git status
+
+# Commit
+git commit -m "Split SWARCO into two case studies - PoGo Investment Dept and Scotland Operations"
+
+# Push
+git push origin main
+
+About the CV change:
+The CV probably got modified when you opened it. You have two options:
+Option A: Ignore it for now
+bash# Discard the CV changes
+git restore public/Jola_Tacij_CV.docx
+Option B: Commit it too
+bash# Stage both files
+git add src/App.js public/Jola_Tacij_CV.docx
+
+# Commit both
+git commit -m "Update website case studies and CV"
+
+# Push
+git push origin main
+
+Quick Check:
+Did you actually copy/paste those two SWARCO boxes into your VS Code and SAVE the file?
+If not, that's why nothing is committing! 😊Retry<div className="grid gap-6 md:grid-cols-2">
+            <ExpandableBox 
+              title="E.ON Drive Infrastructure – Case Study"
+              short="Standardized DNO application process, eliminating bottlenecks and keeping 50+ concurrent EV infrastructure projects on schedule."
+            pastedJlook this is what is now in my App.js:
+it looks updated. Then I followed your guide and in the terminal: git add src/App.js
+and git status
+C:\Users\Admin\jolaandco>git add src/App.js
+C:\Users\Admin\jolaandco>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)     
+        modified:   public/Jola_Tacij_CV.docx
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\Admin\jolaandco>Show moreAh! I see the issue now!
+Your App.js IS updated (I can see all 4 case studies in the code you shared), BUT Git is saying it hasn't changed. This means:
+The Problem: Git thinks the file is unchanged
+This can happen when:
+
+The file has the same content as what's already committed, OR
+There's a file encoding/line ending issue
+
+Let's check what Git thinks:
+bashgit diff src/App.js
+This will show you what Git sees as different. If it shows nothing, then the changes are already committed!
+
+Try This:
+Option 1: Check if changes are already on GitHub
+Maybe you already pushed these changes earlier? Check your live website - are the two SWARCO case studies already there?
+Option 2: Force Git to see the changes
+bash# Check the file status specifically
+git status src/App.js
+
+# If nothing shows, try:
+git diff HEAD src/App.js
+
+# Still nothing? The changes might already be committed. Check:
+git log --oneline -5
+Option 3: Make a tiny change to trigger Git
+
+Open src/App.js in VS Code
+Add a space somewhere (like at the end of a line)
+Save (Ctrl+S)
+Try again:
+
+bashgit add src/App.js
+git status
+
+About the CV:
+Let's ignore that for now:
+bashgit restore public/Jola_Tacij_CV.docx
+This will discard the CV changes so it stops showing up.
+
+Try git diff src/App.js first and tell me what it shows! That will tell us what's going on. 🔍RetryJgit diff src/App.js shows me nothing.
+AN i checked localhost and - still no change.Okay! Now I understand the issue. The changes you made in VS Code were NOT saved properly, OR you edited the wrong file.
+Let's troubleshoot:
+Step 1: Verify which file you're editing
+In VS Code, look at the top of the tab where you have App.js open. Does it say:
+
+src/App.js ✅ (correct)
+App.js somewhere else ❌ (wrong location)
+
+Step 2: Check if VS Code shows unsaved changes
+Look at the tab name in VS Code:
+
+White dot next to filename = unsaved changes
+X button only = saved
+
+If there's a white dot, press Ctrl+S to save!
+Step 3: Verify the actual file content
+Run this command to see what's actually in your project's App.js:
+bashtype src\App.js | findstr "SWARCO"
+Does it show:
+
+"SWARCO – PoGo EV Investment Department (Case Study)" ✅ Changes are there
+"SWARCO – BI & Reporting" ❌ Changes are NOT there
+
+
+Step 4: If changes are NOT there, let's do it manually
+
+Open C:\Users\Admin\jolaandco\src\App.js in VS Code
+Find the line that says title="SWARCO – BI & Reporting"
+Select and delete both the SWARCO and PoGo <ExpandableBox> sections
+Paste the 3 new boxes I gave you earlier (E.ON, SWARCO PoGo, SWARCO Scotland)
+SAVE the file (Ctrl+S)
+Check localhost - refresh the page (Ctrl+Shift+R)
+
+
+What does this command show you:
+bashtype src\App.js | findstr "SWARCO"
+Tell me the output! 🔍RetryClaude can make mistakes. Please double-check responses.
 
             <ExpandableBox 
               title="PoGo – Investment Feasibility"

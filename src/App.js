@@ -114,9 +114,9 @@ function HomePage() {
             />
 
             <ExpandableBox 
-              title="New Business Setup & Back Office"
-              short="Build the operational foundation for growth from day one."
-              full="Building something new? I create the operational backbone from day one — from documentation and compliance to invoicing and governance systems. Strong foundations scale; weak ones collapse."
+              title="Ground-Up Business Building"
+              short="From zero to fully operational — I build the infrastructure new ventures need to launch and scale."
+              full="I've launched departments and businesses from scratch — not just paperwork, but the full operational ecosystem. IT setup and connectivity, department structures, back-office systems, compliance frameworks, reporting infrastructure, and the day-to-day processes that make everything run. When you're building something new, I make sure you're not just open for business — you're built to scale."
             />
 
             <ExpandableBox 

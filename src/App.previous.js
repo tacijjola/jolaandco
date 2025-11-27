@@ -1,42 +1,27 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
-// Import Case Study Pages
-import EONSiteStrategyMapping from "./pages/case-studies/EONSiteStrategyMapping";
-
 // Expandable Box Component
-function ExpandableBox({ title, short, full, caseStudyLink }) {
+function ExpandableBox({ title, short, full }) {
   const [expanded, setExpanded] = React.useState(false);
 
   return (
-    <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition">
+    <div className="border p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <p className="text-brightGray mb-3">
         {expanded ? full : short}
       </p>
-      <div className="flex flex-wrap gap-3">
-        <button
-          onClick={() => setExpanded(!expanded)}
-          className="text-driftwood font-semibold hover:opacity-80 transition cursor-pointer"
-        >
-          {expanded ? "Show less ↑" : "Learn more →"}
-        </button>
-        {caseStudyLink && (
-          <Link 
-            to={caseStudyLink} 
-            className="text-bigStone font-semibold hover:text-driftwood transition"
-          >
-            View Full Case Study →
-          </Link>
-        )}
-      </div>
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="text-driftwood font-semibold hover:opacity-80 transition"
+      >
+        {expanded ? "Show less ↑" : "Learn more →"}
+      </button>
     </div>
   );
 }
 
-// Homepage Component
-function HomePage() {
+export default function App() {
   return (
     <div className="min-h-screen bg-white text-bigStone font-sans">
       {/* HEADER */}
@@ -226,20 +211,12 @@ function HomePage() {
 
           <div className="grid gap-6 md:grid-cols-2">
             <ExpandableBox 
-              title="E.ON Drive – DNO Process Standardisation"
-              short="Standardized DNO application process, eliminating bottlenecks and keeping 50+ concurrent EV infrastructure projects on schedule."
+              title="E.ON Drive Infrastructure (Case Study)"              short="Standardized DNO application process, eliminating bottlenecks and keeping 50+ concurrent EV infrastructure projects on schedule."
               full="THE CHALLENGE: No standardized process for DNO (Distribution Network Operator) applications. Delays and misunderstandings causing project bottlenecks. Multiple stakeholders (DNOs, IDNOs, finance, engineering) with no clear coordination. 50+ concurrent projects at risk of timeline slippage. || MY ROLE: Single point of contact for all pre-work involving DNOs and IDNOs across the UK deployment portfolio. Acted as liaison between external network operators, internal engineering teams, and finance. || THE SOLUTION: (1) Process Design - Analyzed existing workflows, identified pain points, and designed a simplified, standardized DNO application process. (2) Cross-Functional Collaboration - Worked closely with finance team to align payment tracking with application milestones. (3) Sitetracker Implementation - Created milestone tracker providing real-time visibility of project progress and key deliverables. (4) Business Central Integration - Streamlined payment tracking system, liaising between accounts and project teams for clear visibility of payments and outstanding balances. || THE RESULTS: Eliminated bottlenecks in DNO application process. Projects kept on schedule despite complex regulatory environment. Clear visibility across stakeholders on timelines and dependencies. Simplified tracking method adopted across entire UK deployment team. Reduced administrative overhead and manual follow-ups. || TOOLS USED: Sitetracker, Business Central, Excel, stakeholder coordination across Engineering, Finance, and external DNO/IDNO partners. || KEY TAKEAWAY: By standardizing what was previously an ad-hoc process, we turned a major bottleneck into a competitive advantage. Projects that previously stalled for weeks waiting on DNO approvals now moved through a clear, tracked pipeline."
             />
 
             <ExpandableBox 
-              title="E.ON Drive – Site Strategy Mapping"
-              short="Built Power BI dashboard with geospatial data integration to evaluate and score 890 potential EV charging sites across Italy."
-              full="Multi-month project integrating QGIS geospatial processing, Python scripting, and Power BI to create a comprehensive site evaluation system. Designed weighted scoring methodology covering traffic, accessibility, facilities, amenities, and competition. Delivered interactive mapping with cross-filtering capabilities and full user documentation."
-              caseStudyLink="/case-study/eon-site-strategy-mapping"
-            />
-
-            <ExpandableBox 
-              title="SWARCO – PoGo EV Investment Department"
+              title="SWARCO – PoGo EV Investment Department (Case Study)"
               short="Built data infrastructure and evaluation framework for new EV Investment Department from ground up. Unified fragmented data for Azure migration and created systems for evaluating large-scale EV infrastructure sites."
               full="THE CHALLENGE: SWARCO was operating in manual mode with fragmented data across dozens of sources - different files, apps, and back-office systems with no unified view. The company was preparing to establish a new EV Investment Department to expand ultra-fast charging infrastructure across Scotland and the UK, but lacked the data infrastructure to make informed investment decisions. Without a clear evaluation system, there was no way to assess which sites were viable for multi-million pound infrastructure investments. || MY ROLE: Initially hired on a 3-6 month contract to consolidate and clean data for Azure migration. Due to successful delivery, role expanded to become founding member of new EV Investment Department (team of 3: department director, engineer, and myself). Responsible for all back-office operations, data management, and business intelligence systems. || THE SOLUTION: (1) Data Consolidation & Azure Migration - Successfully unified fragmented data sources across the organization in preparation for Azure platform migration, creating single source of truth for business operations. (2) Project Evaluation Framework - Designed and implemented tracking/evaluation system for scoping investment-grade EV charging sites. Created comprehensive tracking of all incoming projects with dates, evaluation scores, and decision commentary. (3) Self-Directed Power BI Upskilling - Independently studied for and achieved Microsoft PL-300 Power BI Data Analyst certification to meet emerging business intelligence needs. (4) KPI Dashboard Development - Built first-ever EV charging KPIs dashboard for SWARCO using Power BI with DAX and M-language. Created custom visualizations tracking project profitability, resource utilization, and pipeline health. (5) Training & Documentation - Created user manuals and delivered training sessions ensuring teams could interpret and act on insights independently. || THE RESULTS: Successfully unified fragmented data sources across entire organization, enabling data-driven decision-making. Established project evaluation system that assessed hundreds of potential investment sites. Created BI infrastructure that directly supported formation of PoGo Charge brand. Delivered executive dashboards providing real-time visibility into investment pipeline. Achieved Microsoft PL-300 certification while delivering production systems. Enabled department to scale from 3 people to full investment operation evaluating large-scale EV infrastructure sites. || TOOLS USED: Power BI, DAX, M-language, Excel, Azure data platform, multiple CRM and project management systems || KEY TAKEAWAY: Starting with messy, fragmented data across dozens of sources, I built the data infrastructure and BI systems that enabled SWARCO to launch their EV Investment Department. The evaluation framework and dashboards I created became the foundation for their investment strategy and the formation of the PoGo Charge brand."
             />
@@ -318,15 +295,5 @@ function HomePage() {
         </a>
       </footer>
     </div>
-  );
-}
-
-// Main App with Routes
-export default function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/case-study/eon-site-strategy-mapping" element={<EONSiteStrategyMapping />} />
-    </Routes>
   );
 }

@@ -54,7 +54,7 @@ function HomePage() {
             <a href="#about" className="hover:opacity-80">About</a>
             <a href="#certifications" className="hover:opacity-80">Certifications</a>
             <a href="#projects" className="hover:opacity-80">Projects</a>
-            <a href="#ai-tools" className="hover:opacity-80">AI & Automation</a>
+            <a href="#ai-tools" className="hover:opacity-80">Technology</a>
             <a href="#contact" className="hover:opacity-80">Contact</a>
             <a
               href="/Jola_Tacij_CV.pdf"
@@ -125,9 +125,9 @@ function HomePage() {
             />
 
             <ExpandableBox 
-              title="AI Tools & Workflow Automation"
-              short="Leveraging AI platforms and no-code automation to accelerate delivery and reduce manual overhead."
-              full="I integrate AI tools into real business workflows — not as novelties, but as force multipliers. From automating repetitive processes with Make to using Claude and ChatGPT for content generation, research synthesis, and data analysis. I work with Gamma for rapid presentation builds, NotebookLM for research structuring, Descript for content production, and ElevenLabs for voice applications. These aren't experiments — they're part of how I deliver faster, smarter, and with less overhead."
+              title="AI-Augmented Delivery"
+              short="Using AI as a daily working tool — for research, analysis, problem-solving, and accelerating delivery."
+              full="AI isn't a buzzword in my workflow — it's how I work. I use Claude daily for research synthesis, data structuring, problem-solving, and content creation. Combined with my Generative AI certification, I bring a practical understanding of where AI adds real value and where it doesn't. I evaluate tools, design workflows, and help businesses understand what AI can actually do for their operations — without the hype."
             />
           </div>
         </div>
@@ -273,86 +273,85 @@ function HomePage() {
         </div>
       </section>
 
-      {/* AI TOOLS & MODERN WORKFLOW */}
+      {/* TECHNOLOGY & APPROACH */}
       <section id="ai-tools" className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-center">AI-Powered Delivery</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">Technology & Approach</h2>
           <p className="text-brightGray text-center mb-10 max-w-3xl mx-auto">
-            I don't just know these tools — I use them daily to deliver faster, sharper, and with less overhead. 
-            These platforms are integrated into how I work, not bolted on as afterthoughts.
+            I pair deep operational experience with modern tools — including AI — to work faster, think more clearly, and deliver solutions that are built to last. The technology serves the outcome, not the other way around.
           </p>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">Research & Analysis</h3>
+              <h3 className="text-lg font-semibold mb-2">Business Intelligence & Reporting</h3>
               <p className="text-brightGray text-sm mb-3">
-                Deep research synthesis, data analysis, and structured insight generation using AI-powered platforms.
+                Interactive dashboards, data modelling, and executive reporting that drives decisions — not just decorates slide decks.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Power BI</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">DAX</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">M-language</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">SQL</span>
+              </div>
+            </div>
+
+            <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">AI-Augmented Workflows</h3>
+              <p className="text-brightGray text-sm mb-3">
+                I use AI daily as a thinking partner — for research, analysis, problem-solving, and accelerating delivery. Trained in prompt engineering and practical AI application.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Claude</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">ChatGPT</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">NotebookLM</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Manus</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Generative AI (certified)</span>
               </div>
             </div>
 
             <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">Automation & Workflows</h3>
+              <h3 className="text-lg font-semibold mb-2">Project & Operations Platforms</h3>
               <p className="text-brightGray text-sm mb-3">
-                Process automation, system integrations, and no-code workflow design that eliminates manual tasks.
+                Hands-on experience with the systems that run large-scale infrastructure programmes — from milestone tracking to financial coordination.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Make</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Lovable</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Precision</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Sitetracker</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Business Central</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Excel (advanced)</span>
               </div>
             </div>
 
             <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">Content & Presentations</h3>
+              <h3 className="text-lg font-semibold mb-2">Geospatial & Data Processing</h3>
               <p className="text-brightGray text-sm mb-3">
-                Rapid deck creation, video editing, voice generation, and professional content production.
+                Spatial analysis and scripted data pipelines for location-based decision-making — proven on a 890-site evaluation across Italy, now scaling to 10 countries.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Gamma</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Descript</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">ElevenLabs</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">QGIS</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Python</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Power BI mapping</span>
               </div>
             </div>
 
             <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">Social & Outreach</h3>
+              <h3 className="text-lg font-semibold mb-2">Web Development & Deployment</h3>
               <p className="text-brightGray text-sm mb-3">
-                Social media management, scheduling, and AI-assisted engagement strategies.
+                Building and maintaining production websites with modern frameworks. This site was built and deployed by me — design, code, and infrastructure.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">SocialSweep</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">ChatAid</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">React</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Git</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Vercel</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">VS Code</span>
               </div>
             </div>
 
             <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">Finance & Operations</h3>
+              <h3 className="text-lg font-semibold mb-2">Always Learning</h3>
               <p className="text-brightGray text-sm mb-3">
-                Financial tracking, hiring workflows, and membership platform management.
+                I stay close to the tools that are reshaping how businesses operate — automation platforms, AI agents, no-code solutions. When a client needs it, I can evaluate, recommend, and implement the right fit.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Hiro Finance</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">HireAlli</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Membership.io</span>
-              </div>
-            </div>
-
-            <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">Client & Revenue Tools</h3>
-              <p className="text-brightGray text-sm mb-3">
-                Client onboarding, revenue management, and collaborative review platforms.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">BuddyPro</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Revio</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Revaly</span>
-                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">YourAtlas</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">AI & Automation</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">No-code platforms</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Continuous development</span>
               </div>
             </div>
           </div>

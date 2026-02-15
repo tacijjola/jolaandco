@@ -74,9 +74,7 @@ function HomePage() {
             <span className="text-driftwood">real momentum</span>.
           </h1>
           <p className="mt-4 text-lg text-brightGray">
-            I help businesses structure smarter, report clearly, and move faster.
-            20+ years across operations, BI, and project delivery — from
-            back-office setup to dashboards, automation, and AI-driven workflows.
+            Forward-thinking operations specialist with 20+ years of experience across BI, project delivery, and business transformation. I combine deep operational expertise with AI-powered tools and Power BI reporting to find, design, and implement the right solutions — fast. Flexible, hands-on, and built to adapt to whatever your business needs next.
           </p>
 
           <div className="mt-8 flex justify-center gap-3 flex-wrap">
@@ -249,8 +247,8 @@ function HomePage() {
 
             <ExpandableBox 
               title="E.ON Drive – Site Strategy Mapping"
-              short="Built Power BI dashboard with geospatial data integration to evaluate and score 890 potential EV charging sites across Italy."
-              full="Multi-month project integrating QGIS geospatial processing, Python scripting, and Power BI to create a comprehensive site evaluation system. Designed weighted scoring methodology covering traffic, accessibility, facilities, amenities, and competition. Delivered interactive mapping with cross-filtering capabilities and full user documentation."
+              short="Built Power BI dashboard with geospatial data integration to evaluate and score 890 potential EV charging sites across Italy — now expanding to all 10 EDRI countries with tailored requirements per market."
+              full="Originally delivered as a multi-month project integrating QGIS geospatial processing, Python scripting, and Power BI to create a comprehensive site evaluation system for Italy. Designed weighted scoring methodology covering traffic, accessibility, facilities, amenities, and competition. Delivered interactive mapping with cross-filtering capabilities and full user documentation. Now scaling this framework across all 10 EDRI countries, each with distinct market requirements and data landscapes. Working closely with the IT department to facilitate technical integration, data access, and infrastructure needs across every market. The goal: a unified, scalable site strategy tool that adapts to local conditions while maintaining consistent evaluation standards."
               caseStudyLink="/case-study/eon-site-strategy-mapping"
             />
 

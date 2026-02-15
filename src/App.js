@@ -54,6 +54,7 @@ function HomePage() {
             <a href="#about" className="hover:opacity-80">About</a>
             <a href="#certifications" className="hover:opacity-80">Certifications</a>
             <a href="#projects" className="hover:opacity-80">Projects</a>
+            <a href="#ai-tools" className="hover:opacity-80">AI & Automation</a>
             <a href="#contact" className="hover:opacity-80">Contact</a>
             <a
               href="/Jola_Tacij_CV.pdf"
@@ -75,7 +76,7 @@ function HomePage() {
           <p className="mt-4 text-lg text-brightGray">
             I help businesses structure smarter, report clearly, and move faster.
             20+ years across operations, BI, and project delivery — from
-            back-office setup to dashboards and automation.
+            back-office setup to dashboards, automation, and AI-driven workflows.
           </p>
 
           <div className="mt-8 flex justify-center gap-3 flex-wrap">
@@ -97,20 +98,20 @@ function HomePage() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <ExpandableBox 
               title="PMO & Project Coordination"
-              short="Strategic project coordination and team alignment that drives execution."
-              full="End meetings with clarity and action. I coordinate complex projects across teams, ensuring stakeholders stay aligned and deliverables ship on time. Managing 50+ concurrent projects? I track dependencies, flag risks, and keep everyone moving forward. Currently supporting E.ON Drive Infrastructure with Sitetracker-based project tracking and cross-functional delivery."
+              short="Strategic project coordination and cross-functional alignment across multi-country teams."
+              full="I keep complex programmes moving. From managing 50+ concurrent infrastructure projects to coordinating across 10 countries at E.ON Drive Infrastructure, I bring structure to chaos. That means clear milestones, tracked dependencies, flagged risks, and stakeholders who always know where things stand. I've redesigned meeting structures, standardized agenda formats, and introduced cadences that keep cross-functional teams aligned — not just informed. Currently embedded in E.ON Drive's Central Team supporting pan-European EV infrastructure delivery."
             />
 
             <ExpandableBox 
               title="Process & Systems Optimization"
-              short="Operational systems and workflows that scale with your business."
-              full="Turn chaos into workflow. I design the systems that let your team work smarter — automating manual tasks, reducing bottlenecks, and freeing up 20-30% of admin time. The result? Your team focuses on strategy, not spreadsheets."
+              short="Operational systems and workflows that actually scale — designed from the ground up or rebuilt from scratch."
+              full="I design the systems that let teams work smarter. Whether it's restructuring a broken utilization model, streamlining how meetings are run across departments, or automating manual admin tasks — I find the bottleneck and fix it. The result? Less time on spreadsheets, more time on strategy. I've built entire operational frameworks from zero and redesigned existing ones that weren't delivering."
             />
 
             <ExpandableBox 
               title="Data Management & Analysis"
-              short="Transform raw data into actionable insights and informed decisions."
-              full="Data without insight is just noise. I clean, organize, and analyze your information to reveal what actually matters — identifying trends, spotting inefficiencies, and uncovering growth opportunities your team might miss."
+              short="From raw data to actionable insight — I make your information work for you."
+              full="Data without insight is noise. I clean, organize, and analyze information to surface what actually matters — trends, inefficiencies, growth opportunities. Whether it's competitor analysis across 10 international markets or investment-grade site evaluations, I turn fragmented data into clear direction."
             />
 
             <ExpandableBox 
@@ -120,15 +121,15 @@ function HomePage() {
             />
 
             <ExpandableBox 
-              title="Power BI, SQL, & Automation"
-              short="Dashboards, queries, and workflows that save time and surface insights."
-              full="Stop copying data between systems. I build dashboards that answer your questions automatically, write queries that surface hidden patterns, and automate workflows that save hours every week. Your data works for you."
+              title="Power BI, SQL & Dashboards"
+              short="Interactive dashboards, robust queries, and reporting that leadership actually uses."
+              full="I build dashboards that answer real business questions — not vanity metrics. From Power BI with DAX and M-language to SQL-driven data pipelines, I create reporting systems that save hours every week. Geospatial mapping, cross-filtering, weighted scoring models — if the data exists, I'll make it talk."
             />
 
             <ExpandableBox 
-              title="Strategic Reporting"
-              short="Clear, compelling reports and dashboards that matter to leadership."
-              full="Data tells a story — if you know how to tell it. I create reports and dashboards that matter to leadership: investment ROI, department performance, market trends. Clear, compelling, actionable."
+              title="AI Tools & Workflow Automation"
+              short="Leveraging AI platforms and no-code automation to accelerate delivery and reduce manual overhead."
+              full="I integrate AI tools into real business workflows — not as novelties, but as force multipliers. From automating repetitive processes with Make to using Claude and ChatGPT for content generation, research synthesis, and data analysis. I work with Gamma for rapid presentation builds, NotebookLM for research structuring, Descript for content production, and ElevenLabs for voice applications. These aren't experiments — they're part of how I deliver faster, smarter, and with less overhead."
             />
           </div>
         </div>
@@ -140,20 +141,29 @@ function HomePage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Certifications & Professional Development</h2>
           
           <div className="grid gap-8 md:grid-cols-3 mb-16">
-            {/* AgilePM v3 Foundation */}
+            {/* AgilePM v3 Practitioner */}
             <div className="flex flex-col items-center text-center">
               <div className="mb-4 h-32 w-32 flex items-center justify-center">
-                <div className="w-full h-full bg-gradient-to-b from-blue-100 to-blue-50 rounded-full flex items-center justify-center border-4 border-blue-400 shadow-lg">
+                <img
+                  src="/agilepm-practitioner-badge.png"
+                  alt="AgilePM v3 Practitioner certification badge"
+                  className="h-full w-full object-contain"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="w-full h-full bg-gradient-to-b from-blue-100 to-blue-50 rounded-full items-center justify-center border-4 border-blue-400 shadow-lg" style={{display: 'none'}}>
                   <div className="text-center">
                     <p className="text-sm font-bold text-blue-600">AgilePM</p>
                     <p className="text-xs font-semibold text-blue-700">v3</p>
-                    <p className="text-xs text-blue-600 mt-1">FOUNDATION</p>
+                    <p className="text-xs text-blue-600 mt-1">PRACTITIONER</p>
                   </div>
                 </div>
               </div>
-              <h3 className="text-lg font-semibold mb-2">AgilePM® v3 Foundation</h3>
+              <h3 className="text-lg font-semibold mb-2">AgilePM® v3 Practitioner</h3>
               <p className="text-brightGray text-sm">
-                Certified in Agile Project Management. Currently studying for Practitioner level. Brings structured, flexible methodology to project delivery and cross-team coordination.
+                Fully certified at Practitioner level in Agile Project Management. Proven methodology for managing iterative delivery, cross-functional teams, and complex stakeholder environments.
               </p>
               <p className="text-sm text-driftwood font-medium mt-3">APMG International</p>
             </div>
@@ -171,7 +181,7 @@ function HomePage() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Power BI Data Analyst (PL-300)</h3>
               <p className="text-brightGray text-sm">
-                Microsoft certified. Demonstrates expertise in data modeling, visualization, and business intelligence. Core to dashboard delivery and reporting strategy.
+                Microsoft certified. Expertise in data modeling, visualization, and business intelligence. Core to dashboard delivery and reporting strategy across every engagement.
               </p>
               <p className="text-sm text-driftwood font-medium mt-3">Microsoft Certified</p>
             </div>
@@ -189,7 +199,7 @@ function HomePage() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Generative AI Mastermind</h3>
               <p className="text-brightGray text-sm">
-                Comprehensive training in AI applications, prompt engineering, and automation strategies. Directly shaped approach to process optimization and business solutions.
+                Comprehensive training in AI applications, prompt engineering, and automation strategies. Directly shaped my approach to process optimization and modern business solutions.
               </p>
               <p className="text-sm text-driftwood font-medium mt-3">Outskill</p>
             </div>
@@ -200,19 +210,19 @@ function HomePage() {
             <div className="grid gap-4 md:grid-cols-2">
               <div className="border-l-4 border-driftwood p-4 bg-lightStone/40 rounded">
                 <p className="font-semibold text-bigStone">15 Days of SQL: The Complete SQL Masterclass 2024</p>
-                <p className="text-sm text-brightGray">Udemy • Nikolai Schuler • Jan 2024</p>
+                <p className="text-sm text-brightGray">Udemy · Nikolai Schuler · Jan 2024</p>
               </div>
               <div className="border-l-4 border-driftwood p-4 bg-lightStone/40 rounded">
                 <p className="font-semibold text-bigStone">SQL - MySQL for Data Analytics & BI</p>
-                <p className="text-sm text-brightGray">Udemy • 365 Careers • Aug 2023</p>
+                <p className="text-sm text-brightGray">Udemy · 365 Careers · Aug 2023</p>
               </div>
               <div className="border-l-4 border-driftwood p-4 bg-lightStone/40 rounded">
                 <p className="font-semibold text-bigStone">Mastering SQL Server 2016 SSIS - Part 1</p>
-                <p className="text-sm text-brightGray">Udemy • Kameswara Sarma Uppuluri • Mar 2024</p>
+                <p className="text-sm text-brightGray">Udemy · Kameswara Sarma Uppuluri · Mar 2024</p>
               </div>
               <div className="border-l-4 border-driftwood p-4 bg-lightStone/40 rounded">
                 <p className="font-semibold text-bigStone">Business Analysis Fundamentals - IIBA Endorsed</p>
-                <p className="text-sm text-brightGray">Udemy • The BA Guide • May 2025</p>
+                <p className="text-sm text-brightGray">Udemy · The BA Guide · May 2025</p>
               </div>
             </div>
           </div>
@@ -226,9 +236,15 @@ function HomePage() {
 
           <div className="grid gap-6 md:grid-cols-2">
             <ExpandableBox 
+              title="E.ON Drive – Central Team Operations"
+              short="Embedded in E.ON Drive Infrastructure's Central Team supporting pan-European EV operations across 10 countries. Redesigned the Utilization Model, led multi-country Competitor Analysis, and restructured cross-functional meeting frameworks."
+              full="THE CHALLENGE: E.ON Drive Infrastructure operates across 10 countries, each with distinct market conditions, regulatory environments, and competitive landscapes. The Central Team needed standardized frameworks and reliable data models to support strategic decisions at scale — but existing tools and processes weren't keeping pace. || MY ROLE: Operations and data specialist within the Central Team, responsible for driving process improvements, analytical frameworks, and meeting governance across the pan-European portfolio. || THE SOLUTION: (1) Utilization Model Redesign — Identified critical gaps in the existing utilization model that was underpinning infrastructure planning. Redesigned the methodology and data structure to deliver more accurate, actionable utilization insights across all markets. (2) Multi-Country Competitor Analysis — Currently designing and developing a comprehensive competitor analysis framework based on requirements gathered from all 10 EDRI countries. Each market has different competitive dynamics, so the framework accommodates country-specific parameters while maintaining a unified reporting structure. (3) Meeting Governance & Structure — Restructured the meeting setup across workstreams. Designed standardized agenda formats, created templates for recurring meetings, and introduced clear cadences that improved cross-functional alignment and reduced time wasted in unstructured sessions. || THE RESULTS: Utilization model now delivers more reliable data for infrastructure planning decisions. Competitor analysis framework progressing through development with buy-in from all 10 country teams. Meeting restructuring adopted across workstreams, improving alignment and accountability. Standardized formats reduced preparation time and ensured consistent outputs. || TOOLS USED: Power BI, Excel, Sitetracker, cross-functional coordination across 10 international markets. || KEY TAKEAWAY: Working at the Central Team level means designing for scale. Every framework, every model, every process needs to work across 10 different markets with different needs — and still deliver consistent, reliable insight. That's where operational discipline meets analytical thinking."
+            />
+
+            <ExpandableBox 
               title="E.ON Drive – DNO Process Standardisation"
               short="Standardized DNO application process, eliminating bottlenecks and keeping 50+ concurrent EV infrastructure projects on schedule."
-              full="THE CHALLENGE: No standardized process for DNO (Distribution Network Operator) applications. Delays and misunderstandings causing project bottlenecks. Multiple stakeholders (DNOs, IDNOs, finance, engineering) with no clear coordination. 50+ concurrent projects at risk of timeline slippage. || MY ROLE: Single point of contact for all pre-work involving DNOs and IDNOs across the UK deployment portfolio. Acted as liaison between external network operators, internal engineering teams, and finance. || THE SOLUTION: (1) Process Design - Analyzed existing workflows, identified pain points, and designed a simplified, standardized DNO application process. (2) Cross-Functional Collaboration - Worked closely with finance team to align payment tracking with application milestones. (3) Sitetracker Implementation - Created milestone tracker providing real-time visibility of project progress and key deliverables. (4) Business Central Integration - Streamlined payment tracking system, liaising between accounts and project teams for clear visibility of payments and outstanding balances. || THE RESULTS: Eliminated bottlenecks in DNO application process. Projects kept on schedule despite complex regulatory environment. Clear visibility across stakeholders on timelines and dependencies. Simplified tracking method adopted across entire UK deployment team. Reduced administrative overhead and manual follow-ups. || TOOLS USED: Sitetracker, Business Central, Excel, stakeholder coordination across Engineering, Finance, and external DNO/IDNO partners. || KEY TAKEAWAY: By standardizing what was previously an ad-hoc process, we turned a major bottleneck into a competitive advantage. Projects that previously stalled for weeks waiting on DNO approvals now moved through a clear, tracked pipeline."
+              full="THE CHALLENGE: No standardized process for DNO (Distribution Network Operator) applications. Delays and misunderstandings causing project bottlenecks. Multiple stakeholders (DNOs, IDNOs, finance, engineering) with no clear coordination. 50+ concurrent projects at risk of timeline slippage. || MY ROLE: Single point of contact for all pre-work involving DNOs and IDNOs across the UK deployment portfolio. Acted as liaison between external network operators, internal engineering teams, and finance. || THE SOLUTION: (1) Process Design — Analyzed existing workflows, identified pain points, and designed a simplified, standardized DNO application process. (2) Cross-Functional Collaboration — Worked closely with finance team to align payment tracking with application milestones. (3) Sitetracker Implementation — Created milestone tracker providing real-time visibility of project progress and key deliverables. (4) Business Central Integration — Streamlined payment tracking system, liaising between accounts and project teams for clear visibility of payments and outstanding balances. || THE RESULTS: Eliminated bottlenecks in DNO application process. Projects kept on schedule despite complex regulatory environment. Clear visibility across stakeholders on timelines and dependencies. Simplified tracking method adopted across entire UK deployment team. Reduced administrative overhead and manual follow-ups. || TOOLS USED: Sitetracker, Business Central, Excel, stakeholder coordination across Engineering, Finance, and external DNO/IDNO partners. || KEY TAKEAWAY: By standardizing what was previously an ad-hoc process, we turned a major bottleneck into a competitive advantage. Projects that previously stalled for weeks waiting on DNO approvals now moved through a clear, tracked pipeline."
             />
 
             <ExpandableBox 
@@ -241,7 +257,7 @@ function HomePage() {
             <ExpandableBox 
               title="SWARCO – PoGo EV Investment Department"
               short="Built data infrastructure and evaluation framework for new EV Investment Department from ground up. Unified fragmented data for Azure migration and created systems for evaluating large-scale EV infrastructure sites."
-              full="THE CHALLENGE: SWARCO was operating in manual mode with fragmented data across dozens of sources - different files, apps, and back-office systems with no unified view. The company was preparing to establish a new EV Investment Department to expand ultra-fast charging infrastructure across Scotland and the UK, but lacked the data infrastructure to make informed investment decisions. Without a clear evaluation system, there was no way to assess which sites were viable for multi-million pound infrastructure investments. || MY ROLE: Initially hired on a 3-6 month contract to consolidate and clean data for Azure migration. Due to successful delivery, role expanded to become founding member of new EV Investment Department (team of 3: department director, engineer, and myself). Responsible for all back-office operations, data management, and business intelligence systems. || THE SOLUTION: (1) Data Consolidation & Azure Migration - Successfully unified fragmented data sources across the organization in preparation for Azure platform migration, creating single source of truth for business operations. (2) Project Evaluation Framework - Designed and implemented tracking/evaluation system for scoping investment-grade EV charging sites. Created comprehensive tracking of all incoming projects with dates, evaluation scores, and decision commentary. (3) Self-Directed Power BI Upskilling - Independently studied for and achieved Microsoft PL-300 Power BI Data Analyst certification to meet emerging business intelligence needs. (4) KPI Dashboard Development - Built first-ever EV charging KPIs dashboard for SWARCO using Power BI with DAX and M-language. Created custom visualizations tracking project profitability, resource utilization, and pipeline health. (5) Training & Documentation - Created user manuals and delivered training sessions ensuring teams could interpret and act on insights independently. || THE RESULTS: Successfully unified fragmented data sources across entire organization, enabling data-driven decision-making. Established project evaluation system that assessed hundreds of potential investment sites. Created BI infrastructure that directly supported formation of PoGo Charge brand. Delivered executive dashboards providing real-time visibility into investment pipeline. Achieved Microsoft PL-300 certification while delivering production systems. Enabled department to scale from 3 people to full investment operation evaluating large-scale EV infrastructure sites. || TOOLS USED: Power BI, DAX, M-language, Excel, Azure data platform, multiple CRM and project management systems || KEY TAKEAWAY: Starting with messy, fragmented data across dozens of sources, I built the data infrastructure and BI systems that enabled SWARCO to launch their EV Investment Department. The evaluation framework and dashboards I created became the foundation for their investment strategy and the formation of the PoGo Charge brand."
+              full="THE CHALLENGE: SWARCO was operating in manual mode with fragmented data across dozens of sources — different files, apps, and back-office systems with no unified view. The company was preparing to establish a new EV Investment Department to expand ultra-fast charging infrastructure across Scotland and the UK, but lacked the data infrastructure to make informed investment decisions. || MY ROLE: Initially hired on a 3–6 month contract to consolidate and clean data for Azure migration. Due to successful delivery, role expanded to become founding member of new EV Investment Department (team of 3: department director, engineer, and myself). Responsible for all back-office operations, data management, and business intelligence systems. || THE SOLUTION: (1) Data Consolidation & Azure Migration — Successfully unified fragmented data sources across the organization in preparation for Azure platform migration, creating single source of truth for business operations. (2) Project Evaluation Framework — Designed and implemented tracking/evaluation system for scoping investment-grade EV charging sites. Created comprehensive tracking of all incoming projects with dates, evaluation scores, and decision commentary. (3) Self-Directed Power BI Upskilling — Independently studied for and achieved Microsoft PL-300 Power BI Data Analyst certification to meet emerging business intelligence needs. (4) KPI Dashboard Development — Built first-ever EV charging KPIs dashboard for SWARCO using Power BI with DAX and M-language. Created custom visualizations tracking project profitability, resource utilization, and pipeline health. (5) Training & Documentation — Created user manuals and delivered training sessions ensuring teams could interpret and act on insights independently. || THE RESULTS: Successfully unified fragmented data sources across entire organization, enabling data-driven decision-making. Established project evaluation system that assessed hundreds of potential investment sites. Created BI infrastructure that directly supported formation of PoGo Charge brand. Delivered executive dashboards providing real-time visibility into investment pipeline. Achieved Microsoft PL-300 certification while delivering production systems. Enabled department to scale from 3 people to full investment operation evaluating large-scale EV infrastructure sites. || TOOLS USED: Power BI, DAX, M-language, Excel, Azure data platform, multiple CRM and project management systems. || KEY TAKEAWAY: Starting with messy, fragmented data across dozens of sources, I built the data infrastructure and BI systems that enabled SWARCO to launch their EV Investment Department. The evaluation framework and dashboards I created became the foundation for their investment strategy and the formation of the PoGo Charge brand."
             />
 
             <ExpandableBox 
@@ -259,22 +275,108 @@ function HomePage() {
         </div>
       </section>
 
+      {/* AI TOOLS & MODERN WORKFLOW */}
+      <section id="ai-tools" className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-center">AI-Powered Delivery</h2>
+          <p className="text-brightGray text-center mb-10 max-w-3xl mx-auto">
+            I don't just know these tools — I use them daily to deliver faster, sharper, and with less overhead. 
+            These platforms are integrated into how I work, not bolted on as afterthoughts.
+          </p>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">Research & Analysis</h3>
+              <p className="text-brightGray text-sm mb-3">
+                Deep research synthesis, data analysis, and structured insight generation using AI-powered platforms.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Claude</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">ChatGPT</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">NotebookLM</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Manus</span>
+              </div>
+            </div>
+
+            <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">Automation & Workflows</h3>
+              <p className="text-brightGray text-sm mb-3">
+                Process automation, system integrations, and no-code workflow design that eliminates manual tasks.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Make</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Lovable</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Precision</span>
+              </div>
+            </div>
+
+            <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">Content & Presentations</h3>
+              <p className="text-brightGray text-sm mb-3">
+                Rapid deck creation, video editing, voice generation, and professional content production.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Gamma</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Descript</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">ElevenLabs</span>
+              </div>
+            </div>
+
+            <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">Social & Outreach</h3>
+              <p className="text-brightGray text-sm mb-3">
+                Social media management, scheduling, and AI-assisted engagement strategies.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">SocialSweep</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">ChatAid</span>
+              </div>
+            </div>
+
+            <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">Finance & Operations</h3>
+              <p className="text-brightGray text-sm mb-3">
+                Financial tracking, hiring workflows, and membership platform management.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Hiro Finance</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">HireAlli</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Membership.io</span>
+              </div>
+            </div>
+
+            <div className="border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">Client & Revenue Tools</h3>
+              <p className="text-brightGray text-sm mb-3">
+                Client onboarding, revenue management, and collaborative review platforms.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">BuddyPro</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Revio</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">Revaly</span>
+                <span className="text-xs bg-lightStone px-3 py-1 rounded-full">YourAtlas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT ME */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-lightStone/40">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
           
           <div className="space-y-6 text-brightGray">
             <p className="text-lg leading-relaxed">
-              I bring passion, precision, and intuition to every project. I listen first, ask the right questions, and deliver solutions that actually work — not just theoretically, but in practice.
+              I bring passion, precision, and intuition to every project. I listen first, ask the right questions, and deliver solutions that work in practice — not just in theory.
             </p>
 
             <p className="text-lg leading-relaxed">
-              What sets me apart: I'm forthcoming about challenges, transparent about timelines, and relentless about quality. I don't hide behind jargon or complexity — I translate it into clarity. My clients know exactly what they're getting and why it matters.
+              What sets me apart: I'm forthcoming about challenges, transparent about timelines, and relentless about quality. I don't hide behind jargon or complexity — I translate it into clarity. Whether I'm redesigning a utilization model for a pan-European team or building a competitor analysis framework across 10 markets, my clients know exactly what they're getting and why it matters.
             </p>
 
             <p className="text-lg leading-relaxed">
-              I'm remote-first, deadline-driven, and genuinely invested in the success of the organizations I work with. Whether you need a one-off analysis, a complete operations overhaul, or ongoing support, I show up ready to make a difference.
+              I'm remote-first, deadline-driven, and invested in the success of every organization I work with. Whether you need a one-off analysis, a complete operations overhaul, or ongoing support — I show up ready to deliver.
             </p>
 
             <p className="text-lg leading-relaxed italic text-center mt-8">
@@ -285,7 +387,7 @@ function HomePage() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-16 px-4 bg-lightStone/40">
+      <section id="contact" className="py-16 px-4">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Let's Collaborate</h2>
           <p className="mb-6 text-brightGray">
@@ -305,7 +407,6 @@ function HomePage() {
             >
               View CV (PDF)
             </a>
-            
           </div>
         </div>
       </section>

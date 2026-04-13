@@ -1,77 +1,25 @@
 /* === Brand Colors === */
 :root {
-  --brand-primary: #6C5CE7;       /* Main purple */
-  --brand-primaryDark: #4C46B3;   /* Darker purple */
-  --brand-accent: #F59E0B;        /* Warm accent color */
+  --brand-accent: #F59E0B;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background: linear-gradient(
-    135deg,
-    var(--brand-primary),
-    var(--brand-primaryDark)
-  );
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: var(--brand-accent);
-  text-decoration: none;
-}
-
-.App-link:hover {
-  text-decoration: underline;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Buttons that use your brand colors */
 .btn-primary {
-  background: var(--brand-primary);
+  background: #2d3a4a;
   color: #fff;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
   display: inline-block;
-  transition: filter 120ms ease, background 120ms ease;
+  transition: background 120ms ease;
   text-decoration: none;
 }
 
 .btn-primary:hover {
-  background: var(--brand-primaryDark);
-  filter: brightness(0.98);
+  background: #c8a84b;
 }
 
 .btn-outline {
-  border: 2px solid var(--brand-primary);
-  color: var(--brand-primary);
+  border: 2px solid #c8a84b;
+  color: #c8a84b;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
   display: inline-block;
@@ -80,38 +28,6 @@
 }
 
 .btn-outline:hover {
-  background: var(--brand-primary);
-  color: #fff;
-}
-
-C:\Users\Admin\jolaandco
-/* Buttons that use your brand colors */
-.btn-primary {
-  background: var(--brand-primary);
-  color: #fff;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.75rem;
-  display: inline-block;
-  transition: filter 120ms ease, background 120ms ease;
-  text-decoration: none;
-}
-
-.btn-primary:hover {
-  background: var(--brand-primaryDark);
-  filter: brightness(0.98);
-}
-
-.btn-outline {
-  border: 2px solid var(--brand-primary);
-  color: var(--brand-primary);
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.75rem;
-  display: inline-block;
-  transition: background 120ms ease, color 120ms ease;
-  text-decoration: none;
-}
-
-.btn-outline:hover {
-  background: var(--brand-primary);
+  background: #c8a84b;
   color: #fff;
 }

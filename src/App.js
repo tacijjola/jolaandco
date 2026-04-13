@@ -300,11 +300,9 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="text-center text-sm py-6 text-sage">
-        © {new Date().getFullYear()} Jola & Co. ·{" "}
-        <a href="https://www.linkedin.com/in/jola-tacij/" target="_blank" rel="noopener noreferrer" className="underline">
-          LinkedIn
-        </a>
+      <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
+        <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola.tacij@outlook.com" className="underline hover:text-goldenWheat">jola.tacij@outlook.com</a></p>
+        <p className="mt-1 text-gray-400">Business Analysis · Power BI · Project Delivery · Remote</p>
       </footer>
 
     </div>

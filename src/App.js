@@ -6,26 +6,32 @@ export default function App() {
     <div className="min-h-screen bg-lightStone text-navySlate font-sans">
 
       {/* HEADER */}
-      <header className="bg-lightStone border-b border-gray-200 px-6 py-4">
+      <header className="bg-lightStone border-b border-gray-200 px-4 py-3">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <a href="#top" className="no-underline">
+          <a href="#top" className="no-underline flex-shrink-0">
             <img
               src="/logo.png"
               alt="Jola & Co. logo"
-              className="h-16 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
           </a>
-          <nav className="space-x-5">
-            <a href="#work-with-me" className="text-navySlate hover:text-goldenWheat">Work with Me</a>
-            <a href="#projects" className="text-navySlate hover:text-goldenWheat">Projects</a>
-            <a href="#certifications" className="text-navySlate hover:text-goldenWheat">Certifications</a>
-            <a href="#about" className="text-navySlate hover:text-goldenWheat">About</a>
-            <a href="#contact" className="text-navySlate hover:text-goldenWheat">Contact</a>
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center space-x-5">
+            <a href="#work-with-me" className="text-navySlate hover:text-goldenWheat text-sm">Work with Me</a>
+            <a href="#projects" className="text-navySlate hover:text-goldenWheat text-sm">Projects</a>
+            <a href="#certifications" className="text-navySlate hover:text-goldenWheat text-sm">Certifications</a>
+            <a href="#about" className="text-navySlate hover:text-goldenWheat text-sm">About</a>
+            <a href="#contact" className="text-navySlate hover:text-goldenWheat text-sm">Contact</a>
             <a href="/Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer"
-               className="bg-goldenWheat text-white px-4 py-2 rounded-lg hover:bg-sage transition">
+               className="bg-goldenWheat text-white px-4 py-2 rounded-lg hover:bg-sage transition text-sm">
               View CV
             </a>
           </nav>
+          {/* Mobile: just show CV button */}
+          <a href="/Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer"
+             className="md:hidden bg-goldenWheat text-white px-3 py-2 rounded-lg text-sm font-semibold">
+            View CV
+          </a>
         </div>
       </header>
 

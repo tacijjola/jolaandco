@@ -305,4 +305,42 @@ export default function App() {
       <section id="about" className="py-16 px-4 bg-lightStone">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
-          <p className="text-navySlate leading-relaxed mb-4
+          <p className="text-navySlate leading-relaxed mb-4">
+            I bring passion, precision, and intuition to every project. I listen first, ask the right questions,
+            and deliver solutions that work in practice — not just in theory. I don't hide behind jargon —
+            I translate complexity into clarity.
+          </p>
+          <p className="text-navySlate leading-relaxed mb-4">
+            Remote-first, deadline-driven, and invested in the success of every organisation I work with.
+            Whether you need a one-off analysis, a complete operations overhaul, or ongoing support —
+            I show up ready to deliver.
+          </p>
+          <p className="text-navySlate leading-relaxed text-sm opacity-80">
+            Based in Abruzzo with my family and two beautiful Maremma Sheepdogs. Always learning. Always improving. Always ready.
+          </p>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="py-16 px-4 bg-lightStone">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">Let's Collaborate</h2>
+          <p className="mb-8 text-navySlate">
+            Consulting, project collaboration, or remote support. If you're looking to streamline, grow, or automate — let's talk.
+          </p>
+          <div className="flex justify-center gap-3 flex-wrap">
+            <a href="mailto:jola.tacij@outlook.com" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Email Me</a>
+            <a href="/Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">View CV (PDF)</a>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
+        <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola.tacij@outlook.com" className="underline hover:text-goldenWheat">jola.tacij@outlook.com</a></p>
+        <p className="mt-1 text-gray-400">Business Analysis · Power BI · Project Delivery · Remote</p>
+      </footer>
+
+    </div>
+  );
+}

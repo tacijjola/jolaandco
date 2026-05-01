@@ -10,7 +10,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <a href="#top" className="no-underline flex-shrink-0">
             <img
-              src="/logo.png"
+              src="logo.png"
               alt="Jola & Co. logo"
               className="h-12 w-auto object-contain"
             />
@@ -240,7 +240,7 @@ export default function App() {
 
             <div className="text-center">
               <div className="h-40 w-40 mx-auto mb-5 flex items-center justify-center">
-                <img src="/cert-agilepm.png" alt="AgilePM v3 Practitioner" className="h-full w-full object-contain" />
+                <img src="cert-agilepm.png" alt="AgilePM v3 Practitioner" className="h-full w-full object-contain" />
               </div>
               <h3 className="text-lg font-bold mb-2">AgilePM® v3 Practitioner</h3>
               <p className="text-sm text-navySlate mb-3">
@@ -252,7 +252,7 @@ export default function App() {
 
             <div className="text-center">
               <div className="h-40 w-40 mx-auto mb-5 flex items-center justify-center">
-                <img src="/cert-PL-300-Power-BI-Data-Analyst.png" alt="Power BI PL-300" className="h-full w-full object-contain" />
+                <img src="cert-PL-300-Power-BI-Data-Analyst.png" alt="Power BI PL-300" className="h-full w-full object-contain" />
               </div>
               <h3 className="text-lg font-bold mb-2">Power BI Data Analyst (PL-300)</h3>
               <p className="text-sm text-navySlate mb-3">
@@ -264,7 +264,7 @@ export default function App() {
 
             <div className="text-center">
               <div className="h-40 w-40 mx-auto mb-5 flex items-center justify-center">
-                <img src="/cert-ai-mastermind.png" alt="Generative AI Mastermind" className="h-full w-full object-contain" />
+                <img src="cert-ai-mastermind.png" alt="Generative AI Mastermind" className="h-full w-full object-contain" />
               </div>
               <h3 className="text-lg font-bold mb-2">Generative AI Mastermind</h3>
               <p className="text-sm text-navySlate mb-3">

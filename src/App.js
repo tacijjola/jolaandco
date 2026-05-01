@@ -58,88 +58,117 @@ export default function App() {
       <section id="work-with-me" className="py-16 px-4 bg-lightStone">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-center">Work with Me</h2>
-          <p className="text-center text-navySlate max-w-xl mx-auto mb-12">
+          <p className="text-center text-navySlate max-w-2xl mx-auto mb-12">
             Clear data. Structured process. Results in days — not months.
-            Two fixed-price services for startups and scale-ups that need
-            analytical clarity fast.
+            Three fixed-price packages — fully async, no discovery calls.
+            Buy here, scope by email, delivered on time.
           </p>
 
-          <div className="grid gap-8 md:grid-cols-2 mb-12">
+          <div className="grid gap-8 md:grid-cols-3 mb-12">
+
+            {/* KPI Definition Library */}
+            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
+              <span className="inline-block bg-sage text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+                Starter · Instant Download
+              </span>
+              <h3 className="text-xl font-semibold mb-1">KPI Definition Library</h3>
+              <p className="text-sm italic text-goldenWheat mb-4">50 ready-to-use KPIs. For BAs, BI analysts, and ops leads who hate reinventing wheels.</p>
+              <p className="text-navySlate mb-4">
+                Plain-English definitions, calculation formulas, data fields, and ready-to-paste
+                DAX measures — across Operations, Sales, Finance, Customer, and Project domains.
+              </p>
+              <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
+                <li>✓ 50 KPIs across 5 domains</li>
+                <li>✓ Definition + formula + DAX for each</li>
+                <li>✓ Excel + Word + Power BI .pbit template</li>
+                <li>✓ Lifetime updates included</li>
+              </ul>
+              <div className="flex justify-between items-center border-t pt-4 mt-auto">
+                <span className="text-2xl font-bold text-navySlate">€49</span>
+                <span className="text-sm text-gray-400">Instant download</span>
+              </div>
+              {/* TODO: replace # with Stripe / Gumroad payment link */}
+              <a href="#" className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+                → Buy now
+              </a>
+            </div>
 
             {/* BA Sprint */}
-            <div className="border-2 border-goldenWheat p-6 rounded-xl shadow hover:shadow-lg transition bg-white">
+            <div className="border-2 border-goldenWheat p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
               <span className="inline-block bg-goldenWheat text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
                 ⭐ Most Popular
               </span>
               <h3 className="text-xl font-semibold mb-1">The BA Sprint</h3>
-              <p className="text-sm italic text-goldenWheat mb-4">3 days. One messy process. Total clarity.</p>
+              <p className="text-sm italic text-goldenWheat mb-4">3 days. One messy process. Total clarity. No call needed.</p>
               <p className="text-navySlate mb-4">
                 Your team is making decisions without clean requirements or defined KPIs.
-                I fix that in 3 working days — fully remote, fixed price.
+                I fix that in 3 working days — fully async, fixed price.
               </p>
               <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
                 <li>✓ Requirements document</li>
                 <li>✓ Workflow / data flow diagram</li>
                 <li>✓ KPI definitions with measurement logic</li>
-                <li>✓ Kick-off + walkthrough calls included</li>
+                <li>✓ Async scoping brief within 2 hours of purchase</li>
                 <li>✓ 7 days async follow-up</li>
               </ul>
-              <div className="flex justify-between items-center border-t pt-4">
+              <div className="flex justify-between items-center border-t pt-4 mt-auto">
                 <span className="text-2xl font-bold text-navySlate">€900</span>
                 <span className="text-sm text-gray-400">3 working days</span>
               </div>
-              <a href="#contact" className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-                → Book a Discovery Call
+              {/* TODO: replace # with Stripe payment link */}
+              <a href="#" className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+                → Buy now
               </a>
             </div>
 
             {/* Power BI Rescue */}
-            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white">
+            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
               <span className="inline-block bg-navySlate text-lightStone text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
                 Power BI
               </span>
               <h3 className="text-xl font-semibold mb-1">The Power BI Rescue</h3>
-              <p className="text-sm italic text-goldenWheat mb-4">5 days. One live dashboard. No more Excel chaos.</p>
+              <p className="text-sm italic text-goldenWheat mb-4">5 days. One live dashboard. No more Excel chaos. No call needed.</p>
               <p className="text-navySlate mb-4">
                 I build one clean, live Power BI dashboard — connected to your data source,
-                built properly, delivered in 5 working days.
+                built properly, delivered in 5 working days. Fully async.
               </p>
               <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
                 <li>✓ 1 data source connected</li>
                 <li>✓ 5–8 KPI tiles / visuals</li>
-                <li>✓ DAX measures & clean data model</li>
-                <li>✓ Published & accessible to your team</li>
+                <li>✓ DAX measures &amp; clean data model</li>
+                <li>✓ Published &amp; accessible to your team</li>
                 <li>✓ 7 days async support post-delivery</li>
               </ul>
-              <div className="flex justify-between items-center border-t pt-4">
-                <span className="text-2xl font-bold text-navySlate">€750</span>
+              <div className="flex justify-between items-center border-t pt-4 mt-auto">
+                <span className="text-2xl font-bold text-navySlate">€1,800</span>
                 <span className="text-sm text-gray-400">5 working days</span>
               </div>
-              <a href="#contact" className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-                → Book a Discovery Call
+              {/* TODO: replace # with Stripe payment link */}
+              <a href="#" className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+                → Buy now
               </a>
             </div>
 
           </div>
 
-          {/* How it works */}
+          {/* How it works — async flow, no calls */}
           <div className="bg-lightStone rounded-xl p-8 mb-8">
-            <h3 className="text-xl font-bold text-center mb-6">Simple process. No surprises.</h3>
+            <h3 className="text-xl font-bold text-center mb-6">Simple process. Fully async. No surprises.</h3>
             <div className="grid gap-6 md:grid-cols-3 text-center">
               <div>
                 <div className="w-10 h-10 rounded-full bg-navySlate text-lightStone font-bold text-lg flex items-center justify-center mx-auto mb-3">1</div>
-                <p className="font-semibold mb-1">Book a 20-min call</p>
-                <p className="text-sm text-navySlate">We talk through where you are. No pitch, no pressure.</p>
+                <p className="font-semibold mb-1">You buy here</p>
+                <p className="text-sm text-navySlate">Stripe checkout. Instant receipt. No call required, ever.</p>
               </div>
               <div>
                 <div className="w-10 h-10 rounded-full bg-navySlate text-lightStone font-bold text-lg flex items-center justify-center mx-auto mb-3">2</div>
-                <p className="font-semibold mb-1">I send a one-page brief</p>
-                <p className="text-sm text-navySlate">Exact deliverables, timeline, and fixed price within 24 hours.</p>
+                <p className="font-semibold mb-1">I send a 10-min brief</p>
+                <p className="text-sm text-navySlate">Within 2 hours of purchase. You reply with the few details I need to scope properly.</p>
               </div>
               <div>
                 <div className="w-10 h-10 rounded-full bg-navySlate text-lightStone font-bold text-lg flex items-center justify-center mx-auto mb-3">3</div>
-                <p className="font-semibold mb-1">I deliver, you decide</p>
-                <p className="text-sm text-navySlate">On-time delivery. Continue if you want — or walk away with something useful.</p>
+                <p className="font-semibold mb-1">I deliver on time</p>
+                <p className="text-sm text-navySlate">3 or 5 working days, fixed price. Plus 7 days of async tweaks afterwards.</p>
               </div>
             </div>
           </div>
@@ -147,11 +176,12 @@ export default function App() {
           <div className="border border-goldenWheat rounded-xl p-6 text-center">
             <p className="font-bold text-navySlate mb-2">Not sure which one fits?</p>
             <p className="text-sm text-navySlate mb-4">
-              If your biggest problem is <em>"we don't know what we need"</em> — start with the BA Sprint.<br />
-              If it's <em>"we have data but can't see it"</em> — start with the Power BI Rescue.
+              If you just want a head-start on KPIs and DAX — grab the <strong>KPI Library</strong> for €49.<br />
+              If your biggest problem is <em>"we don't know what we need"</em> — start with the <strong>BA Sprint</strong>.<br />
+              If it's <em>"we have data but can't see it"</em> — start with the <strong>Power BI Rescue</strong>.
             </p>
-            <a href="#contact" className="inline-block bg-navySlate text-lightStone px-6 py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-              → Send me a message
+            <a href="mailto:hello@jolaandco.com" className="inline-block bg-navySlate text-lightStone px-6 py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+              → Email me — no pressure, no call
             </a>
           </div>
 
@@ -275,42 +305,4 @@ export default function App() {
       <section id="about" className="py-16 px-4 bg-lightStone">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
-          <p className="text-navySlate leading-relaxed mb-4">
-            I bring passion, precision, and intuition to every project. I listen first, ask the right questions,
-            and deliver solutions that work in practice — not just in theory. I don't hide behind jargon —
-            I translate complexity into clarity.
-          </p>
-          <p className="text-navySlate leading-relaxed mb-4">
-            Remote-first, deadline-driven, and invested in the success of every organisation I work with.
-            Whether you need a one-off analysis, a complete operations overhaul, or ongoing support —
-            I show up ready to deliver.
-          </p>
-          <p className="text-navySlate leading-relaxed text-sm opacity-80">
-            Based in Abruzzo with my family and two beautiful Maremma Sheepdogs. Always learning. Always improving. Always ready.
-          </p>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" className="py-16 px-4 bg-lightStone">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Let's Collaborate</h2>
-          <p className="mb-8 text-navySlate">
-            Consulting, project collaboration, or remote support. If you're looking to streamline, grow, or automate — let's talk.
-          </p>
-          <div className="flex justify-center gap-3 flex-wrap">
-            <a href="mailto:jola.tacij@outlook.com" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Email Me</a>
-            <a href="/Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">View CV (PDF)</a>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
-        <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola.tacij@outlook.com" className="underline hover:text-goldenWheat">jola.tacij@outlook.com</a></p>
-        <p className="mt-1 text-gray-400">Business Analysis · Power BI · Project Delivery · Remote</p>
-      </footer>
-
-    </div>
-  );
-}
+          <p className="text-navySlate leading-relaxed mb-4

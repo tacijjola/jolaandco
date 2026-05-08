@@ -87,10 +87,10 @@ export default function App() {
                 <span className="text-2xl font-bold text-navySlate">€49</span>
                 <span className="text-sm text-gray-400">Instant download</span>
               </div>
-              {/* TODO: replace # with Stripe / Gumroad payment link */}
-              <a href="#" className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+              {/* TODO: replace with Stripe / Gumroad payment link */}
+              <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
                 → Buy now
-              </a>
+              </button>
             </div>
 
             {/* BA Sprint */}
@@ -115,10 +115,10 @@ export default function App() {
                 <span className="text-2xl font-bold text-navySlate">€900</span>
                 <span className="text-sm text-gray-400">3 working days</span>
               </div>
-              {/* TODO: replace # with Stripe payment link */}
-              <a href="#" className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+              {/* TODO: replace with Stripe payment link */}
+              <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
                 → Buy now
-              </a>
+              </button>
             </div>
 
             {/* Power BI Rescue */}
@@ -143,10 +143,10 @@ export default function App() {
                 <span className="text-2xl font-bold text-navySlate">€1,800</span>
                 <span className="text-sm text-gray-400">5 working days</span>
               </div>
-              {/* TODO: replace # with Stripe payment link */}
-              <a href="#" className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+              {/* TODO: replace with Stripe payment link */}
+              <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
                 → Buy now
-              </a>
+              </button>
             </div>
 
           </div>

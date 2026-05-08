@@ -10,21 +10,21 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: #0d0f14;
-      color: #e8eaf0;
+      background: #F5F0E8;
+      color: #2C2C2C;
       line-height: 1.7;
     }
     a { color: inherit; text-decoration: none; }
 
     /* ─── Colour Tokens ─── */
     :root {
-      --accent:   #00d4aa;
-      --accent2:  #3b8bff;
-      --surface:  #161b27;
-      --surface2: #1e2535;
-      --border:   rgba(255,255,255,0.07);
-      --muted:    #8892a4;
-      --text:     #e8eaf0;
+      --accent:   #D4A574;
+      --accent2:  #8B7355;
+      --surface:  #FFFBF5;
+      --surface2: #FAF7F2;
+      --border:   rgba(0,0,0,0.1);
+      --muted:    #6B6B6B;
+      --text:     #2C2C2C;
     }
 
     /* ─── Utility ─── */
@@ -55,7 +55,7 @@
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       backdrop-filter: blur(14px);
-      background: rgba(13,15,20,.82);
+      background: rgba(245,240,232,.95);
       border-bottom: 1px solid var(--border);
     }
     nav .inner {
@@ -69,7 +69,7 @@
     .nav-links a { font-size: .88rem; color: var(--muted); transition: color .2s; }
     .nav-links a:hover { color: var(--text); }
     .nav-cta {
-      background: var(--accent); color: #0d0f14;
+      background: var(--accent); color: #FFFBF5;
       padding: .45rem 1.1rem; border-radius: 6px;
       font-size: .85rem; font-weight: 700;
       transition: opacity .2s;
@@ -88,14 +88,14 @@
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(0,212,170,.08) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(59,139,255,.06) 0%, transparent 70%);
+        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(212,165,116,.06) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(139,115,85,.04) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: .5rem;
-      background: rgba(0,212,170,.1);
-      border: 1px solid rgba(0,212,170,.25);
+      background: rgba(212,165,116,.1);
+      border: 1px solid rgba(212,165,116,.25);
       border-radius: 20px; padding: .35rem 1rem;
       font-size: .78rem; font-weight: 600; color: var(--accent);
       margin-bottom: 1.8rem;
@@ -116,19 +116,19 @@
     }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn-primary {
-      background: var(--accent); color: #0d0f14;
+      background: var(--accent); color: #FFFBF5;
       padding: .75rem 1.8rem; border-radius: 8px;
       font-weight: 700; font-size: .95rem;
       transition: transform .15s, box-shadow .15s;
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,212,170,.3); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,165,116,.3); }
     .btn-outline {
       border: 1px solid var(--border); color: var(--text);
       padding: .75rem 1.8rem; border-radius: 8px;
       font-weight: 600; font-size: .95rem;
       transition: border-color .2s, color .2s;
     }
-    .btn-outline:hover { border-color: rgba(255,255,255,.3); }
+    .btn-outline:hover { border-color: rgba(0,0,0,.2); }
 
     .hero-stats {
       display: flex; gap: 3rem; margin-top: 4rem; flex-wrap: wrap;
@@ -182,7 +182,7 @@
       margin-bottom: 3rem;
       transition: border-color .3s;
     }
-    .case-study:hover { border-color: rgba(0,212,170,.3); }
+    .case-study:hover { border-color: rgba(212,165,116,.3); }
 
     .cs-header {
       padding: 2.5rem 2.5rem 0;
@@ -227,8 +227,8 @@
     .cs-block ul li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
 
     .cs-outcomes {
-      background: linear-gradient(135deg, rgba(0,212,170,.07), rgba(59,139,255,.05));
-      border: 1px solid rgba(0,212,170,.18);
+      background: linear-gradient(135deg, rgba(212,165,116,.07), rgba(139,115,85,.05));
+      border: 1px solid rgba(212,165,116,.18);
       border-radius: 12px; padding: 1.6rem;
       margin-bottom: 1.5rem;
     }
@@ -260,7 +260,7 @@
       border-radius: 12px; padding: 1.4rem;
       transition: border-color .2s;
     }
-    .skill-card:hover { border-color: rgba(0,212,170,.3); }
+    .skill-card:hover { border-color: rgba(212,165,116,.3); }
     .skill-card .icon { font-size: 1.6rem; margin-bottom: .7rem; }
     .skill-card h4 { font-size: .95rem; font-weight: 700; margin-bottom: .5rem; }
     .skill-card p { font-size: .83rem; color: var(--muted); line-height: 1.6; }
@@ -275,7 +275,7 @@
       border-radius: 14px; padding: 2rem;
       transition: border-color .2s, transform .2s;
     }
-    .service-card:hover { border-color: rgba(0,212,170,.35); transform: translateY(-3px); }
+    .service-card:hover { border-color: rgba(212,165,116,.35); transform: translateY(-3px); }
     .service-card .price {
       font-size: 1.5rem; font-weight: 800; color: var(--accent);
       margin-bottom: .2rem;
@@ -294,7 +294,7 @@
     #contact::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,212,170,.07) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(212,165,116,.07) 0%, transparent 70%);
       pointer-events: none;
     }
     #contact h2 {
@@ -339,7 +339,6 @@
 <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
 <section id="hero">
   <div class="container">
-    <div class="hero-badge">Available for remote projects — May 2026</div>
     <h1>I turn <em>complex data</em> into decisions that move business forward.</h1>
     <p>
       Senior Business Analyst &amp; BI Specialist with 20+ years in operations and 5+ years
@@ -706,29 +705,40 @@
   <div class="container">
     <div class="section-label">How we can work together</div>
     <h2>Services</h2>
-    <p class="subtitle">Project-based engagements designed to deliver fast, tangible outcomes.</p>
+    <p class="subtitle">Three project types. Three different problems. All designed to deliver measurable business impact.</p>
     <div class="services-grid">
-      <div class="service-card">
-        <div class="price">BA Sprint</div>
-        <div class="price-sub">Fixed scope · 2–4 weeks</div>
-        <h4>Rapid Business Analysis</h4>
+      <div class="service-card" style="border: 2px solid #00d4aa;">
+        <div class="price">Data Model Restructuring</div>
+        <div class="price-sub">€2,500–€4,500 · 4–8 weeks</div>
+        <h4>Data Architecture &amp; Rebuild</h4>
         <p>
-          Stuck on a business question you can't quite answer with your current data?
-          I come in, map the problem, analyse what you have, and deliver a structured
-          brief with findings and recommendations. Fast, focused, actionable.
+          Your data model is fragmented, slow, or unmaintainable. I audit your current
+          structure, redesign for performance and scalability, rebuild it properly, and train
+          your team so it lasts. Includes documentation and ongoing support.
         </p>
-        <div class="service-tag"><span class="tag">Great for: Startups &amp; scale-ups</span></div>
+        <div class="service-tag"><span class="tag">Great for: Finance, Ops, multi-country teams</span></div>
       </div>
       <div class="service-card">
-        <div class="price">Power BI Build</div>
-        <div class="price-sub">Fixed or time-bound · 3–6 weeks</div>
-        <h4>BI Dashboard &amp; Reporting</h4>
+        <div class="price">Dashboard Rebuild</div>
+        <div class="price-sub">Fixed scope · 3–6 weeks</div>
+        <h4>BI Dashboard Overhaul</h4>
         <p>
-          From messy data sources to clean, decision-ready dashboards your whole team
-          can use. Includes data model design, dashboard build, and a handover session
-          so you're not dependent on me to keep the lights on.
+          Your dashboards are slow, confusing, or don't answer the right questions.
+          I rebuild them from scratch—clean data model, optimised performance, decision-ready
+          design. Includes training so your team can maintain and extend them.
         </p>
         <div class="service-tag"><span class="tag">Great for: Finance, Ops, Exec teams</span></div>
+      </div>
+      <div class="service-card">
+        <div class="price">Business Question Sprint</div>
+        <div class="price-sub">Fixed scope · 2–4 weeks</div>
+        <h4>Data-Driven Analysis &amp; Recommendations</h4>
+        <p>
+          Stuck on a business question—market entry, site selection, pricing strategy, investment
+          case? I scope it, analyse your data, and deliver structured findings with actionable
+          recommendations. Fast, rigorous, decision-ready.
+        </p>
+        <div class="service-tag"><span class="tag">Great for: Startups, scale-ups, strategic decisions</span></div>
       </div>
       <div class="service-card">
         <div class="price">Fractional BI Lead</div>
@@ -751,25 +761,8 @@
     <div class="section-label">Get in touch</div>
     <h2>Let's solve something together.</h2>
     <p>
-      Available for remote projects from May 2026. If you have a data problem,
-      a BI gap, or a business question that needs answering — let's talk.
+      If you have a data problem, a BI gap, or a business question that needs answering — let's talk.
     </p>
     <div class="cta-actions">
       <a href="mailto:jola.tacij@outlook.com" class="btn-primary">Email me →</a>
-      <a href="https://www.jolaandco.com" class="btn-outline">Visit jolaandco.com</a>
-    </div>
-    <div class="contact-info">
-      <a href="https://www.linkedin.com/in/jola-tacij/" target="_blank">LinkedIn ↗</a>
-      <a href="https://www.jolaandco.com" target="_blank">jolaandco.com ↗</a>
-      <a href="mailto:jola.tacij@outlook.com">jola.tacij@outlook.com</a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
-<footer>
-  <p>© 2026 Jola Tacij &amp; Co. · Senior BI &amp; Business Analyst · Remote · Europe</p>
-</footer>
-
-</body>
-</html>
+      <a href="https://tacijjola.github.io/jolaandco/" class="btn-outline">Visit Jola & Co</a

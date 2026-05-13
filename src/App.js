@@ -59,57 +59,85 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-center">Work with Me</h2>
           <p className="text-center text-navySlate max-w-2xl mx-auto mb-12">
-            Clear data. Structured process. Results in days — not months.
-            Three fixed-price packages — fully async, no discovery calls.
-            Buy here, scope by email, delivered on time.
+            Four fixed-price packages — from quick wins to full-scope transformations.
+            Fully async, fully transparent. Buy, scope by email, delivered on time.
           </p>
 
           <div className="grid gap-8 md:grid-cols-3 mb-12">
 
-            {/* KPI Definition Library */}
-            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
+            {/* Data Model Restructuring */}
+            <div className="border-2 border-sage p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
               <span className="inline-block bg-sage text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-                Starter · Instant Download
+                Complex · Transformation
               </span>
-              <h3 className="text-xl font-semibold mb-1">KPI Definition Library</h3>
-              <p className="text-sm italic text-goldenWheat mb-4">50 ready-to-use KPIs. For BAs, BI analysts, and ops leads who hate reinventing wheels.</p>
+              <h3 className="text-xl font-semibold mb-1">Data Model Restructuring</h3>
+              <p className="text-sm italic text-sage mb-4">4–5 weeks. Your data layer, rebuilt. Built to scale.</p>
               <p className="text-navySlate mb-4">
-                Plain-English definitions, calculation formulas, data fields, and ready-to-paste
-                DAX measures — across Operations, Sales, Finance, Customer, and Project domains.
+                Your Power BI model is slow, fragile, or unfinished. I architect and rebuild it
+                from scratch — optimized for performance, future-proofed for growth, fully documented.
               </p>
               <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
-                <li>✓ 50 KPIs across 5 domains</li>
-                <li>✓ Definition + formula + DAX for each</li>
-                <li>✓ Excel + Word + Power BI .pbit template</li>
-                <li>✓ Lifetime updates included</li>
+                <li>✓ Diagnostic audit of current model</li>
+                <li>✓ Clean, star-schema architecture</li>
+                <li>✓ Optimized DAX, partitioning &amp; refresh strategy</li>
+                <li>✓ Full documentation &amp; handover</li>
+                <li>✓ 4 weeks async support post-delivery</li>
               </ul>
               <div className="flex justify-between items-center border-t pt-4 mt-auto">
-                <span className="text-2xl font-bold text-navySlate">€49</span>
-                <span className="text-sm text-gray-400">Instant download</span>
+                <span className="text-2xl font-bold text-navySlate">€2,500–4,500</span>
+                <span className="text-sm text-gray-400">4–5 weeks</span>
               </div>
-              {/* TODO: replace with Stripe / Gumroad payment link */}
+              {/* TODO: replace with Stripe payment link */}
               <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
                 → Buy now
               </button>
             </div>
 
-            {/* BA Sprint */}
+            {/* Dashboard Rebuild */}
             <div className="border-2 border-goldenWheat p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
               <span className="inline-block bg-goldenWheat text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
                 ⭐ Most Popular
               </span>
-              <h3 className="text-xl font-semibold mb-1">The BA Sprint</h3>
-              <p className="text-sm italic text-goldenWheat mb-4">3 days. One messy process. Total clarity. No call needed.</p>
+              <h3 className="text-xl font-semibold mb-1">Dashboard Rebuild</h3>
+              <p className="text-sm italic text-goldenWheat mb-4">5 days. One clean, live dashboard. No chaos, no Excel.</p>
               <p className="text-navySlate mb-4">
-                Your team is making decisions without clean requirements or defined KPIs.
-                I fix that in 3 working days — fully async, fixed price.
+                I build one production-ready Power BI dashboard — connected to your data source,
+                clean model, proper visuals, delivered in 5 working days. Fully async.
               </p>
               <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
-                <li>✓ Requirements document</li>
-                <li>✓ Workflow / data flow diagram</li>
-                <li>✓ KPI definitions with measurement logic</li>
-                <li>✓ Async scoping brief within 2 hours of purchase</li>
-                <li>✓ 7 days async follow-up</li>
+                <li>✓ 1 data source connected &amp; shaped</li>
+                <li>✓ 5–8 KPI tiles / visuals</li>
+                <li>✓ Clean data model &amp; DAX measures</li>
+                <li>✓ Published to Power BI Service &amp; shared</li>
+                <li>✓ 7 days async support post-delivery</li>
+              </ul>
+              <div className="flex justify-between items-center border-t pt-4 mt-auto">
+                <span className="text-2xl font-bold text-navySlate">€1,800</span>
+                <span className="text-sm text-gray-400">5 working days</span>
+              </div>
+              {/* TODO: replace with Stripe payment link */}
+              <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+                → Buy now
+              </button>
+            </div>
+
+            {/* Business Question Sprint */}
+            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
+              <span className="inline-block bg-navySlate text-lightStone text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+                Business Analysis
+              </span>
+              <h3 className="text-xl font-semibold mb-1">Business Question Sprint</h3>
+              <p className="text-sm italic text-goldenWheat mb-4">3 days. One tough question. Clear answer.</p>
+              <p className="text-navySlate mb-4">
+                Your team is stuck on a business decision. I take the question, dive into your data,
+                deliver a clear analysis — in 3 working days, fully async.
+              </p>
+              <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
+                <li>✓ Analysis brief within 2 hours of purchase</li>
+                <li>✓ Data extraction &amp; investigation</li>
+                <li>✓ Executive summary + detailed findings</li>
+                <li>✓ Recommendations &amp; next steps</li>
+                <li>✓ 5 days async follow-up</li>
               </ul>
               <div className="flex justify-between items-center border-t pt-4 mt-auto">
                 <span className="text-2xl font-bold text-navySlate">€900</span>
@@ -121,31 +149,31 @@ export default function App() {
               </button>
             </div>
 
-            {/* Power BI Rescue */}
+            {/* Fractional BI Lead */}
             <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
               <span className="inline-block bg-navySlate text-lightStone text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-                Power BI
+                Ongoing · Flexible
               </span>
-              <h3 className="text-xl font-semibold mb-1">The Power BI Rescue</h3>
-              <p className="text-sm italic text-goldenWheat mb-4">5 days. One live dashboard. No more Excel chaos. No call needed.</p>
+              <h3 className="text-xl font-semibold mb-1">Fractional BI Lead</h3>
+              <p className="text-sm italic text-goldenWheat mb-4">1–3 days/week. Your BI layer, managed. Strategic &amp; hands-on.</p>
               <p className="text-navySlate mb-4">
-                I build one clean, live Power BI dashboard — connected to your data source,
-                built properly, delivered in 5 working days. Fully async.
+                Hire me as your part-time BI lead — I own your dashboards, mentor your team,
+                respond to ad-hoc questions, and build new reports. Strategic guidance + delivery.
               </p>
               <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
-                <li>✓ 1 data source connected</li>
-                <li>✓ 5–8 KPI tiles / visuals</li>
-                <li>✓ DAX measures &amp; clean data model</li>
-                <li>✓ Published &amp; accessible to your team</li>
-                <li>✓ 7 days async support post-delivery</li>
+                <li>✓ Ongoing dashboard &amp; report ownership</li>
+                <li>✓ Strategic BI roadmap &amp; advice</li>
+                <li>✓ Team mentoring &amp; upskilling</li>
+                <li>✓ Ad-hoc analysis &amp; troubleshooting</li>
+                <li>✓ 1–3 days/week commitment (flexible)</li>
               </ul>
               <div className="flex justify-between items-center border-t pt-4 mt-auto">
-                <span className="text-2xl font-bold text-navySlate">€1,800</span>
-                <span className="text-sm text-gray-400">5 working days</span>
+                <span className="text-2xl font-bold text-navySlate">€1,200–1,500</span>
+                <span className="text-sm text-gray-400">/day</span>
               </div>
               {/* TODO: replace with Stripe payment link */}
               <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-                → Buy now
+                → Get started
               </button>
             </div>
 
@@ -162,25 +190,25 @@ export default function App() {
               </div>
               <div>
                 <div className="w-10 h-10 rounded-full bg-navySlate text-lightStone font-bold text-lg flex items-center justify-center mx-auto mb-3">2</div>
-                <p className="font-semibold mb-1">I send a 10-min brief</p>
-                <p className="text-sm text-navySlate">Within 2 hours of purchase. You reply with the few details I need to scope properly.</p>
+                <p className="font-semibold mb-1">I send a brief</p>
+                <p className="text-sm text-navySlate">Within 2 hours of purchase. You reply with the details I need to scope properly.</p>
               </div>
               <div>
                 <div className="w-10 h-10 rounded-full bg-navySlate text-lightStone font-bold text-lg flex items-center justify-center mx-auto mb-3">3</div>
                 <p className="font-semibold mb-1">I deliver on time</p>
-                <p className="text-sm text-navySlate">3 or 5 working days, fixed price. Plus 7 days of async tweaks afterwards.</p>
+                <p className="text-sm text-navySlate">Fixed price. Fixed timeline. Plus days of async support afterwards.</p>
               </div>
             </div>
           </div>
 
           <div className="border border-goldenWheat rounded-xl p-6 text-center">
-            <p className="font-bold text-navySlate mb-2">Not sure which one fits?</p>
+            <p className="font-bold text-navySlate mb-2">Not sure where to start?</p>
             <p className="text-sm text-navySlate mb-4">
-              If you just want a head-start on KPIs and DAX — grab the <strong>KPI Library</strong> for €49.<br />
-              If your biggest problem is <em>"we don't know what we need"</em> — start with the <strong>BA Sprint</strong>.<br />
-              If it's <em>"we have data but can't see it"</em> — start with the <strong>Power BI Rescue</strong>.
+              If you need clarity on a business question — start with the <strong>Business Question Sprint</strong>.<br />
+              If it's "we have data but no dashboard" — go straight to <strong>Dashboard Rebuild</strong>.<br />
+              If you need ongoing BI leadership — let's talk <strong>Fractional BI Lead</strong>.
             </p>
-            <a href="mailto:hello@jolaandco.com" className="inline-block bg-navySlate text-lightStone px-6 py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+            <a href="mailto:jola.tacij@outlook.com" className="inline-block bg-navySlate text-lightStone px-6 py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
               → Email me — no pressure, no call
             </a>
           </div>

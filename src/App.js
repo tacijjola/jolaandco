@@ -63,7 +63,7 @@ export default function App() {
             Fully async, fully transparent. Buy, scope by email, delivered on time.
           </p>
 
-          <div className="grid gap-8 md:grid-cols-3 mb-12">
+          <div className="grid gap-8 md:grid-cols-2 mb-12">
 
             {/* Data Model Restructuring */}
             <div className="border-2 border-sage p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
@@ -216,46 +216,134 @@ export default function App() {
         </div>
       </section>
 
-      {/* PROJECTS — top 3 */}
+      {/* PROJECTS — Case Studies */}
       <section id="projects" className="py-16 px-4 bg-lightStone">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-3 text-center">Highlighted Projects</h2>
-          <p className="text-center text-navySlate mb-10">A selection of recent work — full case studies available on request.</p>
+          <h2 className="text-3xl font-bold mb-3 text-center">Case Studies</h2>
+          <p className="text-center text-navySlate mb-10">How I've solved real problems for energy, infrastructure, and operations teams.</p>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="space-y-12 mb-12">
 
-            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white">
-              <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">E.ON Drive</span>
-              <h3 className="text-lg font-semibold mt-1 mb-2">EV Utilization Model</h3>
-              <p className="text-sm text-navySlate">
-                Rebuilt a 10-country utilization model from scratch — single dynamic data layer,
-                zero hardcoded formulas, deployed to Azure Databricks as a live analytical asset.
-              </p>
+            {/* Case Study 1 */}
+            <div className="border-l-4 border-goldenWheat p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">E.ON Drive · Energy Infrastructure</span>
+                  <h3 className="text-2xl font-semibold mt-2 mb-1">EV Utilization Model — 10 Countries, Zero Hardcoding</h3>
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-2 mb-6">
+                <div>
+                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Problem</p>
+                  <p className="text-sm text-navySlate">
+                    E.ON's EV charging fleet utilization was trapped in a fragile Excel model. It had hardcoded formulas, manual calculation steps, and couldn't scale beyond two countries. Leadership needed daily reporting for 10 EDRI countries.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Solution</p>
+                  <p className="text-sm text-navySlate">
+                    Built a single, dynamic data layer in Azure Databricks. No hardcoded values. Every metric flows from raw transaction data → aggregated dimensions → executive dashboard. Real-time, auditable, scalable.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-lightStone rounded-lg p-4 mb-6">
+                <p className="text-xs uppercase font-bold text-navySlate mb-3">Results</p>
+                <ul className="text-sm text-navySlate space-y-1">
+                  <li>✓ 10-country reporting ready in 6 weeks</li>
+                  <li>✓ Reduced manual data prep from 4 hours/day to 0</li>
+                  <li>✓ Zero calculation errors in daily P&amp;L reporting</li>
+                  <li>✓ Model now handles ad-hoc questions without engineering support</li>
+                </ul>
+              </div>
+
+              <p className="text-xs text-gray-400">Data modeling · SQL · Azure Databricks · Power BI</p>
             </div>
 
-            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white">
-              <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">E.ON Drive</span>
-              <h3 className="text-lg font-semibold mt-1 mb-2">Site Strategy Mapping</h3>
-              <p className="text-sm text-navySlate">
-                Power BI dashboard with geospatial integration to score 890 potential EV charging
-                sites across Italy — now scaling to all 10 EDRI countries.
-              </p>
+            {/* Case Study 2 */}
+            <div className="border-l-4 border-goldenWheat p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">E.ON Drive · Site Selection</span>
+                  <h3 className="text-2xl font-semibold mt-2 mb-1">Geospatial Site Scoring Dashboard — 890 Sites Evaluated</h3>
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-2 mb-6">
+                <div>
+                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Problem</p>
+                  <p className="text-sm text-navySlate">
+                    E.ON needed to evaluate 890 potential EV charging locations across Italy. Spreadsheets couldn't handle the scale, complexity, or geographic context. Site teams were making decisions on incomplete data.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Solution</p>
+                  <p className="text-sm text-navySlate">
+                    Designed a Power BI dashboard with geospatial mapping, multi-factor scoring (grid demand, land availability, permitting risk), and drill-down analysis. Integrated competitive landscape and financial feasibility into one view.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-lightStone rounded-lg p-4 mb-6">
+                <p className="text-xs uppercase font-bold text-navySlate mb-3">Results</p>
+                <ul className="text-sm text-navySlate space-y-1">
+                  <li>✓ Site prioritization model deployed in 4 weeks</li>
+                  <li>✓ Evaluation time per site cut from 2 hours to 5 minutes</li>
+                  <li>✓ Now scaling to all 10 EDRI countries</li>
+                  <li>✓ Site teams using the tool daily for investment decisions</li>
+                </ul>
+              </div>
+
+              <p className="text-xs text-gray-400">Power BI · Geospatial analysis · Business logic · Stakeholder alignment</p>
             </div>
 
-            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white">
-              <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">SWARCO</span>
-              <h3 className="text-lg font-semibold mt-1 mb-2">PoGo EV Investment Dept.</h3>
-              <p className="text-sm text-navySlate">
-                Built data infrastructure and evaluation framework for a new EV Investment Department
-                from the ground up — unifying fragmented data for Azure migration.
-              </p>
+            {/* Case Study 3 */}
+            <div className="border-l-4 border-goldenWheat p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">SWARCO · Infrastructure</span>
+                  <h3 className="text-2xl font-semibold mt-2 mb-1">EV Investment Department — Data Foundation from Zero</h3>
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-2 mb-6">
+                <div>
+                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Problem</p>
+                  <p className="text-sm text-navySlate">
+                    SWARCO created a new EV Investment Department with no data infrastructure. Existing systems were siloed, data quality was poor, and teams couldn't answer basic questions about portfolio health, deal flow, or risk.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Solution</p>
+                  <p className="text-sm text-navySlate">
+                    Built the data foundation from scratch: unified schemas, ETL pipelines, KPI definitions, and governance framework. Prepared infrastructure for Azure Databricks migration and ongoing scaling.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-lightStone rounded-lg p-4 mb-6">
+                <p className="text-xs uppercase font-bold text-navySlate mb-3">Results</p>
+                <ul className="text-sm text-navySlate space-y-1">
+                  <li>✓ Data infrastructure documented and handed over in 8 weeks</li>
+                  <li>✓ Deal flow reporting now accessible to leadership</li>
+                  <li>✓ Foundation ready for Azure migration (scheduled 2026)</li>
+                  <li>✓ Team onboarded on data governance &amp; best practices</li>
+                </ul>
+              </div>
+
+              <p className="text-xs text-gray-400">Data strategy · ETL · Schema design · Team enablement</p>
             </div>
 
           </div>
 
-          <p className="text-center mt-8 text-sm text-navySlate">
-            Also: E.ON Competitor Intelligence Platform · DNO Process Standardisation · SWARCO Scotland Operations · Virtual Jola
-          </p>
+          <div className="border border-goldenWheat rounded-xl p-6 text-center">
+            <p className="font-semibold text-navySlate mb-2">Ongoing Engagement</p>
+            <p className="text-sm text-navySlate mb-4">
+              Beyond one-off projects, I've also delivered: E.ON Competitor Intelligence Platform · DNO Process Standardisation · SWARCO Scotland Operations Analysis
+            </p>
+          </div>
+
         </div>
       </section>
 

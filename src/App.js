@@ -356,7 +356,7 @@ export default function App() {
 
             <div className="text-center">
               <div className="h-40 w-40 mx-auto mb-5 flex items-center justify-center">
-                <img src="cert-agilepm.png" alt="AgilePM v3 Practitioner" className="h-full w-full object-contain" />
+                <img src="agilepm-practitioner-badge.png" alt="AgilePM v3 Practitioner" className="h-full w-full object-contain" />
               </div>
               <h3 className="text-lg font-bold mb-2">AgilePM® v3 Practitioner</h3>
               <p className="text-sm text-navySlate mb-3">

@@ -421,6 +421,11 @@ export default function App() {
       <section id="about" className="py-16 px-4 bg-lightStone">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
+          <img
+            src="jola-and-dogs.png"
+            alt="Jola with her two rescue dogs in Abruzzo"
+            className="w-48 h-48 md:w-56 md:h-56 mx-auto mb-8 rounded-full object-cover shadow-md"
+          />
           <p className="text-navySlate leading-relaxed mb-4">
             I bring passion, precision, and intuition to every project. I listen first, ask the right questions,
             and deliver solutions that work in practice — not just in theory. I don't hide behind jargon —
@@ -432,7 +437,7 @@ export default function App() {
             I show up ready to deliver.
           </p>
           <p className="text-navySlate leading-relaxed text-sm opacity-80">
-            Based in Abruzzo with my family and two beautiful Maremma Sheepdogs. Always learning. Always improving. Always ready.
+            Based in Abruzzo with my family and our two rescue dogs. Always learning. Always improving. Always ready.
           </p>
         </div>
       </section>

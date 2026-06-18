@@ -10,21 +10,21 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: #F5F0E8;
-      color: #2C2C2C;
+      background: #0d0f14;
+      color: #e8eaf0;
       line-height: 1.7;
     }
     a { color: inherit; text-decoration: none; }
 
     /* ─── Colour Tokens ─── */
     :root {
-      --accent:   #D4A574;
-      --accent2:  #8B7355;
-      --surface:  #FFFBF5;
-      --surface2: #FAF7F2;
-      --border:   rgba(0,0,0,0.1);
-      --muted:    #6B6B6B;
-      --text:     #2C2C2C;
+      --accent:   #00d4aa;
+      --accent2:  #3b8bff;
+      --surface:  #161b27;
+      --surface2: #1e2535;
+      --border:   rgba(255,255,255,0.07);
+      --muted:    #8892a4;
+      --text:     #e8eaf0;
     }
 
     /* ─── Utility ─── */
@@ -55,7 +55,7 @@
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       backdrop-filter: blur(14px);
-      background: rgba(245,240,232,.95);
+      background: rgba(13,15,20,.82);
       border-bottom: 1px solid var(--border);
     }
     nav .inner {
@@ -69,7 +69,7 @@
     .nav-links a { font-size: .88rem; color: var(--muted); transition: color .2s; }
     .nav-links a:hover { color: var(--text); }
     .nav-cta {
-      background: var(--accent); color: #FFFBF5;
+      background: var(--accent); color: #0d0f14;
       padding: .45rem 1.1rem; border-radius: 6px;
       font-size: .85rem; font-weight: 700;
       transition: opacity .2s;
@@ -88,14 +88,14 @@
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(212,165,116,.06) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(139,115,85,.04) 0%, transparent 70%);
+        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(0,212,170,.08) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(59,139,255,.06) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: .5rem;
-      background: rgba(212,165,116,.1);
-      border: 1px solid rgba(212,165,116,.25);
+      background: rgba(0,212,170,.1);
+      border: 1px solid rgba(0,212,170,.25);
       border-radius: 20px; padding: .35rem 1rem;
       font-size: .78rem; font-weight: 600; color: var(--accent);
       margin-bottom: 1.8rem;
@@ -116,19 +116,19 @@
     }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn-primary {
-      background: var(--accent); color: #FFFBF5;
+      background: var(--accent); color: #0d0f14;
       padding: .75rem 1.8rem; border-radius: 8px;
       font-weight: 700; font-size: .95rem;
       transition: transform .15s, box-shadow .15s;
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,165,116,.3); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,212,170,.3); }
     .btn-outline {
       border: 1px solid var(--border); color: var(--text);
       padding: .75rem 1.8rem; border-radius: 8px;
       font-weight: 600; font-size: .95rem;
       transition: border-color .2s, color .2s;
     }
-    .btn-outline:hover { border-color: rgba(0,0,0,.2); }
+    .btn-outline:hover { border-color: rgba(255,255,255,.3); }
 
     .hero-stats {
       display: flex; gap: 3rem; margin-top: 4rem; flex-wrap: wrap;
@@ -182,7 +182,7 @@
       margin-bottom: 3rem;
       transition: border-color .3s;
     }
-    .case-study:hover { border-color: rgba(212,165,116,.3); }
+    .case-study:hover { border-color: rgba(0,212,170,.3); }
 
     .cs-header {
       padding: 2.5rem 2.5rem 0;
@@ -227,8 +227,8 @@
     .cs-block ul li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
 
     .cs-outcomes {
-      background: linear-gradient(135deg, rgba(212,165,116,.07), rgba(139,115,85,.05));
-      border: 1px solid rgba(212,165,116,.18);
+      background: linear-gradient(135deg, rgba(0,212,170,.07), rgba(59,139,255,.05));
+      border: 1px solid rgba(0,212,170,.18);
       border-radius: 12px; padding: 1.6rem;
       margin-bottom: 1.5rem;
     }
@@ -260,7 +260,7 @@
       border-radius: 12px; padding: 1.4rem;
       transition: border-color .2s;
     }
-    .skill-card:hover { border-color: rgba(212,165,116,.3); }
+    .skill-card:hover { border-color: rgba(0,212,170,.3); }
     .skill-card .icon { font-size: 1.6rem; margin-bottom: .7rem; }
     .skill-card h4 { font-size: .95rem; font-weight: 700; margin-bottom: .5rem; }
     .skill-card p { font-size: .83rem; color: var(--muted); line-height: 1.6; }
@@ -275,7 +275,7 @@
       border-radius: 14px; padding: 2rem;
       transition: border-color .2s, transform .2s;
     }
-    .service-card:hover { border-color: rgba(212,165,116,.35); transform: translateY(-3px); }
+    .service-card:hover { border-color: rgba(0,212,170,.35); transform: translateY(-3px); }
     .service-card .price {
       font-size: 1.5rem; font-weight: 800; color: var(--accent);
       margin-bottom: .2rem;
@@ -294,7 +294,7 @@
     #contact::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(212,165,116,.07) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,212,170,.07) 0%, transparent 70%);
       pointer-events: none;
     }
     #contact h2 {
@@ -339,6 +339,7 @@
 <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
 <section id="hero">
   <div class="container">
+    <div class="hero-badge">Available for remote projects — May 2026</div>
     <h1>I turn <em>complex data</em> into decisions that move business forward.</h1>
     <p>
       Senior Business Analyst &amp; BI Specialist with 20+ years in operations and 5+ years
@@ -426,42 +427,41 @@
       <div class="cs-header">
         <div class="cs-meta">
           <div class="cs-tags">
-            <span class="tag">Competitor Intelligence</span>
-            <span class="tag--blue tag">Data Architecture</span>
-            <span class="tag--muted tag">Cross-functional</span>
+            <span class="tag">BI Architecture</span>
+            <span class="tag--blue tag">Data Modelling</span>
+            <span class="tag--muted tag">Multi-country</span>
           </div>
-          <h3>EDRI Central — European EV Network Intelligence Platform</h3>
-          <p class="client">Client: <strong>E.ON Drive Infrastructure</strong> &nbsp;·&nbsp; Role: BI Lead, Passenger Cars Branch</p>
+          <h3>10-Country EV Utilisation Model</h3>
+          <p class="client">Client: <strong>Major European EV Infrastructure Operator</strong> &nbsp;·&nbsp; Role: BI Analyst &amp; Data Architect</p>
         </div>
       </div>
       <div class="cs-body">
         <p class="cs-intro">
-          The European EV market moves fast — new networks, new pricing strategies, new site
-          openings, across 10 countries simultaneously. E.ON Drive had no centralised system
-          to track any of it. EDRI Central was built to change that: a live, multi-branch
-          intelligence platform covering both passenger car and commercial vehicle networks
-          across EU markets. I led the passenger cars branch — scoping the intelligence
-          framework, building the Databricks data foundation, and delivering the published
-          Power BI reporting layer. A cross-functional team continues expanding the platform.
+          An inherited Excel model covering 10 EU markets had become unmaintainable —
+          riddled with hardcoded values, broken as soon as a country changed a rate or
+          assumption, and impossible to audit. Finance, Operations, and Country Leads
+          were all working from different versions of the truth. The business needed
+          a single, governed source of analytical truth that could answer utilisation
+          and revenue questions across an entire European network — in real time.
         </p>
 
         <div class="cs-grid">
           <div class="cs-block">
             <h4>The Problem</h4>
             <ul>
-              <li>No structured view of competitor EV networks across 10 EU markets</li>
-              <li>Passenger cars and trucks required separate frameworks and ownership</li>
-              <li>Raw data existed but was unprocessed — no repeatable intelligence methodology</li>
-              <li>No single platform to bring network growth, pricing, and expansion data together</li>
+              <li>10-country model with hundreds of hardcoded formula cells</li>
+              <li>No single version of truth — teams used conflicting spreadsheets</li>
+              <li>Manual refresh cycle: hours of work per market update</li>
+              <li>No auditability or change tracking — high risk in regulated environment</li>
             </ul>
           </div>
           <div class="cs-block">
             <h4>What I Built</h4>
             <ul>
-              <li>Databricks database consolidating all available EU competitor data — structured for ongoing ingestion</li>
-              <li>Data architecture designed to merge cleanly with future streams (weather data next)</li>
-              <li>Passenger cars intelligence framework: network monitoring, pricing, expansion tracking</li>
-              <li>Power BI report published and live for the cross-functional team</li>
+              <li>Full star-schema data model on Azure Databricks</li>
+              <li>Zero hardcoded formulas — all assumptions governed as parameters</li>
+              <li>Power BI front-end delivering live cross-country views</li>
+              <li>Automated ETL pipelines replacing manual data collection</li>
             </ul>
           </div>
         </div>
@@ -471,19 +471,19 @@
           <div class="outcomes-grid">
             <div class="outcome-item">
               <div class="outcome-number">10</div>
-              <div class="outcome-desc">EU markets covered in one intelligence platform for the first time</div>
+              <div class="outcome-desc">EU markets served from one governed model</div>
             </div>
             <div class="outcome-item">
-              <div class="outcome-number">Live</div>
-              <div class="outcome-desc">Power BI report published and active across the team</div>
+              <div class="outcome-number">0</div>
+              <div class="outcome-desc">Hardcoded formulas in the rebuilt system</div>
             </div>
             <div class="outcome-item">
-              <div class="outcome-number">Future-proof</div>
-              <div class="outcome-desc">Architecture built for ongoing ingestion — weather data and more</div>
+              <div class="outcome-number">Real-time</div>
+              <div class="outcome-desc">Dashboard refresh replacing days of manual work</div>
             </div>
             <div class="outcome-item">
-              <div class="outcome-number">Active</div>
-              <div class="outcome-desc">Cross-functional team continuing to build on the foundation</div>
+              <div class="outcome-number">One truth</div>
+              <div class="outcome-desc">Finance, Ops &amp; Country Leads aligned on same data</div>
             </div>
           </div>
         </div>
@@ -491,11 +491,11 @@
         <div class="cs-block" style="margin-bottom:1.5rem">
           <h4>Approach</h4>
           <ul>
-            <li>Scoped and led the passenger cars intelligence branch alongside a Senior Network Account Manager who owned the trucks branch</li>
-            <li>Built Databricks database: processed all available up-to-date EU competitor data, designed schema for clean future merges</li>
-            <li>Collaborated cross-functionally: Data Engineer, academic researcher (thesis), and Network Account Manager across two workstreams</li>
-            <li>Published Power BI report as the live reporting and intelligence layer for the team</li>
-            <li>Designed for continuity: clean architecture and documentation so the team can keep building after handover</li>
+            <li>Discovery: mapped all 10 country models to identify shared vs. market-specific logic</li>
+            <li>Architecture: designed star-schema (fact + dimension tables) to handle multi-country complexity cleanly</li>
+            <li>Build: developed on Azure Databricks with parameterised assumption tables instead of hardcoded cells</li>
+            <li>Reporting layer: Power BI dashboards with cross-country and drill-down views</li>
+            <li>Governance: version control, documentation, and stakeholder training across 4+ country teams</li>
           </ul>
         </div>
 
@@ -503,10 +503,11 @@
           <span class="pill">Azure Databricks</span>
           <span class="pill">Power BI</span>
           <span class="pill">DAX &amp; Power Query</span>
-          <span class="pill">Competitor Intelligence</span>
-          <span class="pill">Data Architecture</span>
+          <span class="pill">Star-Schema Modelling</span>
+          <span class="pill">ETL Pipelines</span>
+          <span class="pill">SQL</span>
           <span class="pill">10 EU Markets</span>
-          <span class="pill">Cross-functional Delivery</span>
+          <span class="pill">Stakeholder Management</span>
         </div>
       </div>
     </div>
@@ -611,20 +612,20 @@
           <div class="cs-header" style="padding-bottom:1.5rem;">
             <div class="cs-meta">
               <div class="cs-tags">
-                <span class="tag">BI Architecture</span>
-                <span class="tag--muted tag">Data Modelling</span>
+                <span class="tag">Competitor Intelligence</span>
+                <span class="tag--muted tag">Strategy</span>
               </div>
-              <h3 style="font-size:1.2rem;">10-Country EV Utilisation Model</h3>
+              <h3 style="font-size:1.2rem;">10-Country CI System</h3>
               <p class="client" style="margin-top:.4rem;">
-                <strong>E.ON Drive Infrastructure</strong><br/>
-                Rebuilt a broken 10-country Excel model from scratch on Azure Databricks — zero hardcoded formulas, full star-schema data architecture, live Power BI front-end. Finance, Ops, and 4+ country teams aligned on one governed version of the truth for the first time.
+                <strong>Major European EV Infrastructure Operator</strong><br/>
+                Built a structured competitor intelligence framework covering 10 EU markets — monitoring charging network growth, pricing strategies, and site expansion patterns. Enabled country teams and senior leadership to track competitive dynamics for the first time with a consistent, repeatable methodology.
               </p>
               <div class="cs-stack" style="margin-top:1rem;">
-                <span class="pill">Azure Databricks</span>
-                <span class="pill">Star-Schema Modelling</span>
+                <span class="pill">Competitor Analysis</span>
+                <span class="pill">Data Frameworks</span>
                 <span class="pill">Power BI</span>
-                <span class="pill">ETL Pipelines</span>
                 <span class="pill">10 EU Markets</span>
+                <span class="pill">Strategic Reporting</span>
               </div>
             </div>
           </div>
@@ -705,44 +706,33 @@
   <div class="container">
     <div class="section-label">How we can work together</div>
     <h2>Services</h2>
-    <p class="subtitle">Three project types. Three different problems. All designed to deliver measurable business impact.</p>
+    <p class="subtitle">Project-based engagements designed to deliver fast, tangible outcomes.</p>
     <div class="services-grid">
-      <div class="service-card" style="border: 2px solid #00d4aa;">
-        <div class="price">Data Model Restructuring</div>
-        <div class="price-sub">€2,500–€4,500 · 4–8 weeks</div>
-        <h4>Data Architecture &amp; Rebuild</h4>
+      <div class="service-card">
+        <div class="price">BA Sprint</div>
+        <div class="price-sub">Fixed scope · 2–4 weeks</div>
+        <h4>Rapid Business Analysis</h4>
         <p>
-          Your data model is fragmented, slow, or unmaintainable. I audit your current
-          structure, redesign for performance and scalability, rebuild it properly, and train
-          your team so it lasts. Includes documentation and ongoing support.
+          Stuck on a business question you can't quite answer with your current data?
+          I come in, map the problem, analyse what you have, and deliver a structured
+          brief with findings and recommendations. Fast, focused, actionable.
         </p>
-        <div class="service-tag"><span class="tag">Great for: Finance, Ops, multi-country teams</span></div>
+        <div class="service-tag"><span class="tag">Great for: Startups &amp; scale-ups</span></div>
       </div>
       <div class="service-card">
-        <div class="price">Dashboard Rebuild</div>
-        <div class="price-sub">€1,800 · 5 working days</div>
-        <h4>BI Dashboard Overhaul</h4>
+        <div class="price">Power BI Build</div>
+        <div class="price-sub">Fixed or time-bound · 3–6 weeks</div>
+        <h4>BI Dashboard &amp; Reporting</h4>
         <p>
-          Your dashboards are slow, confusing, or don't answer the right questions.
-          I rebuild them from scratch—clean data model, optimised performance, decision-ready
-          design. Includes training so your team can maintain and extend them.
+          From messy data sources to clean, decision-ready dashboards your whole team
+          can use. Includes data model design, dashboard build, and a handover session
+          so you're not dependent on me to keep the lights on.
         </p>
         <div class="service-tag"><span class="tag">Great for: Finance, Ops, Exec teams</span></div>
       </div>
       <div class="service-card">
-        <div class="price">Business Question Sprint</div>
-        <div class="price-sub">€900 · 3 working days</div>
-        <h4>Data-Driven Analysis &amp; Recommendations</h4>
-        <p>
-          Stuck on a business question—market entry, site selection, pricing strategy, investment
-          case? I scope it, analyse your data, and deliver structured findings with actionable
-          recommendations. Fast, rigorous, decision-ready.
-        </p>
-        <div class="service-tag"><span class="tag">Great for: Startups, scale-ups, strategic decisions</span></div>
-      </div>
-      <div class="service-card">
         <div class="price">Fractional BI Lead</div>
-        <div class="price-sub">€1,200–€1,500/day · 1–3 days/week</div>
+        <div class="price-sub">Ongoing · 1–3 days/week</div>
         <h4>Embedded Analytics Partner</h4>
         <p>
           For growing companies that need senior BI capability without the overhead of
@@ -761,7 +751,25 @@
     <div class="section-label">Get in touch</div>
     <h2>Let's solve something together.</h2>
     <p>
-      If you have a data problem, a BI gap, or a business question that needs answering — let's talk.
+      Available for remote projects from May 2026. If you have a data problem,
+      a BI gap, or a business question that needs answering — let's talk.
     </p>
     <div class="cta-actions">
-      <a href="mailto:jola.tacij@outlook.com" class="btn-primary">Emai
+      <a href="mailto:jola.tacij@outlook.com" class="btn-primary">Email me →</a>
+      <a href="https://www.jolaandco.com" class="btn-outline">Visit jolaandco.com</a>
+    </div>
+    <div class="contact-info">
+      <a href="https://www.linkedin.com/in/jola-tacij/" target="_blank">LinkedIn ↗</a>
+      <a href="https://www.jolaandco.com" target="_blank">jolaandco.com ↗</a>
+      <a href="mailto:jola.tacij@outlook.com">jola.tacij@outlook.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+  <p>© 2026 Jola Tacij &amp; Co. · Senior BI &amp; Business Analyst · Remote · Europe</p>
+</footer>
+
+</body>
+</html>

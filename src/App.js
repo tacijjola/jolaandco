@@ -59,9 +59,43 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-center">Work with Me</h2>
           <p className="text-center text-navySlate max-w-2xl mx-auto mb-12">
-            Four fixed-price packages — from quick wins to full-scope transformations.
+            Five fixed-price packages — from quick wins to full-scope transformations.
             Fully async, fully transparent. Buy, scope by email, delivered on time.
           </p>
+
+          {/* Excel Rescue — featured */}
+          <div className="border-2 border-navySlate p-6 md:p-8 rounded-xl shadow hover:shadow-lg transition bg-white mb-8">
+            <span className="inline-block bg-navySlate text-lightStone text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+              🚑 Excel Rescue · Start Here
+            </span>
+            <h3 className="text-2xl font-semibold mb-1">Excel Rescue</h3>
+            <p className="text-sm italic text-goldenWheat mb-4">10 days. The fragile spreadsheet your business runs on — reborn. Zero hardcoding, self-checking, built to scale.</p>
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <p className="text-navySlate mb-4">
+                Every company has one: the Excel file only one person understands, held together by
+                hardcoded formulas and hope. I rebuild it the way I rebuilt a 10-country utilization
+                model at E.ON — fully dynamic, automated refresh, built-in error checks, and
+                plan-vs-actuals comparison out of the box. Delivered as bulletproof Excel + Power Query,
+                or upgraded straight into Power BI.
+              </p>
+              <ul className="text-sm text-navySlate space-y-1 mb-6 md:mb-4 md:border-t-0 border-t pt-4 md:pt-0">
+                <li>✓ Full audit: formulas, links &amp; hidden dependencies</li>
+                <li>✓ Rebuilt dynamic — zero hardcoded values</li>
+                <li>✓ Automated data refresh — no more copy-paste</li>
+                <li>✓ Self-checking: data integrity flags built in</li>
+                <li>✓ Plan vs. Actuals comparison ready</li>
+                <li>✓ Documentation, handover &amp; 14 days async support</li>
+              </ul>
+            </div>
+            <div className="flex justify-between items-center border-t pt-4">
+              <span className="text-2xl font-bold text-navySlate">€2,400</span>
+              <span className="text-sm text-gray-400">10 working days</span>
+            </div>
+            {/* TODO: replace with Stripe payment link */}
+            <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+              → Rescue my Excel
+            </button>
+          </div>
 
           <div className="grid gap-8 md:grid-cols-2 mb-12">
 
@@ -204,6 +238,7 @@ export default function App() {
           <div className="border border-goldenWheat rounded-xl p-6 text-center">
             <p className="font-bold text-navySlate mb-2">Not sure where to start?</p>
             <p className="text-sm text-navySlate mb-4">
+              If your business runs on one fragile spreadsheet — start with <strong>Excel Rescue</strong>.<br />
               If you need clarity on a business question — start with the <strong>Business Question Sprint</strong>.<br />
               If it's "we have data but no dashboard" — go straight to <strong>Dashboard Rebuild</strong>.<br />
               If you need ongoing BI leadership — let's talk <strong>Fractional BI Lead</strong>.

@@ -47,6 +47,11 @@ export default function App() {
             I bring the operational depth most data analysts don't have — and the technical rigour
             most coordinators can't match.
           </p>
+          <p className="text-lg text-navySlate mb-6">
+            And now I build the <strong>automations</strong> that run the busywork for you — instant lead
+            alerts, self-updating reports, and workflows that connect your CRM, spreadsheets and tools.
+            So your team spends its time on decisions, not data entry.
+          </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a href="#work-with-me" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Let's Work Together</a>
             <a href="#projects" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">See Projects</a>
@@ -59,7 +64,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-center">Work with Me</h2>
           <p className="text-center text-navySlate max-w-2xl mx-auto mb-12">
-            Five fixed-price packages — from quick wins to full-scope transformations.
+            Six fixed-price packages — from quick wins to full-scope transformations.
             Fully async, fully transparent. Buy, scope by email, delivered on time.
           </p>
 
@@ -94,6 +99,40 @@ export default function App() {
             {/* TODO: replace with Stripe payment link */}
             <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
               → Rescue my Excel
+            </button>
+          </div>
+
+          {/* Automation Setup — featured (new) */}
+          <div className="border-2 border-goldenWheat p-6 md:p-8 rounded-xl shadow hover:shadow-lg transition bg-white mb-8">
+            <span className="inline-block bg-goldenWheat text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+              ✨ New · AI Automation
+            </span>
+            <h3 className="text-2xl font-semibold mb-1">Automation Setup</h3>
+            <p className="text-sm italic text-goldenWheat mb-4">7 days. The repetitive work that eats your team's week — automated, tested, and documented.</p>
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <p className="text-navySlate mb-4">
+                Your team loses hours every week to work a machine should be doing — chasing leads,
+                copying data between systems, rebuilding the same report. I map your biggest time-sink
+                and build the automation that runs it for you: your CRM, spreadsheets, email and tools
+                talking to each other, with AI handling the judgement calls. Built in Make, fully
+                documented, with error alerts so you always know it's working.
+              </p>
+              <ul className="text-sm text-navySlate space-y-1 mb-6 md:mb-4 md:border-t-0 border-t pt-4 md:pt-0">
+                <li>✓ One end-to-end workflow, scoped to your biggest time-sink</li>
+                <li>✓ Instant lead alerts — valuable leads flagged the moment they land</li>
+                <li>✓ CRM ↔ spreadsheet ↔ reporting, connected and automated</li>
+                <li>✓ AI-drafted responses &amp; summaries where they save most time</li>
+                <li>✓ Built-in error alerts, documentation &amp; handover</li>
+                <li>✓ 14 days async support</li>
+              </ul>
+            </div>
+            <div className="flex justify-between items-center border-t pt-4">
+              <span className="text-2xl font-bold text-navySlate">€1,500</span>
+              <span className="text-sm text-gray-400">~7 working days</span>
+            </div>
+            {/* TODO: replace with Stripe payment link */}
+            <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+              → Automate my busywork
             </button>
           </div>
 
@@ -239,6 +278,7 @@ export default function App() {
             <p className="font-bold text-navySlate mb-2">Not sure where to start?</p>
             <p className="text-sm text-navySlate mb-4">
               If your business runs on one fragile spreadsheet — start with <strong>Excel Rescue</strong>.<br />
+              If your team loses hours to repetitive manual work — start with <strong>Automation Setup</strong>.<br />
               If you need clarity on a business question — start with the <strong>Business Question Sprint</strong>.<br />
               If it's "we have data but no dashboard" — go straight to <strong>Dashboard Rebuild</strong>.<br />
               If you need ongoing BI leadership — let's talk <strong>Fractional BI Lead</strong>.
@@ -438,9 +478,10 @@ export default function App() {
                 <p className="font-semibold text-navySlate">SQL - MySQL for Data Analytics & BI</p>
                 <p className="text-sm text-navySlate opacity-70">Udemy · 365 Careers · Aug 2023</p>
               </div>
-              <div className="border-l-4 border-goldenWheat pl-4">
-                <p className="font-semibold text-navySlate">Mastering SQL Server 2016 SSIS - Part 1</p>
-                <p className="text-sm text-navySlate opacity-70">Udemy · Kameswara Sarma Uppuluri · Mar 2024</p>
+              <div className="border-l-4 border-sage bg-sandBeige rounded-r-lg pl-4 pr-4 py-3">
+                <span className="inline-block bg-sage text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-1 uppercase tracking-wide">★ Latest</span>
+                <p className="font-semibold text-navySlate">Make — from Beginner to Pro: AI Automations &amp; AI Agents</p>
+                <p className="text-sm text-navySlate opacity-70">Udemy · Thalita Milan · 2026</p>
               </div>
               <div className="border-l-4 border-goldenWheat pl-4">
                 <p className="font-semibold text-navySlate">Business Analysis Fundamentals - IIBA Endorsed</p>
@@ -486,7 +527,7 @@ export default function App() {
           </p>
           <div className="flex justify-center gap-3 flex-wrap">
             <a href="mailto:jola.tacij@outlook.com" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Email Me</a>
-            <a href="/Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">View CV (PDF)</a>
+            <a href="Jola_Tacij_FINAL_CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">View CV (PDF)</a>
           </div>
         </div>
       </section>
@@ -494,7 +535,7 @@ export default function App() {
       {/* FOOTER */}
       <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
         <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola.tacij@outlook.com" className="underline hover:text-goldenWheat">jola.tacij@outlook.com</a></p>
-        <p className="mt-1 text-gray-400">Business Analysis · Power BI · Project Delivery · Remote</p>
+        <p className="mt-1 text-gray-400">Business Analysis · Power BI · AI Automation · Remote</p>
       </footer>
 
     </div>

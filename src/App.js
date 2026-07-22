@@ -38,6 +38,7 @@ export default function App() {
       {/* HERO */}
       <section id="top" className="py-16 px-4 bg-lightStone text-center">
         <div className="max-w-4xl mx-auto">
+          <p className="text-goldenWheat text-sm font-semibold tracking-widest uppercase mb-3">Automate · Analyse · Advance</p>
           <h2 className="text-4xl font-semibold mb-4">
             Practical operations, clear data, real momentum.
           </h2>
@@ -534,6 +535,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
+        <p className="text-goldenWheat tracking-widest uppercase text-xs mb-2">Automate · Analyse · Advance</p>
         <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola.tacij@outlook.com" className="underline hover:text-goldenWheat">jola.tacij@outlook.com</a></p>
         <p className="mt-1 text-gray-400">Business Analysis · Power BI · AI Automation · Remote</p>
       </footer>

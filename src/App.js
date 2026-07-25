@@ -384,8 +384,8 @@ export default function App() {
                     <p className="text-xs text-gray-400">documents in · clean order lines out</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-navySlate">~2 sec</p>
-                    <p className="text-xs text-gray-400">end-to-end pipeline runtime</p>
+                    <p className="text-2xl font-bold text-navySlate">Seconds</p>
+                    <p className="text-xs text-gray-400">not hours — full pipeline runtime</p>
                   </div>
                   <div>
                     <p className="text-2xl font-bold text-navySlate">105</p>

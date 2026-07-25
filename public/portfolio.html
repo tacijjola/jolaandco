@@ -403,6 +403,7 @@
           <span class="pill">Databricks (Azure)</span>
           <span class="pill">SQL · MySQL · SQL Server</span>
           <span class="pill">Python</span>
+          <span class="pill">Claude Code</span>
           <span class="pill">Tableau</span>
           <span class="pill">ETL Pipeline Design</span>
           <span class="pill">Sitetracker · Business Central</span>
@@ -422,6 +423,100 @@
     <div class="section-label">Selected work</div>
     <h2>Case Studies</h2>
     <p class="subtitle">Real problems. Real solutions. Results you can take to a board meeting.</p>
+
+    <!-- ─── Case Study: The Chaos Inbox (newest) ─── -->
+    <div class="case-study">
+      <div class="cs-header">
+        <div class="cs-meta">
+          <div class="cs-tags">
+            <span class="tag">AI-Assisted Development</span>
+            <span class="tag--blue tag">Claude Code</span>
+            <span class="tag--muted tag">Python Pipeline</span>
+          </div>
+          <h3>The Chaos Inbox — from 6 hours of Friday admin to 2 seconds</h3>
+          <p class="client">Client: <strong>Bottega Nord S.r.l. (synthetic demo)</strong> &nbsp;·&nbsp; Role: AI-Directed Developer</p>
+        </div>
+      </div>
+      <div class="cs-body">
+        <p style="color: var(--muted); font-style: italic; font-size: .85rem; margin-bottom: 1.5rem;">
+          Demo case study built on fully synthetic data. "Bottega Nord S.r.l." is a fictional client —
+          every document was generated for the demo. The pipeline, and the problems it solves, are entirely real.
+        </p>
+        <p class="cs-intro">
+          Bottega Nord, a specialty food distributor in Lombardy, receives ~800 supplier order confirmations
+          a month — PDF invoices in three different layouts, Excel exports that never match, semicolon CSVs
+          with Italian decimal commas, and orders typed straight into emails. Every Friday, ~6 hours
+          disappeared into manual reconciliation. Duplicate invoices still got paid. Price increases still
+          went unnoticed.
+        </p>
+
+        <div class="cs-grid">
+          <div class="cs-block">
+            <h4>The Pain</h4>
+            <ul>
+              <li>~800 supplier confirmations/month across 4 incompatible formats</li>
+              <li>~6 hours of manual reconciliation every Friday</li>
+              <li>Duplicate invoices still slipped through and got paid</li>
+              <li>Silent price increases went unnoticed</li>
+            </ul>
+          </div>
+          <div class="cs-block">
+            <h4>The Build</h4>
+            <ul>
+              <li>Five-stage Python pipeline, built with AI-assisted development (Claude Code)</li>
+              <li>Ingestion → extraction → normalization → anomaly detection → reporting</li>
+              <li>One command, no manual steps</li>
+              <li>Fuzzy-matches supplier &amp; product names against a reference catalog</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:2rem;">
+          <img src="chaos-inbox-report.png" alt="Chaos Inbox weekly report — KPI summary" style="width:100%; border-radius:12px; border:1px solid var(--border); display:block;" />
+          <img src="chaos-inbox-anomalies.png" alt="Chaos Inbox weekly report — anomaly highlights" style="width:100%; border-radius:12px; border:1px solid var(--border); display:block;" />
+        </div>
+
+        <div class="cs-outcomes">
+          <h4>The Numbers</h4>
+          <div class="outcomes-grid">
+            <div class="outcome-item">
+              <div class="outcome-number">149 → 938</div>
+              <div class="outcome-desc">Documents in · clean order lines out</div>
+            </div>
+            <div class="outcome-item">
+              <div class="outcome-number">~2 sec</div>
+              <div class="outcome-desc">End-to-end pipeline runtime</div>
+            </div>
+            <div class="outcome-item">
+              <div class="outcome-number">105</div>
+              <div class="outcome-desc">Problems caught automatically</div>
+            </div>
+            <div class="outcome-item">
+              <div class="outcome-number">€259,272</div>
+              <div class="outcome-desc">Flagged at risk · biggest single catch: a €90,941 mis-keyed order (793 units instead of ~27)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-block" style="margin-bottom:1.5rem">
+          <h4>The Kicker</h4>
+          <p style="color: var(--muted); font-size: .9rem; line-height: 1.7;">
+            The data is synthetic. The pipeline isn't. If your team runs on supplier paperwork,
+            spreadsheets nobody trusts, or an inbox that eats a day a week — this same architecture
+            drops onto your data. <a href="https://www.jolaandco.com/#contact" style="color: var(--accent); font-weight: 600;">Let's talk →</a>
+          </p>
+        </div>
+
+        <div class="cs-stack">
+          <span class="pill">Python</span>
+          <span class="pill">pandas</span>
+          <span class="pill">pdfplumber</span>
+          <span class="pill">rapidfuzz</span>
+          <span class="pill">Claude Code</span>
+          <a href="https://github.com/tacijjola/chaos-inbox" target="_blank" rel="noopener noreferrer" class="pill" style="color: var(--accent); border-color: var(--accent);">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
 
     <!-- ─── Case Study 1 ─── -->
     <div class="case-study">
@@ -738,9 +833,22 @@
         <p>
           The repetitive work that eats your team's week — automated, tested, and
           documented. I connect your tools (CRM ↔ spreadsheets ↔ reporting) so they talk
-          to each other, with AI handling the judgement calls. Built in Make.
+          to each other, with AI handling the judgement calls. Built in Make — extending
+          into custom Python pipelines when no-code hits its limits.
         </p>
         <div class="service-tag"><span class="tag">Great for: Lean teams &amp; founders</span></div>
+      </div>
+      <div class="service-card">
+        <div class="price">AI-Assisted Dev</div>
+        <div class="price-sub">Scoped per project · days, not months</div>
+        <h4>Custom Tools, Built with AI</h4>
+        <p>
+          Some problems are too custom for no-code and too small for a dev agency. I direct
+          AI (Claude Code) to build working tools for your business — document-processing
+          pipelines, internal apps, data cleaners. You bring the messy process; I ship the
+          tool that eats it.
+        </p>
+        <div class="service-tag"><span class="tag">Great for: Custom internal tools</span></div>
       </div>
       <div class="service-card">
         <div class="price">Fractional BI Lead</div>

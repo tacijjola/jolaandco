@@ -42,6 +42,9 @@ export default function App() {
           <h2 className="text-4xl font-semibold mb-4">
             Practical operations, clear data, real momentum.
           </h2>
+          <p className="text-lg font-medium text-goldenWheat mb-6">
+            No-code when it's enough. Python when it's not. AI-assisted either way.
+          </p>
           <p className="text-lg text-navySlate mb-6">
             Business operations and BI specialist with a 20-year career spanning office coordination,
             project delivery, and 5+ years of hands-on data analysis and Power BI development.
@@ -116,7 +119,8 @@ export default function App() {
                 copying data between systems, rebuilding the same report. I map your biggest time-sink
                 and build the automation that runs it for you: your CRM, spreadsheets, email and tools
                 talking to each other, with AI handling the judgement calls. Built in Make, fully
-                documented, with error alerts so you always know it's working.
+                documented, with error alerts so you always know it's working. When no-code hits its
+                limits, I build custom Python pipelines.
               </p>
               <ul className="text-sm text-navySlate space-y-1 mb-6 md:mb-4 md:border-t-0 border-t pt-4 md:pt-0">
                 <li>✓ One end-to-end workflow, scoped to your biggest time-sink</li>
@@ -135,6 +139,38 @@ export default function App() {
             <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
               → Automate my busywork
             </button>
+          </div>
+
+          {/* AI-Assisted Development — featured (new) */}
+          <div className="border-2 border-sage p-6 md:p-8 rounded-xl shadow hover:shadow-lg transition bg-white mb-8">
+            <span className="inline-block bg-sage text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+              🤖 New · AI-Assisted Development
+            </span>
+            <h3 className="text-2xl font-semibold mb-1">AI-Assisted Development</h3>
+            <p className="text-sm italic text-goldenWheat mb-4">Days, not months. The custom tool no-code can't build and an agency won't build fast — built with Claude Code.</p>
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <p className="text-navySlate mb-4">
+                Some problems are too custom for no-code and too small for a dev agency. That's where
+                I come in: I direct AI to build working tools for your business — document-processing
+                pipelines, internal apps, data cleaners — in days, not months. You bring the messy
+                process; I ship the tool that eats it.
+              </p>
+              <ul className="text-sm text-navySlate space-y-1 mb-6 md:mb-4 md:border-t-0 border-t pt-4 md:pt-0">
+                <li>✓ Document-processing pipelines, internal tools &amp; data cleaners</li>
+                <li>✓ I direct the AI build end-to-end — you review at each step</li>
+                <li>✓ Delivered as a working tool, not a slide deck or prototype</li>
+                <li>✓ Fully documented handover</li>
+                <li>✓ Async support included after delivery</li>
+              </ul>
+            </div>
+            <div className="flex justify-between items-center border-t pt-4">
+              <span className="text-lg font-bold text-navySlate">Scoped per project</span>
+              <span className="text-sm text-gray-400">Days, not months</span>
+            </div>
+            <a href="mailto:jola.tacij@outlook.com"
+               className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+              → Let's talk about your process
+            </a>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 mb-12">
@@ -299,6 +335,82 @@ export default function App() {
           <p className="text-center text-navySlate mb-10">How I've solved real problems for energy, infrastructure, and operations teams.</p>
 
           <div className="space-y-12 mb-12">
+
+            {/* Case Study — The Chaos Inbox (newest) */}
+            <div className="border-l-4 border-sage p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <span className="text-xs font-bold text-sage uppercase tracking-wide">AI-Assisted Development · Claude Code</span>
+                  <h3 className="text-2xl font-semibold mt-2 mb-1">The Chaos Inbox — from 6 hours of Friday admin to 2 seconds</h3>
+                  <p className="text-sm italic text-navySlate opacity-70 mt-1">
+                    Demo case study built on fully synthetic data. "Bottega Nord S.r.l." is a fictional
+                    client — every document was generated for the demo. The pipeline, and the problems
+                    it solves, are entirely real.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-2 mb-6">
+                <div>
+                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Pain</p>
+                  <p className="text-sm text-navySlate">
+                    Bottega Nord, a specialty food distributor in Lombardy, receives ~800 supplier order
+                    confirmations a month — PDF invoices in three different layouts, Excel exports that
+                    never match, semicolon CSVs with Italian decimal commas, and orders typed straight
+                    into emails. Every Friday, ~6 hours disappeared into manual reconciliation. Duplicate
+                    invoices still got paid. Price increases still went unnoticed.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Build</p>
+                  <p className="text-sm text-navySlate">
+                    A five-stage Python pipeline, built with AI-assisted development (Claude Code):
+                    ingestion → extraction → normalization → anomaly detection → reporting. One command.
+                    No manual steps.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid gap-3 md:grid-cols-2 mb-6">
+                <img src="chaos-inbox-report.png" alt="Chaos Inbox weekly report — KPI summary" className="rounded-lg border w-full object-cover" />
+                <img src="chaos-inbox-anomalies.png" alt="Chaos Inbox weekly report — anomaly highlights" className="rounded-lg border w-full object-cover" />
+              </div>
+
+              <div className="bg-lightStone rounded-lg p-4 mb-6">
+                <p className="text-xs uppercase font-bold text-navySlate mb-3">The Numbers</p>
+                <div className="grid gap-4 grid-cols-2 md:grid-cols-3 text-center mb-4">
+                  <div>
+                    <p className="text-2xl font-bold text-navySlate">149 → 938</p>
+                    <p className="text-xs text-gray-400">documents in · clean order lines out</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold text-navySlate">~2 sec</p>
+                    <p className="text-xs text-gray-400">end-to-end pipeline runtime</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold text-navySlate">105</p>
+                    <p className="text-xs text-gray-400">problems caught automatically</p>
+                  </div>
+                </div>
+                <p className="text-sm text-navySlate border-t pt-3">
+                  <strong>€259,272</strong> flagged at risk · biggest single catch: a <strong>€90,941</strong> mis-keyed
+                  order (793 units instead of ~27)
+                </p>
+              </div>
+
+              <div className="border border-sage rounded-lg p-4 mb-4 text-center">
+                <p className="text-sm text-navySlate">
+                  The data is synthetic. The pipeline isn't. If your team runs on supplier paperwork,
+                  spreadsheets nobody trusts, or an inbox that eats a day a week — this same architecture
+                  drops onto your data.
+                </p>
+                <a href="#contact" className="inline-block mt-3 text-sm font-semibold text-sage hover:text-goldenWheat">→ Let's talk</a>
+              </div>
+
+              <p className="text-xs text-gray-400">
+                Python · pandas · pdfplumber · rapidfuzz · Claude Code · <a href="https://github.com/tacijjola/chaos-inbox" target="_blank" rel="noopener noreferrer" className="underline hover:text-goldenWheat">GitHub</a>
+              </p>
+            </div>
 
             {/* Case Study 1 */}
             <div className="border-l-4 border-goldenWheat p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
@@ -537,7 +649,7 @@ export default function App() {
       <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
         <p className="text-goldenWheat tracking-widest uppercase text-xs mb-2">Automate · Analyse · Advance</p>
         <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola.tacij@outlook.com" className="underline hover:text-goldenWheat">jola.tacij@outlook.com</a></p>
-        <p className="mt-1 text-gray-400">Business Analysis · Power BI · AI Automation · Remote</p>
+        <p className="mt-1 text-gray-400">Business Analysis · Power BI · AI Automation · Claude Code · Python · Remote</p>
       </footer>
 
     </div>

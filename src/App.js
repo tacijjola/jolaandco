@@ -341,7 +341,7 @@ export default function App() {
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <span className="text-xs font-bold text-sage uppercase tracking-wide">AI-Assisted Development · Claude Code</span>
-                  <h3 className="text-2xl font-semibold mt-2 mb-1">The Chaos Inbox — from 6 hours of Friday admin to 2 seconds</h3>
+                  <h3 className="text-2xl font-semibold mt-2 mb-1">The Chaos Inbox — from 6 hours of Friday admin to seconds</h3>
                   <p className="text-sm italic text-navySlate opacity-70 mt-1">
                     Demo case study built on fully synthetic data. "Bottega Nord S.r.l." is a fictional
                     client — every document was generated for the demo. The pipeline, and the problems

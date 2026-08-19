@@ -47,7 +47,7 @@ export default function App() {
           </p>
           <p className="text-lg text-navySlate mb-6">
             Business operations and BI specialist with a 20-year career spanning office coordination,
-            project delivery, and 5+ years of hands-on data analysis and Power BI development.
+            project delivery, and 6+ years of hands-on data analysis and Power BI development.
             I bring the operational depth most data analysts don't have — and the technical rigour
             most coordinators can't match.
           </p>

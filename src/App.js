@@ -22,13 +22,13 @@ export default function App() {
             <a href="#certifications" className="text-navySlate hover:text-goldenWheat text-sm">Certifications</a>
             <a href="#about" className="text-navySlate hover:text-goldenWheat text-sm">About</a>
             <a href="#contact" className="text-navySlate hover:text-goldenWheat text-sm">Contact</a>
-            <a href="Jola_Tacij_FINAL_CV.pdf" target="_blank" rel="noopener noreferrer"
+            <a href="Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer"
                className="bg-goldenWheat text-white px-4 py-2 rounded-lg hover:bg-sage transition text-sm">
               View CV
             </a>
           </nav>
           {/* Mobile: just show CV button */}
-          <a href="Jola_Tacij_FINAL_CV.pdf" target="_blank" rel="noopener noreferrer"
+          <a href="Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer"
              className="md:hidden bg-goldenWheat text-white px-3 py-2 rounded-lg text-sm font-semibold">
             View CV
           </a>
@@ -640,7 +640,7 @@ export default function App() {
           </p>
           <div className="flex justify-center gap-3 flex-wrap">
             <a href="mailto:jola.tacij@outlook.com" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Email Me</a>
-            <a href="Jola_Tacij_FINAL_CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">View CV (PDF)</a>
+            <a href="Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">View CV (PDF)</a>
           </div>
         </div>
       </section>

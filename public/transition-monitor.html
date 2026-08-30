@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Transition Monitor — Business Analysis Case Study | Jola Tacij</title>
+<meta name="description" content="A full business analysis case study: BPMN AS-IS and TO-BE process design, a governed star schema and requirement-traced wireframes that take a country scorecard from 15 working days to under one." />
+<link rel="canonical" href="https://www.jolaandco.com/transition-monitor.html" />
+<meta property="og:title" content="Transition Monitor — Business Analysis Case Study" />
+<meta property="og:description" content="From 15 working days to under one — process design, data modelling and requirements, shown in full." />
+<meta property="og:image" content="https://www.jolaandco.com/og-image.png" />
+<meta property="og:url" content="https://www.jolaandco.com/transition-monitor.html" />
+<meta property="og:type" content="article" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7;
+  }
+  a { color: inherit; text-decoration: none; }
+  img, svg { max-width: 100%; }
+
+  :root {
+    --bg:          #FFFFFF;
+    --surface:     #FAF7F0;
+    --surface2:    #EDE6D6;
+    --text:        #2D3644;
+    --muted:       #5A6472;
+    --border:      rgba(45,54,68,0.13);
+    --accent:      #9F8551;
+    --accent-ink:  #7A6438;
+    --accent2:     #6B8F71;
+    --accent2-ink: #4A6650;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+  .narrow { max-width: 760px; }
+
+  .tag {
+    display: inline-block; font-size: .72rem; font-weight: 600;
+    letter-spacing: .06em; text-transform: uppercase;
+    padding: .25rem .65rem; border-radius: 20px;
+    border: 1px solid var(--accent); color: var(--accent-ink);
+  }
+  .tag--sage { border-color: var(--accent2); color: var(--accent2-ink); }
+  .tag--muted { border-color: var(--border); color: var(--muted); }
+  .section-label {
+    font-size: .75rem; font-weight: 700; letter-spacing: .15em;
+    text-transform: uppercase; color: var(--accent-ink); margin-bottom: 1rem;
+  }
+  .pill {
+    font-size: .78rem; padding: .3rem .8rem; border-radius: 20px;
+    background: var(--surface2); border: 1px solid var(--border); color: var(--muted);
+  }
+
+  /* Nav */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    backdrop-filter: blur(14px); background: rgba(255,255,255,.88);
+    border-bottom: 1px solid var(--border);
+  }
+  nav .inner {
+    max-width: 1100px; margin: 0 auto; display: flex;
+    align-items: center; justify-content: space-between; padding: 1rem 2rem;
+  }
+  .nav-logo { font-weight: 700; font-size: 1.05rem; }
+  .nav-logo span { color: var(--accent-ink); }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-size: .88rem; color: var(--muted); transition: color .2s; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta {
+    background: var(--text); color: var(--bg); padding: .45rem 1.1rem;
+    border-radius: 6px; font-size: .85rem; font-weight: 700;
+  }
+  @media(max-width:700px){ .nav-links { display: none; } }
+
+  /* Hero */
+  header.hero { padding: 9rem 0 4rem; position: relative; overflow: hidden; }
+  header.hero::before {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse 80% 60% at 65% 30%, rgba(159,133,81,.13) 0%, transparent 70%);
+  }
+  .breadcrumb { font-size: .82rem; color: var(--muted); margin-bottom: 1.4rem; position: relative; }
+  .breadcrumb a:hover { color: var(--accent-ink); }
+  .hero-tags { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.4rem; position: relative; }
+  header.hero h1 {
+    font-size: clamp(2rem, 4.4vw, 3.2rem); font-weight: 800; line-height: 1.15;
+    letter-spacing: -.02em; max-width: 800px; margin-bottom: 1.2rem; position: relative;
+  }
+  header.hero h1 em { font-style: normal; color: var(--accent-ink); }
+  header.hero .standfirst {
+    font-size: 1.12rem; color: var(--muted); max-width: 640px; position: relative;
+  }
+  .disclaimer {
+    margin-top: 2rem; padding: 1rem 1.2rem; border-left: 3px solid var(--accent);
+    background: var(--surface); border-radius: 0 8px 8px 0;
+    font-size: .88rem; color: var(--muted); max-width: 720px; position: relative;
+  }
+
+  /* Stat strip */
+  .stat-strip {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem; margin-top: 3rem; position: relative;
+  }
+  .stat-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.3rem;
+  }
+  .stat-number { font-size: 1.9rem; font-weight: 800; color: var(--accent-ink); line-height: 1.1; }
+  .stat-label { font-size: .8rem; color: var(--muted); margin-top: .25rem; }
+
+  section { padding: 4.5rem 0; }
+  section.tinted { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; line-height: 1.25; margin-bottom: .8rem; }
+  h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: .6rem; }
+  .lede { color: var(--muted); max-width: 680px; margin-bottom: 2.5rem; }
+  p + p { margin-top: 1rem; }
+  .body-copy p { color: var(--muted); }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  @media(max-width:760px){ .two-col { grid-template-columns: 1fr; } }
+  .panel {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.5rem;
+  }
+  section.tinted .panel { background: var(--bg); }
+  .panel h4 {
+    font-size: .72rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent-ink); margin-bottom: .9rem;
+  }
+  .panel ul { list-style: none; }
+  .panel ul li {
+    font-size: .92rem; color: var(--muted); padding: .4rem 0;
+    border-bottom: 1px solid var(--border); display: flex; gap: .6rem;
+  }
+  .panel ul li:last-child { border-bottom: none; }
+  .panel ul li::before { content: '→'; color: var(--accent-ink); flex-shrink: 0; }
+  .panel--bad ul li::before { content: '✕'; color: #9A5A4A; }
+
+  /* Figure + toggle */
+  figure {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 14px; overflow: hidden; margin-top: 1.5rem;
+  }
+  .fig-toggle {
+    display: flex; gap: .4rem; padding: 1rem 1rem 0;
+    border-bottom: 1px solid var(--border); background: var(--surface);
+  }
+  .fig-toggle button {
+    font: inherit; font-size: .85rem; font-weight: 700;
+    padding: .55rem 1.2rem; border: 1px solid var(--border); border-bottom: none;
+    border-radius: 8px 8px 0 0; background: transparent; color: var(--muted);
+    cursor: pointer; transition: background .18s, color .18s;
+  }
+  .fig-toggle button:hover { color: var(--text); }
+  .fig-toggle button[aria-selected="true"] {
+    background: var(--bg); color: var(--accent-ink); border-color: var(--border);
+    margin-bottom: -1px;
+  }
+  .fig-stage { padding: 1.2rem; background: #fff; overflow-x: auto; }
+  .fig-stage img { display: block; width: 100%; min-width: 620px; cursor: zoom-in; }
+  figcaption {
+    padding: .9rem 1.2rem; font-size: .84rem; color: var(--muted);
+    border-top: 1px solid var(--border); background: var(--surface);
+  }
+  .fig-hint { font-size: .78rem; color: var(--muted); margin-top: .6rem; }
+
+  /* Decisions */
+  .decision {
+    border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1.2rem; margin-bottom: 1.8rem;
+  }
+  .decision h4 { font-size: 1rem; font-weight: 700; margin-bottom: .35rem; }
+  .decision p { font-size: .93rem; color: var(--muted); }
+
+  /* Lifecycle */
+  .lifecycle { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: 1.5rem 0; }
+  .state {
+    font-size: .82rem; font-weight: 600; padding: .4rem .85rem;
+    border-radius: 8px; background: var(--surface2); border: 1px solid var(--border);
+  }
+  .state--live { border-color: var(--accent); color: var(--accent-ink); }
+  .arrow { color: var(--muted); font-size: .9rem; }
+
+  /* CTA */
+  #contact { text-align: center; }
+  #contact p { color: var(--muted); max-width: 520px; margin: 0 auto 2rem; }
+  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--text); color: var(--bg); padding: .75rem 1.8rem;
+    border-radius: 8px; font-weight: 700; font-size: .95rem;
+    transition: transform .15s, box-shadow .15s;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(45,54,68,.22); }
+  .btn-outline {
+    border: 1px solid var(--border); color: var(--text); padding: .75rem 1.8rem;
+    border-radius: 8px; font-weight: 600; font-size: .95rem; transition: border-color .2s;
+  }
+  .btn-outline:hover { border-color: rgba(45,54,68,.38); }
+  .stack-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 2rem; }
+
+  footer {
+    border-top: 1px solid var(--border); padding: 2rem;
+    text-align: center; font-size: .8rem; color: var(--muted);
+  }
+
+  /* Lightbox */
+  #lightbox {
+    position: fixed; inset: 0; z-index: 500; background: rgba(45,54,68,.92);
+    display: none; align-items: center; justify-content: center; padding: 2rem;
+    cursor: zoom-out;
+  }
+  #lightbox.open { display: flex; }
+  #lightbox img { max-width: 100%; max-height: 100%; background: #fff; border-radius: 8px; }
+  #lightbox .close {
+    position: absolute; top: 1.2rem; right: 1.6rem; color: #fff;
+    font-size: 2rem; font-weight: 300; line-height: 1; background: none;
+    border: none; cursor: pointer;
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="/" class="nav-logo">JOLA <span>&amp;</span> CO.</a>
+    <div class="nav-links">
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="#problem">The problem</a>
+      <a href="#process">Process design</a>
+      <a href="#method">Methodology</a>
+    </div>
+    <a href="mailto:jola@jolaandco.com" class="nav-cta">Get in touch</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> · <a href="/portfolio.html">Portfolio</a> · Transition Monitor</div>
+    <div class="hero-tags">
+      <span class="tag">Business Analysis</span>
+      <span class="tag tag--sage">BPMN 2.0 &amp; UML</span>
+      <span class="tag tag--muted">Enterprise Architect</span>
+      <span class="tag tag--muted">Agile Delivery</span>
+    </div>
+    <h1>Transition Monitor — turning a 15-day manual scorecard into <em>a governed process</em></h1>
+    <p class="standfirst">
+      A full business analysis showcase: the AS-IS pain mapped honestly, a TO-BE process designed
+      around a human review gate, a data model that makes every published number traceable, and
+      wireframes that carry their requirement IDs on the page.
+    </p>
+
+    <div class="disclaimer">
+      <strong>A portfolio project, and I'll say so plainly.</strong> Terrawatt Advisory is a fictional
+      client. The energy data is real — Our World in Data, CC-BY, 220 countries and 7,696 country-years.
+      This demonstrates method, not employment history. Everything shown below I built.
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat-card">
+        <div class="stat-number">&lt;1 day</div>
+        <div class="stat-label">Scorecard cycle time, down from 15 &mdash; review gate kept</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5 pools</div>
+        <div class="stat-label">TO-BE process, with exception paths</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">130 cols</div>
+        <div class="stat-label">Source data, ~36% sparse in places</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5 epics</div>
+        <div class="stat-label">~22 stories, two sprints, in Jira</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="problem" class="tinted">
+  <div class="container">
+    <div class="section-label">The problem</div>
+    <h2>The method lived in one analyst's head.</h2>
+    <p class="lede">
+      Terrawatt's analysts produce a Country Transition Scorecard on request — how fast is this
+      country's electricity system actually decarbonising, and who is stalling. The output mattered.
+      The process producing it did not survive contact with a second analyst.
+    </p>
+
+    <div class="two-col">
+      <div class="panel panel--bad">
+        <h4>What actually happened</h4>
+        <ul>
+          <li>An analyst downloaded open energy data into Excel and hand-cleaned it — units, missing years, country name variants</li>
+          <li>They applied a scoring method that existed only in one senior analyst's head</li>
+          <li>They emailed the workbook to a reviewer, who emailed comments back</li>
+          <li>Roughly 15 working days per country, with no audit trail</li>
+          <li>Two analysts scoring the same country produced different answers</li>
+          <li>When the source published an update, every scorecard silently went stale</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h4>What that costs</h4>
+        <ul>
+          <li>Key-person risk: the methodology is undocumented and unversioned</li>
+          <li>No defensible answer to "why is this country scored 62?"</li>
+          <li>Review by email means no record of what changed, or why</li>
+          <li>Published numbers quietly diverge from the data behind them</li>
+          <li>The bottleneck is a person, so the service cannot scale</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <div class="section-label">Process design</div>
+    <h2>Before and after, in BPMN 2.0</h2>
+    <p class="lede">
+      Both diagrams are modelled in Enterprise Architect using the same conventions, so they are
+      directly comparable. Flip between them: the analyst lane empties out, the system lane fills up,
+      and the review gate survives the redesign on purpose.
+    </p>
+
+    <figure>
+      <div class="fig-toggle" role="tablist" aria-label="Process view">
+        <button type="button" role="tab" id="tab-asis" aria-controls="fig-img" aria-selected="true"  data-src="/tm-bpmn-as-is.svg" data-cap="AS-IS — the manual process. Every annotation is a real failure mode: &ldquo;method lives in one analyst's head — key-person risk&rdquo;, &ldquo;email ping-pong, no audit trail&rdquo;, and a System lane whose only job is to let scorecards go stale.">Before — AS-IS</button>
+        <button type="button" role="tab" id="tab-tobe" aria-controls="fig-img" aria-selected="false" data-src="/tm-bpmn-to-be.svg" data-cap="TO-BE — the designed process. Ingestion, validation, scoring, versioning and publication move into the System lane; the analyst reviews rather than assembles; and the reviewer's approval is a gate, not an email. Change requests loop back rather than starting again.">After — TO-BE</button>
+      </div>
+      <div class="fig-stage">
+        <img id="fig-img" src="/tm-bpmn-as-is.svg" alt="BPMN collaboration diagram of the Transition Monitor scorecard process" />
+      </div>
+      <figcaption id="fig-cap">AS-IS — the manual process. Every annotation is a real failure mode: &ldquo;method lives in one analyst's head — key-person risk&rdquo;, &ldquo;email ping-pong, no audit trail&rdquo;, and a System lane whose only job is to let scorecards go stale.</figcaption>
+    </figure>
+    <p class="fig-hint">Click a diagram to open it full size.</p>
+
+    <div class="two-col" style="margin-top:2.5rem">
+      <div class="panel">
+        <h4>What the redesign changes</h4>
+        <ul>
+          <li>A new data release triggers the cycle, instead of triggering nothing</li>
+          <li>Validation runs before scoring, and quarantines what fails rather than silently dropping it</li>
+          <li>One scoring engine, so two analysts get the same answer</li>
+          <li>Every scorecard is versioned with an audit trail as it is created</li>
+          <li>Review happens in the system — no email ping-pong, no lost comments</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h4>What the redesign deliberately keeps</h4>
+        <ul>
+          <li>The human review gate. Automation makes the draft; a person still approves it</li>
+          <li>The analyst's ability to comment and adjust before submitting</li>
+          <li>A change-requested path back to the analyst, rather than a hard reject</li>
+          <li>Publication as an explicit act, not a side effect of a successful run</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="container">
+    <div class="section-label">The data model</div>
+    <h2>Why every published number can be traced back</h2>
+    <p class="lede">
+      A star schema in UML: one fact, four dimensions. The parts that matter for governance are the
+      flags and the version dimension — they are what let the process above make promises it can keep.
+    </p>
+
+    <figure>
+      <div class="fig-stage">
+        <img src="/tm-star-schema.svg" alt="UML class diagram of the Transition Monitor star schema: FactCountryScore with DimDate, DimCountry, DimIndicator and DimScorecardVersion" data-zoom />
+      </div>
+      <figcaption>
+        <strong>FactCountryScore</strong> is grained one row per country × indicator × date × version.
+        <strong>DimScorecardVersion</strong> carries status and version number, which is what makes the
+        approval workflow and the audit trail possible. <strong>DimIndicator</strong> holds each
+        component's weight, direction and scoring method as data — so changing a weight is a business
+        decision with a record, not a code change.
+      </figcaption>
+    </figure>
+    <p class="fig-hint">Click to open it full size.</p>
+  </div>
+</section>
+
+<section id="requirements">
+  <div class="container">
+    <div class="section-label">From requirement to screen</div>
+    <h2>The wireframe carries its requirement IDs</h2>
+    <p class="lede">
+      A low-fidelity screen is only useful if you can say which requirement each element satisfies.
+      Every callout here points back to a numbered functional requirement — which is also how the
+      traceability runs the other way, from requirement to design to test.
+    </p>
+
+    <figure>
+      <div class="fig-stage">
+        <img src="/tm-wireframe-scorecard.svg" alt="Low-fidelity wireframe of the Transition Monitor scorecard view, annotated with functional requirement references" data-zoom />
+      </div>
+      <figcaption>
+        Scorecard view (Analyst). <strong>FR-42</strong> filtering and search · <strong>FR-08</strong> the
+        &ldquo;requires refresh&rdquo; flag, answering the AS-IS pain point where a scorecard silently goes
+        stale · <strong>FR-28/43</strong> governance flags carried straight from the data model ·
+        <strong>FR-04/05</strong> version history visible on every published scorecard.
+      </figcaption>
+    </figure>
+    <p class="fig-hint">Click to open it full size.</p>
+  </div>
+</section>
+
+<section id="method" class="tinted">
+  <div class="container narrow body-copy">
+    <div class="section-label">Methodology</div>
+    <h2>The decisions worth arguing about</h2>
+    <p class="lede">
+      The scoring index is a 0–100 composite of five components — clean electricity level, five-year
+      momentum, carbon intensity, fossil dependence and energy productivity. The interesting part is
+      not the formula. It is the handful of decisions that stop the formula lying to you.
+    </p>
+
+    <div class="decision">
+      <h4>Missing is not zero</h4>
+      <p>A country needs at least three of the five components to be scored at all. Fewer, and it
+      returns <em>Insufficient Data</em> — a status, not a low score. Treating a gap as a zero
+      quietly punishes countries for their statistics office rather than their power sector.</p>
+    </div>
+
+    <div class="decision">
+      <h4>Shares are recomputed, never averaged</h4>
+      <p>Renewable share is <code>SUM(renewable TWh) / SUM(total TWh)</code>. Averaging a percentage
+      across countries or across years weights a country generating 4 TWh the same as one generating
+      400. This is the single most common way an energy dashboard becomes confidently wrong.</p>
+    </div>
+
+    <div class="decision">
+      <h4>Outliers are capped before normalising</h4>
+      <p>Energy productivity is capped at the 95th percentile before the scale is built, so one
+      unusual economy cannot compress everyone else into the bottom third of the range.</p>
+    </div>
+
+    <div class="decision">
+      <h4>Micro-states are scored but not ranked</h4>
+      <p>Below 1 TWh of annual generation, a single new installation moves the score more than a
+      decade of policy. They still get a score; they are excluded from the league table.</p>
+    </div>
+
+    <div class="decision">
+      <h4>Weights are a business decision, not a constant in the code</h4>
+      <p>They live in a versioned decision log and in the indicator dimension. When Research changes
+      a weight, the change has an owner, a date and a reason — and every scorecard built under the
+      old weights stays reproducible.</p>
+    </div>
+
+    <h3 style="margin-top:2.5rem">Scorecard lifecycle</h3>
+    <p>Modelled as a UML state machine, because the rules are easier to argue about as states than as prose.</p>
+    <div class="lifecycle">
+      <span class="state">Draft</span><span class="arrow">→</span>
+      <span class="state">In Review</span><span class="arrow">→</span>
+      <span class="state">Approved</span><span class="arrow">→</span>
+      <span class="state state--live">Published</span><span class="arrow">→</span>
+      <span class="state">Superseded</span>
+    </div>
+    <p style="font-size:.9rem"><span class="arrow">↩</span> From <em>In Review</em> a reviewer can send it to
+    <strong>Changes Requested</strong>, which returns to <em>In Review</em> once the analyst responds — a loop,
+    not a dead end.</p>
+    <p>A scorecard may only be published from <em>Approved</em>. When a new data vintage lands, the
+    previously published scorecard becomes <em>Superseded</em> — never deleted. That one rule is what
+    makes an old published number defensible a year later.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">What it adds up to</div>
+    <h2>Success criteria I'd hold myself to</h2>
+    <div class="two-col">
+      <div class="panel">
+        <h4>Delivery</h4>
+        <ul>
+          <li>Scorecard cycle time from 15 working days to under one, with the human review gate kept</li>
+          <li>One governed methodology — two analysts, same country, same score</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h4>Governance</h4>
+        <ul>
+          <li>Every published number traceable to a source column and a data vintage</li>
+          <li>Every requirement traceable to a process activity, a backlog story and a test</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stack-row">
+      <span class="pill">BPMN 2.0</span>
+      <span class="pill">UML</span>
+      <span class="pill">Enterprise Architect</span>
+      <span class="pill">Requirements &amp; traceability</span>
+      <span class="pill">Star schema</span>
+      <span class="pill">Jira</span>
+      <span class="pill">Confluence</span>
+      <span class="pill">Python</span>
+      <span class="pill">Power BI</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="tinted">
+  <div class="container">
+    <h2>Recognise this process?</h2>
+    <p>
+      Most teams have one. A number everyone relies on, produced by a method nobody has written down,
+      by a person who really ought to be allowed a holiday. That is the work I do.
+    </p>
+    <div class="cta-actions">
+      <a href="mailto:jola@jolaandco.com" class="btn-primary">Email me</a>
+      <a href="/portfolio.html" class="btn-outline">See the rest of the portfolio</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="yr">2026</span> Jola Tacij · Jola &amp; Co. · Automate. Analyse. Advance.</p>
+  <p style="margin-top:.4rem">
+    <a href="mailto:jola@jolaandco.com" style="text-decoration:underline">jola@jolaandco.com</a> ·
+    <a href="https://www.linkedin.com/in/jola-tacij" target="_blank" rel="noopener noreferrer" style="text-decoration:underline">LinkedIn</a> ·
+    Energy data © Our World in Data (CC-BY)
+  </p>
+</footer>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged diagram">
+  <button class="close" type="button" aria-label="Close">&times;</button>
+  <img alt="" />
+</div>
+
+<script>
+(function () {
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* AS-IS / TO-BE toggle */
+  var img = document.getElementById('fig-img');
+  var cap = document.getElementById('fig-cap');
+  var tabs = document.querySelectorAll('.fig-toggle button');
+  tabs.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      tabs.forEach(function (b) { b.setAttribute('aria-selected', 'false'); });
+      btn.setAttribute('aria-selected', 'true');
+      img.src = btn.dataset.src;
+      cap.innerHTML = btn.dataset.cap;
+    });
+  });
+
+  /* Lightbox */
+  var box = document.getElementById('lightbox');
+  var boxImg = box.querySelector('img');
+  function open(src, alt) {
+    boxImg.src = src; boxImg.alt = alt || '';
+    box.classList.add('open'); document.body.style.overflow = 'hidden';
+  }
+  function close() { box.classList.remove('open'); document.body.style.overflow = ''; }
+  document.querySelectorAll('.fig-stage img').forEach(function (el) {
+    el.style.cursor = 'zoom-in';
+    el.addEventListener('click', function () { open(el.src, el.alt); });
+  });
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
+
+</body>
+</html>

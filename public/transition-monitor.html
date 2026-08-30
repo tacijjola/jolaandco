@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Transition Monitor — Business Analysis Case Study | Jola Tacij</title>
 <meta name="description" content="A full business analysis case study: BPMN AS-IS and TO-BE process design, a governed star schema and requirement-traced wireframes that take a country scorecard from 15 working days to under one." />
+<link rel="icon" href="/logo.png" />
 <link rel="canonical" href="https://www.jolaandco.com/transition-monitor.html" />
 <meta property="og:title" content="Transition Monitor — Business Analysis Case Study" />
 <meta property="og:description" content="From 15 working days to under one — process design, data modelling and requirements, shown in full." />
@@ -64,8 +65,9 @@
     max-width: 1100px; margin: 0 auto; display: flex;
     align-items: center; justify-content: space-between; padding: 1rem 2rem;
   }
-  .nav-logo { font-weight: 700; font-size: 1.05rem; }
-  .nav-logo span { color: var(--accent-ink); }
+  .nav-logo { display: flex; align-items: center; flex-shrink: 0; }
+  .nav-logo img { height: 42px; width: auto; display: block; }
+  @media(max-width:640px){ .nav-logo img { height: 34px; } }
   .nav-links { display: flex; gap: 2rem; }
   .nav-links a { font-size: .88rem; color: var(--muted); transition: color .2s; }
   .nav-links a:hover { color: var(--text); }
@@ -224,7 +226,7 @@
 
 <nav>
   <div class="inner">
-    <a href="/" class="nav-logo">JOLA <span>&amp;</span> CO.</a>
+    <a href="/" class="nav-logo"><img src="/logo-nav.png" alt="Jola &amp; Co." /></a>
     <div class="nav-links">
       <a href="/portfolio.html">Portfolio</a>
       <a href="#problem">The problem</a>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jola Tacij — Data & BI Portfolio</title>
+  <link rel="icon" href="/logo.png" />
   <style>
     /* ─── Reset & Base ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -67,8 +68,9 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 1rem 2rem;
     }
-    .nav-logo { font-weight: 700; font-size: 1.05rem; letter-spacing: .02em; }
-    .nav-logo span { color: var(--accent-ink); }
+    .nav-logo { display: flex; align-items: center; flex-shrink: 0; }
+    .nav-logo img { height: 42px; width: auto; display: block; }
+    @media(max-width:640px){ .nav-logo img { height: 34px; } }
     .nav-links { display: flex; gap: 2rem; }
     .nav-links a { font-size: .88rem; color: var(--muted); transition: color .2s; }
     .nav-links a:hover { color: var(--text); }
@@ -356,7 +358,7 @@
 <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
 <nav>
   <div class="inner">
-    <div class="nav-logo">Jola<span>&Co.</span></div>
+    <a href="/" class="nav-logo"><img src="/logo-nav.png" alt="Jola &amp; Co." /></a>
     <div class="nav-links">
       <a href="#work">Case Studies</a>
       <a href="#skills">Skills</a>

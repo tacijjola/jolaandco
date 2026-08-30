@@ -581,10 +581,10 @@ export default function App() {
               </div>
               <h3 className="text-lg font-bold mb-2">Power BI Data Analyst (PL-300)</h3>
               <p className="text-sm text-navySlate mb-3">
-                Microsoft certified. Data modeling, visualization, and BI — core to every
-                dashboard and reporting engagement.
+                Microsoft exam passed 2023. Data modelling, visualisation and BI — core to every
+                dashboard and reporting engagement. Currently studying for DP-600, Fabric Analytics Engineer.
               </p>
-              <p className="text-sm font-semibold text-goldenWheat">Microsoft Certified</p>
+              <p className="text-sm font-semibold text-goldenWheat">Microsoft · 2023–2024</p>
             </div>
 
             <div className="text-center">

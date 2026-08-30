@@ -19,6 +19,7 @@ export default function App() {
           <nav className="hidden md:flex items-center space-x-5">
             <a href="#work-with-me" className="text-navySlate hover:text-goldenWheat text-sm">Work with Me</a>
             <a href="#projects" className="text-navySlate hover:text-goldenWheat text-sm">Projects</a>
+            <a href="/portfolio.html" className="text-navySlate hover:text-goldenWheat text-sm">Portfolio</a>
             <a href="#certifications" className="text-navySlate hover:text-goldenWheat text-sm">Certifications</a>
             <a href="#about" className="text-navySlate hover:text-goldenWheat text-sm">About</a>
             <a href="#contact" className="text-navySlate hover:text-goldenWheat text-sm">Contact</a>
@@ -167,7 +168,7 @@ export default function App() {
               <span className="text-lg font-bold text-navySlate">Scoped per project</span>
               <span className="text-sm text-gray-400">Days, not months</span>
             </div>
-            <a href="mailto:jola.tacij@outlook.com"
+            <a href="mailto:jola@jolaandco.com"
                className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
               → Let's talk about your process
             </a>
@@ -320,7 +321,7 @@ export default function App() {
               If it's "we have data but no dashboard" — go straight to <strong>Dashboard Rebuild</strong>.<br />
               If you need ongoing BI leadership — let's talk <strong>Fractional BI Lead</strong>.
             </p>
-            <a href="mailto:jola.tacij@outlook.com" className="inline-block bg-navySlate text-lightStone px-6 py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
+            <a href="mailto:jola@jolaandco.com" className="inline-block bg-navySlate text-lightStone px-6 py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
               → Email me — no pressure, no call
             </a>
           </div>
@@ -332,7 +333,27 @@ export default function App() {
       <section id="projects" className="py-16 px-4 bg-lightStone">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-3 text-center">Case Studies</h2>
-          <p className="text-center text-navySlate mb-10">How I've solved real problems for energy, infrastructure, and operations teams.</p>
+          <p className="text-center text-navySlate mb-8">How I've solved real problems for energy, infrastructure, and operations teams.</p>
+
+          {/* Featured case study — links to the full portfolio */}
+          <a href="/transition-monitor.html"
+             className="block border border-goldenWheat bg-sandBeige rounded-xl p-6 mb-12 hover:shadow-lg transition">
+            <span className="text-xs font-bold text-goldenWheat uppercase tracking-widest">Featured case study</span>
+            <h3 className="text-xl font-semibold mt-2 mb-2">
+              Transition Monitor — a 15-day manual scorecard, redesigned as a governed process
+            </h3>
+            <p className="text-sm text-navySlate opacity-80 mb-3">
+              Business analysis end to end: AS-IS and TO-BE process models in BPMN 2.0, a star schema that
+              makes every published number traceable, and wireframes annotated with their requirement IDs.
+            </p>
+            <span className="text-sm font-semibold text-sage">Read the full case study →</span>
+          </a>
+
+          <p className="text-center mb-10">
+            <a href="/portfolio.html" className="text-sm font-semibold text-goldenWheat hover:text-sage underline">
+              See the full portfolio →
+            </a>
+          </p>
 
           <div className="space-y-12 mb-12">
 
@@ -639,7 +660,7 @@ export default function App() {
             Consulting, project collaboration, or remote support. If you're looking to streamline, grow, or automate — let's talk.
           </p>
           <div className="flex justify-center gap-3 flex-wrap">
-            <a href="mailto:jola.tacij@outlook.com" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Email Me</a>
+            <a href="mailto:jola@jolaandco.com" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Email Me</a>
             <a href="Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">View CV (PDF)</a>
           </div>
         </div>
@@ -648,7 +669,7 @@ export default function App() {
       {/* FOOTER */}
       <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
         <p className="text-goldenWheat tracking-widest uppercase text-xs mb-2">Automate · Analyse · Advance</p>
-        <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola.tacij@outlook.com" className="underline hover:text-goldenWheat">jola.tacij@outlook.com</a></p>
+        <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola@jolaandco.com" className="underline hover:text-goldenWheat">jola@jolaandco.com</a></p>
         <p className="mt-1 text-gray-400">Business Analysis · Power BI · AI Automation · Claude Code · Python · Remote</p>
       </footer>
 

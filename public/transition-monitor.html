@@ -137,6 +137,7 @@
     border-bottom: 1px solid var(--border); display: flex; gap: .6rem;
   }
   .panel ul li:last-child { border-bottom: none; }
+  .panel ul li > span { flex: 1; }
   .panel ul li::before { content: '→'; color: var(--accent-ink); flex-shrink: 0; }
   .panel--bad ul li::before { content: '✕'; color: #9A5A4A; }
 
@@ -231,6 +232,7 @@
       <a href="/portfolio.html">Portfolio</a>
       <a href="#problem">The problem</a>
       <a href="#process">Process design</a>
+      <a href="#requirements-governance">Requirements</a>
       <a href="#method">Methodology</a>
     </div>
     <a href="mailto:jola@jolaandco.com" class="nav-cta">Get in touch</a>
@@ -249,8 +251,8 @@
     <h1>Transition Monitor — turning a 15-day manual scorecard into <em>a governed process</em></h1>
     <p class="standfirst">
       A full business analysis showcase: the AS-IS pain mapped honestly, a TO-BE process designed
-      around a human review gate, a data model that makes every published number traceable, and
-      wireframes that carry their requirement IDs on the page.
+      around a human review gate, 20 business requirements traced through 43 functional requirements
+      to a live backlog, and a decision log with two entries still open.
     </p>
 
     <div class="disclaimer">
@@ -265,16 +267,16 @@
         <div class="stat-label">Scorecard cycle time, down from 15 &mdash; review gate kept</div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">5 pools</div>
-        <div class="stat-label">TO-BE process, with exception paths</div>
+        <div class="stat-number">20 &rarr; 43</div>
+        <div class="stat-label">Business requirements traced to functional requirements</div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">130 cols</div>
-        <div class="stat-label">Source data, ~36% sparse in places</div>
+        <div class="stat-number">5 / 14</div>
+        <div class="stat-label">Epics and stories in Jira, each with acceptance criteria</div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">5 epics</div>
-        <div class="stat-label">~22 stories, two sprints, in Jira</div>
+        <div class="stat-number">10</div>
+        <div class="stat-label">Decisions logged with rationale &mdash; two still open</div>
       </div>
     </div>
   </div>
@@ -409,6 +411,76 @@
       </figcaption>
     </figure>
     <p class="fig-hint">Click to open it full size.</p>
+  </div>
+</section>
+
+<section id="requirements-governance">
+  <div class="container">
+    <div class="section-label">Requirements &amp; governance</div>
+    <h2>Every requirement traces to a story and a test</h2>
+    <p class="lede">
+      The diagrams are the visible part. The chain underneath them is what makes the work usable by a
+      delivery team &mdash; and what lets anyone ask, a year later, why the system does what it does.
+    </p>
+
+    <div class="two-col">
+      <div class="panel">
+        <h4>The traceability chain</h4>
+        <ul>
+          <li><span><strong>20 business requirements</strong> (BR-01 to BR-20), each mapped to a TO-BE process activity and an epic</span></li>
+          <li><span><strong>43 functional requirements</strong> (FR-01 to FR-43), each with Given / When / Then acceptance criteria</span></li>
+          <li><span><strong>5 epics and 14 stories</strong> in Jira, carrying real issue keys &mdash; not placeholder IDs</span></li>
+          <li>A reconciled BR &rarr; FR &rarr; Epic &rarr; Story &rarr; Test table, updated when the built backlog came in at 14 stories rather than the 20 originally planned</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h4>The governance layer</h4>
+        <ul>
+          <li>Stakeholder register, RACI matrix and power/interest grid &mdash; with the automation gains visible as activities where R moves from Analyst to System</li>
+          <li>A glossary covering domain, modelling and delivery terms, so BRD, FRD and backlog use one vocabulary</li>
+          <li>A decision log: ten entries, statuses of Open, Agreed and In Progress, each with rationale and the artifacts it affects</li>
+          <li>Documentation in Confluence, backlog in Jira, models in Enterprise Architect</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:2.2rem">Three decisions from the log</h3>
+    <p class="lede" style="margin-bottom:1.4rem">
+      A decision log is only useful if it records the reasoning, not just the outcome. Two of the ten
+      are still open, which is what a live project actually looks like.
+    </p>
+
+    <div class="decision">
+      <h4>D-004 &mdash; Component weights are configuration, not code</h4>
+      <p>Weights change when the methodology changes. Storing them as a governed configuration value
+      rather than a constant means a weight change has an owner, a date and a reason &mdash; and
+      &ldquo;it&rsquo;s in the code somewhere&rdquo; is never the answer to why a country scored 62.
+      <em>Status: Agreed. Impacts BR-12, FR-27 and the data model.</em></p>
+    </div>
+
+    <div class="decision">
+      <h4>D-008 &mdash; Keep the fictional client, but disclose it</h4>
+      <p>The scenario needed a named client for the methodology to cohere. Naming one without saying
+      so would misrepresent the work. So the decision to disclose is itself logged, with the
+      disclosure line specified in the project overview.
+      <em>Status: Agreed.</em></p>
+    </div>
+
+    <div class="decision">
+      <h4>D-009 &mdash; Defer the Power BI report to Phase 2</h4>
+      <p>The data-preparation groundwork is complete, but the report is a BI deliverable rather than a
+      business-analysis one. Deferring it deliberately &mdash; and recording that it was deferred &mdash;
+      is more honest than leaving it looking unfinished.
+      <em>Status: Agreed.</em></p>
+    </div>
+
+    <div class="panel" style="margin-top:1.8rem">
+      <h4>Still open</h4>
+      <ul>
+        <li><span><strong>D-001</strong> &mdash; should nuclear count as &ldquo;clean&rdquo;? Parked pending research, for methodology v1.1</span></li>
+        <li><span><strong>D-002</strong> &mdash; which regional standard for roll-ups, World Bank or the source&rsquo;s own?</span></li>
+      </ul>
+    </div>
   </div>
 </section>
 

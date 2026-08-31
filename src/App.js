@@ -670,7 +670,7 @@ export default function App() {
       <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
         <p className="text-goldenWheat tracking-widest uppercase text-xs mb-2">Automate · Analyse · Advance</p>
         <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola@jolaandco.com" className="underline hover:text-goldenWheat">jola@jolaandco.com</a></p>
-        <p className="mt-1 text-gray-400">Business Analysis · Power BI · AI Automation · Claude Code · Python · Remote</p>
+        <p className="mt-1 text-gray-400">Data Analysis · SQL · Power BI · Python (pandas) · AI Automation · Business Analysis · Remote</p>
       </footer>
 
     </div>

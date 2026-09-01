@@ -229,17 +229,22 @@ export default function App() {
             className="w-48 h-48 md:w-56 md:h-56 mx-auto mb-8 rounded-full object-cover shadow-md"
           />
           <p className="text-navySlate leading-relaxed mb-4">
-            I bring passion, precision, and intuition to every project. I listen first, ask the right questions,
-            and deliver solutions that work in practice — not just in theory. I don't hide behind jargon —
-            I translate complexity into clarity.
+            I listen first, and then I ask the questions people find slightly annoying — what does
+            "complete" actually mean here, who signs this off, what happens when the data is missing.
+            Ambiguity that survives a workshop turns into a defect later, so I would rather find it
+            early. I don't hide behind jargon: if I can't explain a model to the person who has to
+            use it, it isn't finished.
           </p>
           <p className="text-navySlate leading-relaxed mb-4">
-            Remote-first, deadline-driven, and invested in the success of every organisation I work with.
-            Whether you need a one-off analysis, a complete operations overhaul, or ongoing support —
-            I show up ready to deliver.
+            I document as I go, so whoever comes after me can see what was decided and why. And I
+            train the people who inherit the work — data engineers, country managers, a technical PM,
+            a CFO. Reporting that nobody trusts or knows how to open hasn't been delivered, it has
+            just been built.
           </p>
           <p className="text-navySlate leading-relaxed text-sm opacity-80">
-            Based in Abruzzo with my family and our two rescue dogs. Always learning. Always improving. Always ready.
+            Polish is my first language and I work in English every day. Based in Abruzzo, Italy —
+            CET, fully remote, and used to teams spread across eight countries and as many opinions.
+            Here with my family and our two rescue dogs.
           </p>
         </div>
       </section>

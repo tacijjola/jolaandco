@@ -113,210 +113,38 @@ export default function App() {
             <span className="text-sm font-semibold text-sage">Read the full case study →</span>
           </a>
 
-          <p className="text-center mb-10">
-            <a href="/portfolio.html" className="text-sm font-semibold text-goldenWheat hover:text-sage underline">
-              See the full portfolio →
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
+            <a href="/portfolio.html#work" className="block bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+              <span className="text-xs font-bold text-sage uppercase tracking-wide">AI-Assisted Development · Claude Code</span>
+              <h3 className="text-lg font-semibold mt-2 mb-2">The Chaos Inbox — from 6 hours of Friday admin to seconds</h3>
+              <p className="text-sm text-navySlate leading-relaxed">149 supplier documents in, 938 clean order lines out — in seconds. A five-stage Python pipeline that catches mis-keyed orders and silent price rises. Built on fully synthetic data; the client is fictional, the pipeline is not.</p>
             </a>
+            <a href="/portfolio.html#work" className="block bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+              <span className="text-xs font-bold text-sage uppercase tracking-wide">E.ON Drive · Energy Infrastructure</span>
+              <h3 className="text-lg font-semibold mt-2 mb-2">EV Utilization Model — 10 Countries, Zero Hardcoding</h3>
+              <p className="text-sm text-navySlate leading-relaxed">A hardcoded spreadsheet rebuilt as a governed 10-country model — SQL transformation layer on Azure Databricks, star schema and DAX, with automated data-integrity checks and live Power BI reporting for senior leadership.</p>
+            </a>
+            <a href="/portfolio.html#work" className="block bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+              <span className="text-xs font-bold text-sage uppercase tracking-wide">E.ON Drive · Site Selection</span>
+              <h3 className="text-lg font-semibold mt-2 mb-2">Geospatial Site Scoring Dashboard — 890 Sites Evaluated</h3>
+              <p className="text-sm text-navySlate leading-relaxed">Geospatial Power BI models scoring 890+ sites, integrating procurement, finance and project data into a single location strategy that senior management could read and act on.</p>
+            </a>
+            <a href="/portfolio.html#work" className="block bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+              <span className="text-xs font-bold text-sage uppercase tracking-wide">SWARCO · Infrastructure</span>
+              <h3 className="text-lg font-semibold mt-2 mb-2">EV Investment Department — Data Foundation from Zero</h3>
+              <p className="text-sm text-navySlate leading-relaxed">A department reporting function co-built from nothing — SQL pipelines and analytical models, recurring reporting automated, and the analysis presented to the Board.</p>
+            </a>
+          </div>
+
+          <p className="text-sm text-navySlate text-center mb-8">
+            Beyond one-off projects, I've also delivered: E.ON Competitor Intelligence Platform · DNO Process Standardisation · SWARCO Scotland Operations Analysis
           </p>
 
-          <div className="space-y-12 mb-12">
-
-            {/* Case Study — The Chaos Inbox (newest) */}
-            <div className="border-l-4 border-sage p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <span className="text-xs font-bold text-sage uppercase tracking-wide">AI-Assisted Development · Claude Code</span>
-                  <h3 className="text-2xl font-semibold mt-2 mb-1">The Chaos Inbox — from 6 hours of Friday admin to seconds</h3>
-                  <p className="text-sm italic text-navySlate opacity-70 mt-1">
-                    Demo case study built on fully synthetic data. "Bottega Nord S.r.l." is a fictional
-                    client — every document was generated for the demo. The pipeline, and the problems
-                    it solves, are entirely real.
-                  </p>
-                </div>
-              </div>
-
-              <div className="grid gap-6 md:grid-cols-2 mb-6">
-                <div>
-                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Pain</p>
-                  <p className="text-sm text-navySlate">
-                    Bottega Nord, a specialty food distributor in Lombardy, receives ~800 supplier order
-                    confirmations a month — PDF invoices in three different layouts, Excel exports that
-                    never match, semicolon CSVs with Italian decimal commas, and orders typed straight
-                    into emails. Every Friday, ~6 hours disappeared into manual reconciliation. Duplicate
-                    invoices still got paid. Price increases still went unnoticed.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Build</p>
-                  <p className="text-sm text-navySlate">
-                    A five-stage Python pipeline, built with AI-assisted development (Claude Code):
-                    ingestion → extraction → normalization → anomaly detection → reporting. One command.
-                    No manual steps.
-                  </p>
-                </div>
-              </div>
-
-              <div className="grid gap-3 md:grid-cols-2 mb-6">
-                <img src="chaos-inbox-report.png" alt="Chaos Inbox weekly report — KPI summary" className="rounded-lg border w-full object-cover" />
-                <img src="chaos-inbox-anomalies.png" alt="Chaos Inbox weekly report — anomaly highlights" className="rounded-lg border w-full object-cover" />
-              </div>
-
-              <div className="bg-lightStone rounded-lg p-4 mb-6">
-                <p className="text-xs uppercase font-bold text-navySlate mb-3">The Numbers</p>
-                <div className="grid gap-4 grid-cols-2 md:grid-cols-3 text-center mb-4">
-                  <div>
-                    <p className="text-2xl font-bold text-navySlate">149 → 938</p>
-                    <p className="text-xs text-gray-400">documents in · clean order lines out</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-navySlate">Seconds</p>
-                    <p className="text-xs text-gray-400">not hours — full pipeline runtime</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-navySlate">105</p>
-                    <p className="text-xs text-gray-400">problems caught automatically</p>
-                  </div>
-                </div>
-                <p className="text-sm text-navySlate border-t pt-3">
-                  <strong>€259,272</strong> flagged at risk · biggest single catch: a <strong>€90,941</strong> mis-keyed
-                  order (793 units instead of ~27)
-                </p>
-              </div>
-
-              <div className="border border-sage rounded-lg p-4 mb-4 text-center">
-                <p className="text-sm text-navySlate">
-                  The data is synthetic. The pipeline isn't. If your team runs on supplier paperwork,
-                  spreadsheets nobody trusts, or an inbox that eats a day a week — this same architecture
-                  drops onto your data.
-                </p>
-                <a href="#contact" className="inline-block mt-3 text-sm font-semibold text-sage hover:text-goldenWheat">→ Let's talk</a>
-              </div>
-
-              <p className="text-xs text-gray-400">
-                Python · pandas · pdfplumber · rapidfuzz · Claude Code · <a href="https://github.com/tacijjola/chaos-inbox" target="_blank" rel="noopener noreferrer" className="underline hover:text-goldenWheat">GitHub</a>
-              </p>
-            </div>
-
-            {/* Case Study 1 */}
-            <div className="border-l-4 border-goldenWheat p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">E.ON Drive · Energy Infrastructure</span>
-                  <h3 className="text-2xl font-semibold mt-2 mb-1">EV Utilization Model — 10 Countries, Zero Hardcoding</h3>
-                </div>
-              </div>
-
-              <div className="grid gap-6 md:grid-cols-2 mb-6">
-                <div>
-                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Problem</p>
-                  <p className="text-sm text-navySlate">
-                    E.ON's EV charging fleet utilization was trapped in a fragile Excel model. It had hardcoded formulas, manual calculation steps, and couldn't scale beyond two countries. Leadership needed daily reporting for 10 EDRI countries.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Solution</p>
-                  <p className="text-sm text-navySlate">
-                    Built a single, dynamic data layer in Azure Databricks. No hardcoded values. Every metric flows from raw transaction data → aggregated dimensions → executive dashboard. Real-time, auditable, scalable.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-lightStone rounded-lg p-4 mb-6">
-                <p className="text-xs uppercase font-bold text-navySlate mb-3">Results</p>
-                <ul className="text-sm text-navySlate space-y-1">
-                  <li>✓ 10-country reporting ready in 6 weeks</li>
-                  <li>✓ Reduced manual data prep from 4 hours/day to 0</li>
-                  <li>✓ Zero calculation errors in daily P&amp;L reporting</li>
-                  <li>✓ Model now handles ad-hoc questions without engineering support</li>
-                </ul>
-              </div>
-
-              <p className="text-xs text-gray-400">Data modeling · SQL · Azure Databricks · Power BI</p>
-            </div>
-
-            {/* Case Study 2 */}
-            <div className="border-l-4 border-goldenWheat p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">E.ON Drive · Site Selection</span>
-                  <h3 className="text-2xl font-semibold mt-2 mb-1">Geospatial Site Scoring Dashboard — 890 Sites Evaluated</h3>
-                </div>
-              </div>
-
-              <div className="grid gap-6 md:grid-cols-2 mb-6">
-                <div>
-                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Problem</p>
-                  <p className="text-sm text-navySlate">
-                    E.ON needed to evaluate 890 potential EV charging locations across Italy. Spreadsheets couldn't handle the scale, complexity, or geographic context. Site teams were making decisions on incomplete data.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Solution</p>
-                  <p className="text-sm text-navySlate">
-                    Designed a Power BI dashboard with geospatial mapping, multi-factor scoring (grid demand, land availability, permitting risk), and drill-down analysis. Integrated competitive landscape and financial feasibility into one view.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-lightStone rounded-lg p-4 mb-6">
-                <p className="text-xs uppercase font-bold text-navySlate mb-3">Results</p>
-                <ul className="text-sm text-navySlate space-y-1">
-                  <li>✓ Site prioritization model deployed in 4 weeks</li>
-                  <li>✓ Evaluation time per site cut from 2 hours to 5 minutes</li>
-                  <li>✓ Now scaling to all 10 EDRI countries</li>
-                  <li>✓ Site teams using the tool daily for investment decisions</li>
-                </ul>
-              </div>
-
-              <p className="text-xs text-gray-400">Power BI · Geospatial analysis · Business logic · Stakeholder alignment</p>
-            </div>
-
-            {/* Case Study 3 */}
-            <div className="border-l-4 border-goldenWheat p-8 rounded-xl shadow hover:shadow-lg transition bg-white">
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <span className="text-xs font-bold text-goldenWheat uppercase tracking-wide">SWARCO · Infrastructure</span>
-                  <h3 className="text-2xl font-semibold mt-2 mb-1">EV Investment Department — Data Foundation from Zero</h3>
-                </div>
-              </div>
-
-              <div className="grid gap-6 md:grid-cols-2 mb-6">
-                <div>
-                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Problem</p>
-                  <p className="text-sm text-navySlate">
-                    SWARCO created a new EV Investment Department with no data infrastructure. Existing systems were siloed, data quality was poor, and teams couldn't answer basic questions about portfolio health, deal flow, or risk.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase font-bold text-navySlate mb-2">The Solution</p>
-                  <p className="text-sm text-navySlate">
-                    Built the data foundation from scratch: unified schemas, ETL pipelines, KPI definitions, and governance framework. Prepared infrastructure for Azure Databricks migration and ongoing scaling.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-lightStone rounded-lg p-4 mb-6">
-                <p className="text-xs uppercase font-bold text-navySlate mb-3">Results</p>
-                <ul className="text-sm text-navySlate space-y-1">
-                  <li>✓ Data infrastructure documented and handed over in 8 weeks</li>
-                  <li>✓ Deal flow reporting now accessible to leadership</li>
-                  <li>✓ Foundation ready for Azure migration (scheduled 2026)</li>
-                  <li>✓ Team onboarded on data governance &amp; best practices</li>
-                </ul>
-              </div>
-
-              <p className="text-xs text-gray-400">Data strategy · ETL · Schema design · Team enablement</p>
-            </div>
-
-          </div>
-
-          <div className="border border-goldenWheat rounded-xl p-6 text-center">
-            <p className="font-semibold text-navySlate mb-2">Ongoing Engagement</p>
-            <p className="text-sm text-navySlate mb-4">
-              Beyond one-off projects, I've also delivered: E.ON Competitor Intelligence Platform · DNO Process Standardisation · SWARCO Scotland Operations Analysis
-            </p>
-          </div>
-
+          <p className="text-center">
+            <a href="/portfolio.html" className="inline-block border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">
+              See all case studies →
+            </a>
+          </p>
         </div>
       </section>
 

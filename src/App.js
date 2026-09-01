@@ -17,7 +17,7 @@ export default function App() {
           </a>
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center space-x-5">
-            <a href="#work-with-me" className="text-navySlate hover:text-goldenWheat text-sm">Work with Me</a>
+            <a href="#what-i-do" className="text-navySlate hover:text-goldenWheat text-sm">What I do</a>
             <a href="#projects" className="text-navySlate hover:text-goldenWheat text-sm">Projects</a>
             <a href="/portfolio.html" className="text-navySlate hover:text-goldenWheat text-sm">Portfolio</a>
             <a href="#certifications" className="text-navySlate hover:text-goldenWheat text-sm">Certifications</a>
@@ -39,297 +39,61 @@ export default function App() {
       {/* HERO */}
       <section id="top" className="py-16 px-4 bg-lightStone text-center">
         <div className="max-w-4xl mx-auto">
-          <p className="text-goldenWheat text-sm font-semibold tracking-widest uppercase mb-3">Automate · Analyse · Advance</p>
+          <p className="text-goldenWheat text-sm font-semibold tracking-widest uppercase mb-3">Business Analyst · Agile Delivery</p>
           <h2 className="text-4xl font-semibold mb-4">
-            Practical operations, clear data, real momentum.
+            I specify solutions that can actually be built — because I'm the one who builds them.
           </h2>
           <p className="text-lg font-medium text-goldenWheat mb-6">
-            No-code when it's enough. Python when it's not. AI-assisted either way.
+            Requirements &amp; traceability · BPMN 2.0 · UML · Jira · Confluence · Power BI · SQL
           </p>
           <p className="text-lg text-navySlate mb-6">
-            Business operations and BI specialist with a 20-year career spanning office coordination,
-            project delivery, and 6+ years of hands-on data analysis and Power BI development.
-            I bring the operational depth most data analysts don't have — and the technical rigour
-            most coordinators can't match.
+            Six years in energy and EV infrastructure across 8+ European markets, in operations and BI
+            roles where I ran the requirements sessions, mapped the processes and built the reporting
+            behind them — the business analysis, whatever the job title said. Over the last two years
+            I've formalised that practice: AgilePM® Practitioner, BPMN 2.0 and UML.
           </p>
           <p className="text-lg text-navySlate mb-6">
-            And now I build the <strong>automations</strong> that run the busywork for you — instant lead
-            alerts, self-updating reports, and workflows that connect your CRM, spreadsheets and tools.
-            So your team spends its time on decisions, not data entry.
+            <strong>Transition Monitor</strong> is the whole method in one place — 20 business requirements
+            traced through 43 functional requirements to a Jira backlog, AS-IS and TO-BE process models,
+            a governed star schema and a decision log. The documentation is public, so you don't have to
+            take my word for any of it.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="#work-with-me" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Let's Work Together</a>
-            <a href="#projects" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">See Projects</a>
+            <a href="/transition-monitor.html" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">See the work</a>
+            <a href="Jola-Tacij-CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-goldenWheat text-goldenWheat px-6 py-3 rounded-xl hover:bg-goldenWheat hover:text-lightStone transition">Download CV</a>
           </div>
         </div>
       </section>
 
-      {/* WORK WITH ME */}
-      <section id="work-with-me" className="py-16 px-4 bg-lightStone">
+      {/* WHAT I DO */}
+      <section id="what-i-do" className="py-16 px-4 bg-lightStone">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-center">Work with Me</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">What I do</h2>
           <p className="text-center text-navySlate max-w-2xl mx-auto mb-12">
-            Six fixed-price packages — from quick wins to full-scope transformations.
-            Fully async, fully transparent. Buy, scope by email, delivered on time.
+            The analysis that happens before anyone writes code — and the reporting that comes after it.
+            Most people do one or the other.
           </p>
-
-          {/* Excel Rescue — featured */}
-          <div className="border-2 border-navySlate p-6 md:p-8 rounded-xl shadow hover:shadow-lg transition bg-white mb-8">
-            <span className="inline-block bg-navySlate text-lightStone text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-              🚑 Excel Rescue · Start Here
-            </span>
-            <h3 className="text-2xl font-semibold mb-1">Excel Rescue</h3>
-            <p className="text-sm italic text-goldenWheat mb-4">10 days. The fragile spreadsheet your business runs on — reborn. Zero hardcoding, self-checking, built to scale.</p>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <p className="text-navySlate mb-4">
-                Every company has one: the Excel file only one person understands, held together by
-                hardcoded formulas and hope. I rebuild it the way I rebuilt a 10-country utilization
-                model at E.ON — fully dynamic, automated refresh, built-in error checks, and
-                plan-vs-actuals comparison out of the box. Delivered as bulletproof Excel + Power Query,
-                or upgraded straight into Power BI.
-              </p>
-              <ul className="text-sm text-navySlate space-y-1 mb-6 md:mb-4 md:border-t-0 border-t pt-4 md:pt-0">
-                <li>✓ Full audit: formulas, links &amp; hidden dependencies</li>
-                <li>✓ Rebuilt dynamic — zero hardcoded values</li>
-                <li>✓ Automated data refresh — no more copy-paste</li>
-                <li>✓ Self-checking: data integrity flags built in</li>
-                <li>✓ Plan vs. Actuals comparison ready</li>
-                <li>✓ Documentation, handover &amp; 14 days async support</li>
-              </ul>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold mb-2">Requirements &amp; traceability</h3>
+              <p className="text-navySlate text-sm leading-relaxed">Gather and reconcile conflicting requirements across teams and markets. Numbered business, functional and non-functional requirements, each traceable to a design, a backlog story and a test — so a year later someone can ask why the system does what it does, and get an answer.</p>
             </div>
-            <div className="flex justify-between items-center border-t pt-4">
-              <span className="text-2xl font-bold text-navySlate">€2,400</span>
-              <span className="text-sm text-gray-400">10 working days</span>
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold mb-2">Process &amp; systems analysis</h3>
+              <p className="text-navySlate text-sm leading-relaxed">AS-IS and TO-BE process design in BPMN 2.0, system behaviour in UML, modelled in Enterprise Architect — so a process map becomes a specification a delivery team can actually build from.</p>
             </div>
-            {/* TODO: replace with Stripe payment link */}
-            <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-              → Rescue my Excel
-            </button>
-          </div>
-
-          {/* Automation Setup — featured (new) */}
-          <div className="border-2 border-goldenWheat p-6 md:p-8 rounded-xl shadow hover:shadow-lg transition bg-white mb-8">
-            <span className="inline-block bg-goldenWheat text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-              ✨ New · AI Automation
-            </span>
-            <h3 className="text-2xl font-semibold mb-1">Automation Setup</h3>
-            <p className="text-sm italic text-goldenWheat mb-4">7 days. The repetitive work that eats your team's week — automated, tested, and documented.</p>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <p className="text-navySlate mb-4">
-                Your team loses hours every week to work a machine should be doing — chasing leads,
-                copying data between systems, rebuilding the same report. I map your biggest time-sink
-                and build the automation that runs it for you: your CRM, spreadsheets, email and tools
-                talking to each other, with AI handling the judgement calls. Built in Make, fully
-                documented, with error alerts so you always know it's working. When no-code hits its
-                limits, I build custom Python pipelines.
-              </p>
-              <ul className="text-sm text-navySlate space-y-1 mb-6 md:mb-4 md:border-t-0 border-t pt-4 md:pt-0">
-                <li>✓ One end-to-end workflow, scoped to your biggest time-sink</li>
-                <li>✓ Instant lead alerts — valuable leads flagged the moment they land</li>
-                <li>✓ CRM ↔ spreadsheet ↔ reporting, connected and automated</li>
-                <li>✓ AI-drafted responses &amp; summaries where they save most time</li>
-                <li>✓ Built-in error alerts, documentation &amp; handover</li>
-                <li>✓ 14 days async support</li>
-              </ul>
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold mb-2">Agile delivery</h3>
+              <p className="text-navySlate text-sm leading-relaxed">AgilePM® Practitioner. In the AgilePM/DSDM team model the Business Analyst is a defined role, bridging business and technical interests. Epics and stories in Jira, documentation and decision logs in Confluence, delivery across multi-country programmes.</p>
             </div>
-            <div className="flex justify-between items-center border-t pt-4">
-              <span className="text-2xl font-bold text-navySlate">€1,500</span>
-              <span className="text-sm text-gray-400">~7 working days</span>
-            </div>
-            {/* TODO: replace with Stripe payment link */}
-            <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-              → Automate my busywork
-            </button>
-          </div>
-
-          {/* AI-Assisted Development — featured (new) */}
-          <div className="border-2 border-sage p-6 md:p-8 rounded-xl shadow hover:shadow-lg transition bg-white mb-8">
-            <span className="inline-block bg-sage text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-              🤖 New · AI-Assisted Development
-            </span>
-            <h3 className="text-2xl font-semibold mb-1">AI-Assisted Development</h3>
-            <p className="text-sm italic text-goldenWheat mb-4">Days, not months. The custom tool no-code can't build and an agency won't build fast — built with Claude Code.</p>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <p className="text-navySlate mb-4">
-                Some problems are too custom for no-code and too small for a dev agency. That's where
-                I come in: I direct AI to build working tools for your business — document-processing
-                pipelines, internal apps, data cleaners — in days, not months. You bring the messy
-                process; I ship the tool that eats it.
-              </p>
-              <ul className="text-sm text-navySlate space-y-1 mb-6 md:mb-4 md:border-t-0 border-t pt-4 md:pt-0">
-                <li>✓ Document-processing pipelines, internal tools &amp; data cleaners</li>
-                <li>✓ I direct the AI build end-to-end — you review at each step</li>
-                <li>✓ Delivered as a working tool, not a slide deck or prototype</li>
-                <li>✓ Fully documented handover</li>
-                <li>✓ Async support included after delivery</li>
-              </ul>
-            </div>
-            <div className="flex justify-between items-center border-t pt-4">
-              <span className="text-lg font-bold text-navySlate">Scoped per project</span>
-              <span className="text-sm text-gray-400">Days, not months</span>
-            </div>
-            <a href="mailto:jola@jolaandco.com"
-               className="mt-4 block text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-              → Let's talk about your process
-            </a>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2 mb-12">
-
-            {/* Data Model Restructuring */}
-            <div className="border-2 border-sage p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
-              <span className="inline-block bg-sage text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-                Complex · Transformation
-              </span>
-              <h3 className="text-xl font-semibold mb-1">Data Model Restructuring</h3>
-              <p className="text-sm italic text-sage mb-4">4–5 weeks. Your data layer, rebuilt. Built to scale.</p>
-              <p className="text-navySlate mb-4">
-                Your Power BI model is slow, fragile, or unfinished. I architect and rebuild it
-                from scratch — optimized for performance, future-proofed for growth, fully documented.
-              </p>
-              <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
-                <li>✓ Diagnostic audit of current model</li>
-                <li>✓ Clean, star-schema architecture</li>
-                <li>✓ Optimized DAX, partitioning &amp; refresh strategy</li>
-                <li>✓ Full documentation &amp; handover</li>
-                <li>✓ 4 weeks async support post-delivery</li>
-              </ul>
-              <div className="flex justify-between items-center border-t pt-4 mt-auto">
-                <span className="text-2xl font-bold text-navySlate">€2,500–4,500</span>
-                <span className="text-sm text-gray-400">4–5 weeks</span>
-              </div>
-              {/* TODO: replace with Stripe payment link */}
-              <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-                → Buy now
-              </button>
-            </div>
-
-            {/* Dashboard Rebuild */}
-            <div className="border-2 border-goldenWheat p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
-              <span className="inline-block bg-goldenWheat text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-                ⭐ Most Popular
-              </span>
-              <h3 className="text-xl font-semibold mb-1">Dashboard Rebuild</h3>
-              <p className="text-sm italic text-goldenWheat mb-4">5 days. One clean, live dashboard. No chaos, no Excel.</p>
-              <p className="text-navySlate mb-4">
-                I build one production-ready Power BI dashboard — connected to your data source,
-                clean model, proper visuals, delivered in 5 working days. Fully async.
-              </p>
-              <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
-                <li>✓ 1 data source connected &amp; shaped</li>
-                <li>✓ 5–8 KPI tiles / visuals</li>
-                <li>✓ Clean data model &amp; DAX measures</li>
-                <li>✓ Published to Power BI Service &amp; shared</li>
-                <li>✓ 7 days async support post-delivery</li>
-              </ul>
-              <div className="flex justify-between items-center border-t pt-4 mt-auto">
-                <span className="text-2xl font-bold text-navySlate">€1,800</span>
-                <span className="text-sm text-gray-400">5 working days</span>
-              </div>
-              {/* TODO: replace with Stripe payment link */}
-              <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-                → Buy now
-              </button>
-            </div>
-
-            {/* Business Question Sprint */}
-            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
-              <span className="inline-block bg-navySlate text-lightStone text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-                Business Analysis
-              </span>
-              <h3 className="text-xl font-semibold mb-1">Business Question Sprint</h3>
-              <p className="text-sm italic text-goldenWheat mb-4">3 days. One tough question. Clear answer.</p>
-              <p className="text-navySlate mb-4">
-                Your team is stuck on a business decision. I take the question, dive into your data,
-                deliver a clear analysis — in 3 working days, fully async.
-              </p>
-              <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
-                <li>✓ Analysis brief within 2 hours of purchase</li>
-                <li>✓ Data extraction &amp; investigation</li>
-                <li>✓ Executive summary + detailed findings</li>
-                <li>✓ Recommendations &amp; next steps</li>
-                <li>✓ 5 days async follow-up</li>
-              </ul>
-              <div className="flex justify-between items-center border-t pt-4 mt-auto">
-                <span className="text-2xl font-bold text-navySlate">€900</span>
-                <span className="text-sm text-gray-400">3 working days</span>
-              </div>
-              {/* TODO: replace with Stripe payment link */}
-              <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-                → Buy now
-              </button>
-            </div>
-
-            {/* Fractional BI Lead */}
-            <div className="border p-6 rounded-xl shadow hover:shadow-lg transition bg-white flex flex-col">
-              <span className="inline-block bg-navySlate text-lightStone text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-                Ongoing · Flexible
-              </span>
-              <h3 className="text-xl font-semibold mb-1">Fractional BI Lead</h3>
-              <p className="text-sm italic text-goldenWheat mb-4">1–3 days/week. Your BI layer, managed. Strategic &amp; hands-on.</p>
-              <p className="text-navySlate mb-4">
-                Hire me as your part-time BI lead — I own your dashboards, mentor your team,
-                respond to ad-hoc questions, and build new reports. Strategic guidance + delivery.
-              </p>
-              <ul className="text-sm text-navySlate space-y-1 mb-6 border-t pt-4">
-                <li>✓ Ongoing dashboard &amp; report ownership</li>
-                <li>✓ Strategic BI roadmap &amp; advice</li>
-                <li>✓ Team mentoring &amp; upskilling</li>
-                <li>✓ Ad-hoc analysis &amp; troubleshooting</li>
-                <li>✓ 1–3 days/week commitment (flexible)</li>
-              </ul>
-              <div className="flex justify-between items-center border-t pt-4 mt-auto">
-                <span className="text-2xl font-bold text-navySlate">€1,200–1,500</span>
-                <span className="text-sm text-gray-400">/day</span>
-              </div>
-              {/* TODO: replace with Stripe payment link */}
-              <button className="mt-4 w-full text-center bg-navySlate text-lightStone py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-                → Get started
-              </button>
-            </div>
-
-          </div>
-
-          {/* How it works — async flow, no calls */}
-          <div className="bg-lightStone rounded-xl p-8 mb-8">
-            <h3 className="text-xl font-bold text-center mb-6">Simple process. Fully async. No surprises.</h3>
-            <div className="grid gap-6 md:grid-cols-3 text-center">
-              <div>
-                <div className="w-10 h-10 rounded-full bg-navySlate text-lightStone font-bold text-lg flex items-center justify-center mx-auto mb-3">1</div>
-                <p className="font-semibold mb-1">You buy here</p>
-                <p className="text-sm text-navySlate">Stripe checkout. Instant receipt. No call required, ever.</p>
-              </div>
-              <div>
-                <div className="w-10 h-10 rounded-full bg-navySlate text-lightStone font-bold text-lg flex items-center justify-center mx-auto mb-3">2</div>
-                <p className="font-semibold mb-1">I send a brief</p>
-                <p className="text-sm text-navySlate">Within 2 hours of purchase. You reply with the details I need to scope properly.</p>
-              </div>
-              <div>
-                <div className="w-10 h-10 rounded-full bg-navySlate text-lightStone font-bold text-lg flex items-center justify-center mx-auto mb-3">3</div>
-                <p className="font-semibold mb-1">I deliver on time</p>
-                <p className="text-sm text-navySlate">Fixed price. Fixed timeline. Plus days of async support afterwards.</p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold mb-2">BI, data modelling &amp; quality</h3>
+              <p className="text-navySlate text-sm leading-relaxed">Advanced SQL, DAX and Power Query. Power BI built backwards from the decision, dimensional / star-schema modelling on Azure Databricks, with automated integrity checks built in so the numbers hold up. Currently extending this into Python (pandas), with daily practice.</p>
             </div>
           </div>
-
-          <div className="border border-goldenWheat rounded-xl p-6 text-center">
-            <p className="font-bold text-navySlate mb-2">Not sure where to start?</p>
-            <p className="text-sm text-navySlate mb-4">
-              If your business runs on one fragile spreadsheet — start with <strong>Excel Rescue</strong>.<br />
-              If your team loses hours to repetitive manual work — start with <strong>Automation Setup</strong>.<br />
-              If you need clarity on a business question — start with the <strong>Business Question Sprint</strong>.<br />
-              If it's "we have data but no dashboard" — go straight to <strong>Dashboard Rebuild</strong>.<br />
-              If you need ongoing BI leadership — let's talk <strong>Fractional BI Lead</strong>.
-            </p>
-            <a href="mailto:jola@jolaandco.com" className="inline-block bg-navySlate text-lightStone px-6 py-2 rounded-lg hover:bg-goldenWheat transition font-semibold">
-              → Email me — no pressure, no call
-            </a>
-          </div>
-
         </div>
       </section>
 
-      {/* PROJECTS — Case Studies */}
       <section id="projects" className="py-16 px-4 bg-lightStone">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-3 text-center">Case Studies</h2>
@@ -655,9 +419,9 @@ export default function App() {
       {/* CONTACT */}
       <section id="contact" className="py-16 px-4 bg-lightStone">
         <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Let's Collaborate</h2>
+          <h2 className="text-3xl font-bold mb-4">Get in touch</h2>
           <p className="mb-8 text-navySlate">
-            Consulting, project collaboration, or remote support. If you're looking to streamline, grow, or automate — let's talk.
+            Open to Business Analyst and BA/BI roles across Europe — remote or hybrid — and to project work through Jola &amp; Co. Email is the fastest route.
           </p>
           <div className="flex justify-center gap-3 flex-wrap">
             <a href="mailto:jola@jolaandco.com" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Email Me</a>
@@ -668,9 +432,10 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
-        <p className="text-goldenWheat tracking-widest uppercase text-xs mb-2">Automate · Analyse · Advance</p>
+        <p className="text-goldenWheat tracking-widest uppercase text-xs mb-2">Business Analysis · Agile Delivery · BI</p>
         <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola@jolaandco.com" className="underline hover:text-goldenWheat">jola@jolaandco.com</a></p>
-        <p className="mt-1 text-gray-400">Data Analysis · SQL · Power BI · Python (pandas) · AI Automation · Business Analysis · Remote</p>
+        <p className="mt-1 text-gray-400">Requirements &amp; Traceability · BPMN 2.0 · UML · Jira · Confluence · Power BI · SQL · Python (pandas) · Remote</p>
+        <p className="mt-3 text-xs text-gray-400"><a href="/services.html" className="hover:text-goldenWheat">Consulting services</a></p>
       </footer>
 
     </div>

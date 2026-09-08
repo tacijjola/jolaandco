@@ -275,7 +275,7 @@
         <div class="stat-label">Epics and stories in Jira, each with acceptance criteria</div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">10</div>
+        <div class="stat-number">13</div>
         <div class="stat-label">Decisions logged with rationale &mdash; two still open</div>
       </div>
     </div>
@@ -387,6 +387,107 @@
     </figure>
     <p class="fig-hint">Click to open it full size.</p>
   </div>
+</section> <!--
+
+  ONE JUDGEMENT CALL I MADE: "The data model" section uses class="tinted".
+  Sections often alternate tinted/plain for visual rhythm on a page like this.
+  I've left this new section with NO class (plain) below, assuming the next
+  section ("From requirement to screen") is also plain or that alternating
+  is what you want. If the next section is ALSO tinted, add class="tinted"
+  here instead so two tinted sections aren't sitting back to back.
+
+  IMAGE PATH: your images sit flat in /public, referenced as root paths
+  (e.g. src="/tm-star-schema.svg") — not in a subfolder. So save your chart
+  as tm-data-validation-chart.png directly in C:\Users\jolat\Projects\jolaandco\public\,
+  right alongside tm-star-schema.svg and the others.
+
+  ONE GUESS: I don't have the exact markup for how D-004/D-008/D-009 are
+  styled as callouts elsewhere on this page (I only ever saw the plain-text
+  version of those). I've used class="decision-card" below as a reasonable
+  guess matching your naming convention (section-label, fig-hint, etc are
+  all kebab-case and semantic). If you have an existing decision callout
+  style elsewhere in the file, paste it and I'll match it exactly instead.
+-->
+
+<section>
+  <div class="container">
+    <div class="section-label">Data validation</div>
+    <h2>One metric, three answers</h2>
+    <p class="lede">
+      A star schema only protects you from a bad structure. It says nothing about
+      whether the numbers going into it are trustworthy. Before scoring a single
+      country, I checked whether the data even agreed with itself.
+    </p>
+
+    <p>
+      Renewable electricity share for Germany, Lithuania, Poland, Slovenia and
+      Sweden — 2023 — pulled from three independent sources: Our World in Data,
+      IRENA, and Eurostat. Same metric name, same year, same countries.
+    </p>
+
+    <figure>
+      <div class="fig-stage">
+        <img src="/tm-data-validation-chart.png"
+             alt="Bar chart: renewable electricity share by country and source, 2023. Sweden, Germany, Slovenia and Poland show close agreement across Eurostat, IRENA and OWID; Lithuania shows a 48-point spread (36%, 74%, 84%)."
+             data-zoom />
+      </div>
+      <figcaption>
+        Same country, same year, three different answers — the largest gap is 48 percentage points.
+      </figcaption>
+    </figure>
+    <p class="fig-hint">Click to open it full size.</p>
+
+    <h4>What it found</h4>
+    <p>
+      Four of the five countries agreed closely — within 2&ndash;3 percentage points,
+      well inside normal reporting variance. <strong>Lithuania did not.</strong> The
+      same country, the same year, reported as 36%, 74%, and 84% depending which
+      source you asked — a 48-point spread, larger than the gap between the
+      highest- and lowest-scoring country in the entire dataset.
+    </p>
+    <p>
+      A dashboard that silently picks one of those three numbers is not being
+      neutral. It is being confidently wrong.
+    </p>
+
+    <h4>What I did about it</h4>
+    <ul>
+      <li>
+        <strong>Disclosed it, rather than resolving it or hiding it.</strong>
+        The instinct with an inconvenient outlier is to quietly exclude it. I
+        decided the divergence itself was the more useful finding — a live
+        example of why a single-source dashboard needs a documented system
+        boundary before anyone trusts its numbers.
+      </li>
+      <li>
+        <strong>Defined the system boundary explicitly (D-012):</strong>
+        Transition Monitor measures renewable <em>electricity generation</em>
+        share &mdash; not consumption, not the broader energy balance. That
+        definitional choice is what makes cross-source and cross-country
+        comparison honest instead of coincidental.
+      </li>
+      <li>
+        <strong>Logged the reversal, not just the decision.</strong> An earlier
+        version of this decision (D-011) proposed excluding Lithuania while its
+        data was under-explained. Once the full three-source comparison was in,
+        D-013 formally superseded that &mdash; the wrong instinct is on the
+        record alongside the right one, because that's what an honest decision
+        log looks like.
+      </li>
+    </ul>
+
+    <div class="decision-card">
+      <h5>D-013 &mdash; Include Lithuania as a documented divergence case, not an exclusion</h5>
+      <p>
+        Excluding an inconvenient country is the easy version of data governance.
+        Disclosing exactly where and why sources disagree is the harder, more
+        useful version &mdash; and it's the one a reviewer can actually act on.
+        <em>Status: Agreed. Supersedes D-011. Impacts the Data Quality Assessment,
+        the published country set, and the scoring methodology's system
+        boundary.</em>
+      </p>
+    </div>
+  </div>
 </section>
 
 <section id="requirements">
@@ -438,7 +539,7 @@
         <ul>
           <li>Stakeholder register, RACI matrix and power/interest grid &mdash; with the automation gains visible as activities where R moves from Analyst to System</li>
           <li>A glossary covering domain, modelling and delivery terms, so BRD, FRD and backlog use one vocabulary</li>
-          <li>A decision log: ten entries, statuses of Open, Agreed and In Progress, each with rationale and the artifacts it affects</li>
+          <li>A decision log: thirteen entries, statuses of Open, Agreed and In Progress, each with rationale and the artifacts it affects</li>
           <li>Documentation in Confluence, backlog in Jira, models in Enterprise Architect</li>
         </ul>
       </div>
@@ -446,7 +547,7 @@
 
     <h3 style="margin-top:2.2rem">Three decisions from the log</h3>
     <p class="lede" style="margin-bottom:1.4rem">
-      A decision log is only useful if it records the reasoning, not just the outcome. Two of the ten
+      A decision log is only useful if it records the reasoning, not just the outcome. Two of the thirteen.
       are still open, which is what a live project actually looks like.
     </p>
 

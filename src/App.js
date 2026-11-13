@@ -39,12 +39,12 @@ export default function App() {
       {/* HERO */}
       <section id="top" className="py-16 px-4 bg-lightStone text-center">
         <div className="max-w-4xl mx-auto">
-          <p className="text-goldenWheat text-sm font-semibold tracking-widest uppercase mb-3">Business Analyst · Agile Delivery</p>
+          <p className="text-goldenWheat text-sm font-semibold tracking-widest uppercase mb-3">BI &amp; Data Analyst · Azure Databricks</p>
           <h2 className="text-4xl font-semibold mb-4">
             I specify solutions that can actually be built — because I'm the one who builds them.
           </h2>
           <p className="text-lg font-medium text-goldenWheat mb-6">
-            Requirements &amp; traceability · BPMN 2.0 · UML · Jira · Confluence · Power BI · SQL
+            SQL · Azure Databricks · Power BI · DAX · Data quality checks · Automation
           </p>
           <p className="text-lg text-navySlate mb-6">
             Six years in energy and EV infrastructure across 8+ European markets, in operations and BI
@@ -254,7 +254,7 @@ export default function App() {
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Get in touch</h2>
           <p className="mb-8 text-navySlate">
-            Open to Business Analyst and BA/BI roles across Europe — remote or hybrid — and to project work through Jola &amp; Co. Email is the fastest route.
+            Open to BI and data analyst roles across Europe — remote, contract or B2B — and to project work through Jola &amp; Co. Email is the fastest route.
           </p>
           <div className="flex justify-center gap-3 flex-wrap">
             <a href="mailto:jola@jolaandco.com" className="bg-goldenWheat text-lightStone px-6 py-3 rounded-xl shadow hover:bg-sage transition">Email Me</a>
@@ -265,9 +265,9 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="bg-navySlate text-lightStone text-center py-6 px-4 text-sm">
-        <p className="text-goldenWheat tracking-widest uppercase text-xs mb-2">Business Analysis · Agile Delivery · BI</p>
+        <p className="text-goldenWheat tracking-widest uppercase text-xs mb-2">BI &amp; Data Analysis · Azure Databricks · Power BI</p>
         <p>© {new Date().getFullYear()} Jola Tacij · <a href="mailto:jola@jolaandco.com" className="underline hover:text-goldenWheat">jola@jolaandco.com</a></p>
-        <p className="mt-1 text-gray-400">Requirements &amp; Traceability · BPMN 2.0 · UML · Jira · Confluence · Power BI · SQL · Python (pandas) · Remote</p>
+        <p className="mt-1 text-gray-400">SQL · Azure Databricks · Power BI · DAX · Make · n8n · BPMN 2.0 · Remote</p>
         <p className="mt-3 text-xs text-gray-400"><a href="/services.html" className="hover:text-goldenWheat">Consulting services</a></p>
       </footer>
 
